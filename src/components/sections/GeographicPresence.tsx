@@ -27,39 +27,30 @@ const countries = [
 
 export default function GeographicPresence() {
   return (
-    <section className="bg-[#111009] section-padding">
+    <section className="bg-[#111009] py-16">
       <div className="container-custom">
 
         {/* Header */}
-
-        <div className="text-center max-w-3xl mx-auto mb-20">
-
-          <span className="eyebrow">
-            GLOBAL PRESENCE
-          </span>
-
-          <h2 className="display-md mt-6 text-white">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <span className="eyebrow">GLOBAL PRESENCE</span>
+          <h2 className="display-md mt-4 text-white">
             Building Experiences
             <br />
             Across Markets
           </h2>
-
-          <p className="mt-6 text-lg text-white/60">
+          <p className="mt-4 text-base text-white/60">
             With a growing footprint across India, Sri Lanka
             and Maldives, Gourmet Gateway continues to deliver
             premium food and beverage experiences.
           </p>
-
         </div>
 
         {/* Cards */}
-
-        <div className="grid lg:grid-cols-3 gap-8">
-
+        <div className="grid lg:grid-cols-3 gap-6">
           {countries.map((country) => (
             <div
               key={country.name}
-              className="presence-card group relative overflow-hidden h-[600px] cursor-pointer"
+              className="presence-card group relative overflow-hidden h-[500px] cursor-pointer"
             >
               <img
                 src={country.image}
@@ -85,31 +76,30 @@ export default function GeographicPresence() {
                 "
               />
 
-              <div className="absolute inset-0 p-10 flex flex-col justify-end">
-
-                <span className="text-[#B8965A] uppercase tracking-[0.25em] text-xs">
+              <div className="absolute inset-0 p-8 flex flex-col justify-end">
+                <span className="text-[#B8965A] uppercase tracking-[0.25em] text-[10px]">
                   Presence
                 </span>
 
-                <h3 className="text-white font-serif text-5xl mt-3">
+                <h3 className="text-white font-serif text-4xl mt-2">
                   {country.name}
                 </h3>
 
-                <div className="mt-5 flex items-center gap-4">
-                  <span className="text-[#B8965A] text-4xl font-serif">
+                <div className="mt-3 flex items-center gap-3">
+                  <span className="text-[#B8965A] text-3xl font-serif">
                     {country.outlets}
                   </span>
-
-                  <span className="text-white/60 uppercase text-xs tracking-[0.2em]">
+                  <span className="text-white/60 uppercase text-[10px] tracking-[0.2em]">
                     Locations
                   </span>
                 </div>
 
                 <p
                   className="
-                    mt-5
+                    mt-4
                     text-white/75
-                    leading-7
+                    text-sm
+                    leading-6
                     opacity-0
                     translate-y-5
                     transition-all
@@ -120,12 +110,9 @@ export default function GeographicPresence() {
                 >
                   {country.description}
                 </p>
-
               </div>
-
             </div>
           ))}
-
         </div>
 
       </div>

@@ -42,59 +42,11 @@ const brands = [
 export default function BrandsPage() {
   return (
     <>
-      {/* ======================================
-          HERO
-      ====================================== */}
-
-      <section className="relative min-h-[80vh] flex items-center overflow-hidden">
-
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000')",
-          }}
-        />
-
-        <div className="absolute inset-0 bg-black/60" />
-
-        <div className="relative z-10 container-custom">
-
-          <span className="eyebrow text-[var(--c-gold)]">
-            OUR BRANDS
-          </span>
-
-          <h1 className="display-xl text-white mt-6 max-w-5xl">
-            A Portfolio Of
-            Distinct Culinary
-            Experiences
-          </h1>
-
-          <p className="mt-10 text-white/80 text-xl max-w-3xl leading-9">
-            Gourmet Gateway India Limited operates a diverse
-            collection of hospitality brands across cafés,
-            restaurants, quick service concepts and premium
-            patisserie experiences.
-          </p>
-
-        </div>
-
-      </section>
-
-      {/* ======================================
-          INTRODUCTION
-      ====================================== */}
-
-      <section className="section-padding bg-[var(--c-warm-white)]">
+      <section className="pt-20 pb-12 bg-[var(--c-warm-white)]">
 
         <div className="container-custom">
 
           <div className="max-w-4xl">
-
-            <span className="eyebrow">
-              PORTFOLIO OVERVIEW
-            </span>
-
             <h2 className="display-lg mt-6">
               Creating Experiences
               Beyond Dining
@@ -117,7 +69,7 @@ export default function BrandsPage() {
           BRANDS GRID
       ====================================== */}
 
-      <section className="pb-32 bg-[var(--c-warm-white)]">
+      <section className="pb-20 bg-[var(--c-warm-white)]">
 
         <div className="container-custom">
 

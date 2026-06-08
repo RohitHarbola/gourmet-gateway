@@ -30,22 +30,22 @@ const boardMembers = [
 
 export default function LeadershipPreview() {
   return (
-    <section className="section-padding bg-[var(--c-cream)] reveal">
+    <section className="bg-[var(--c-cream)] py-16 reveal">
       <div className="container-custom">
 
         {/* Header */}
-        <div className="grid lg:grid-cols-2 gap-16 mb-20">
+        <div className="grid lg:grid-cols-2 gap-12 mb-12">
           <div>
             <span className="eyebrow">LEADERSHIP</span>
-            <h2 className="display-lg mt-6">
+            <h2 className="display-lg mt-4">
               Guiding Vision.
               <br />
               Driving Growth.
             </h2>
           </div>
 
-          <div className="lg:pt-16">
-            <p className="text-lg leading-8 text-[var(--c-muted)]">
+          <div className="lg:pt-8">
+            <p className="text-base leading-7 text-[var(--c-muted)]">
               Our leadership team brings together decades of
               experience in hospitality, retail, finance and
               strategic business expansion, helping shape the
@@ -56,14 +56,14 @@ export default function LeadershipPreview() {
               href="/leadership"
               className="
                 inline-flex
-                mt-8
+                mt-6
                 border
                 border-[var(--c-gold)]
-                px-8
-                py-4
+                px-6
+                py-3
                 uppercase
                 tracking-[0.2em]
-                text-sm
+                text-xs
                 transition-all
                 duration-300
                 hover:bg-[var(--c-gold)]
@@ -76,7 +76,7 @@ export default function LeadershipPreview() {
         </div>
 
         {/* Leadership Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {boardMembers.map((member) => (
             <div
               key={member.name}
@@ -94,7 +94,7 @@ export default function LeadershipPreview() {
                   className="
                     leader-img
                     w-full
-                    h-[450px]
+                    h-[380px]
                     object-cover
                     object-top
                     transition-transform
@@ -104,14 +104,14 @@ export default function LeadershipPreview() {
                 />
               </div>
 
-              <div className="p-6">
-                <p className="text-xs uppercase tracking-[0.2em] text-[#B8965A]">
+              <div className="p-5">
+                <p className="text-[11px] uppercase tracking-[0.2em] text-[#B8965A]">
                   {member.designation}
                 </p>
-                <h3 className="mt-3 text-2xl font-serif">
+                <h3 className="mt-2 text-xl font-serif">
                   {member.name}
                 </h3>
-                <p className="mt-3 text-sm text-[var(--c-muted)] leading-6">
+                <p className="mt-2 text-xs text-[var(--c-muted)] leading-5">
                   {member.description}
                 </p>
               </div>

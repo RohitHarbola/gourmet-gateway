@@ -12,13 +12,7 @@ const BusinessOverviewPage = () => {
 
       <section className="relative min-h-screen flex items-center overflow-hidden">
 
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000')",
-          }}
-        />
+        
 
         <div className="absolute inset-0 bg-black/60" />
 

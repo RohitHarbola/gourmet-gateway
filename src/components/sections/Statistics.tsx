@@ -40,72 +40,64 @@ function Counter({ end, suffix = "" }: CounterProps) {
 
 export default function Statistics() {
   return (
-    <section className="bg-[#111009] py-28 reveal">
+    <section className="bg-[#111009] py-16 reveal">
       <div className="container-custom">
-
-        <div className="stat-card border-r border-b lg:border-b-0 border-white/10 p-10 lg:p-14 text-center">
-          <span className="eyebrow">
+        
+        {/* Header Section */}
+        <div className="text-center mb-12">
+          <span className="eyebrow text-xs">
             COMPANY OVERVIEW
           </span>
-
-          <h2 className="display-md mt-6 text-white">
+          <h2 className="text-3xl lg:text-4xl font-light text-white mt-3 font-serif">
             Numbers That Reflect
             <br />
             Our Journey
           </h2>
         </div>
 
+        {/* Stats Grid */}
         <div className="grid grid-cols-2 lg:grid-cols-4 border border-white/10">
-
           {/* Years */}
-
-          <div className="stat-card border-r border-b lg:border-b-0 border-white/10 p-10 lg:p-14 text-center">
-            <h3 className="font-serif text-6xl lg:text-7xl text-[#B8965A]">
+          <div className="border-r border-b lg:border-b-0 border-white/10 p-6 lg:p-8 text-center">
+            <h3 className="font-serif text-4xl lg:text-5xl text-[#B8965A] font-semibold">
               <Counter end={24} suffix="+" />
             </h3>
-
-            <p className="mt-4 uppercase tracking-[0.2em] text-sm text-white/60">
+            <p className="mt-2 uppercase tracking-[0.2em] text-[10px] text-white/50 font-light">
               Years
             </p>
           </div>
 
           {/* Outlets */}
-
-          <div className="stat-card border-r border-b lg:border-b-0 border-white/10 p-10 lg:p-14 text-center">
-            <h3 className="font-serif text-6xl lg:text-7xl text-[#B8965A]">
+          <div className="border-r border-b lg:border-b-0 border-white/10 p-6 lg:p-8 text-center">
+            <h3 className="font-serif text-4xl lg:text-5xl text-[#B8965A] font-semibold">
               <Counter end={200} suffix="+" />
             </h3>
-
-            <p className="mt-4 uppercase tracking-[0.2em] text-sm text-white/60">
+            <p className="mt-2 uppercase tracking-[0.2em] text-[10px] text-white/50 font-light">
               Outlets
             </p>
           </div>
 
           {/* Brands */}
-
-          <div className="stat-card border-r border-b lg:border-b-0 border-white/10 p-10 lg:p-14 text-center">
-            <h3 className="font-serif text-6xl lg:text-7xl text-[#B8965A]">
+          <div className="border-r border-b lg:border-b-0 border-white/10 p-6 lg:p-8 text-center">
+            <h3 className="font-serif text-4xl lg:text-5xl text-[#B8965A] font-semibold">
               <Counter end={4} suffix="+" />
             </h3>
-
-            <p className="mt-4 uppercase tracking-[0.2em] text-sm text-white/60">
+            <p className="mt-2 uppercase tracking-[0.2em] text-[10px] text-white/50 font-light">
               Brands
             </p>
           </div>
 
           {/* Countries */}
-
-          <div className="stat-card border-r border-b lg:border-b-0 border-white/10 p-10 lg:p-14 text-center">
-            <h3 className="font-serif text-6xl lg:text-7xl text-[#B8965A]">
+          <div className="border-b lg:border-b-0 border-white/10 p-6 lg:p-8 text-center">
+            <h3 className="font-serif text-4xl lg:text-5xl text-[#B8965A] font-semibold">
               <Counter end={3} />
             </h3>
-
-            <p className="mt-4 uppercase tracking-[0.2em] text-sm text-white/60">
+            <p className="mt-2 uppercase tracking-[0.2em] text-[10px] text-white/50 font-light">
               Countries
             </p>
           </div>
-
         </div>
+
       </div>
     </section>
   );

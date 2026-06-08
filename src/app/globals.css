@@ -290,6 +290,7 @@ body {
   max-width: var(--container);
   margin-inline: auto;
   padding-inline: 24px;
+  box-sizing: border-box;
 }
 
 .display-xl {
@@ -314,7 +315,7 @@ body {
 }
 
 .eyebrow {
-  font-size: 11px;
+  font-size: 20px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--c-gold);
@@ -322,6 +323,7 @@ body {
 
 .section-padding {
   padding-block: 120px;
+      display: grid;
 }
 
 @keyframes ticker {
@@ -570,11 +572,16 @@ body {
 
 /* Title */
 .hero-title {
-  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  font-size: clamp(3.5rem, 7vw, 6.5rem);
-  font-weight: 700;
-  line-height: 1.05;
-  color: white;
+  font-family: var(--font-display)
+'Cormorant Garamond', Georgia, serif
+;
+  font-size: clamp(54px, 7.5vw, 112px);
+  font-weight: 300;
+  line-height: 0.92;
+  letter-spacing: -0.025em;
+  color: var(--c-cream);
+  margin-bottom: 32px;
+  max-width: 680px;
 }
 
 .hero-title-em {
@@ -584,20 +591,21 @@ body {
 
 /* Description */
 .hero-description {
-  margin-top: 28px;
-  max-width: 520px;
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 15px;
-  line-height: 1.65;
-  font-weight: 300;
+    font-size: clamp(15px, 1.3vw, 18px);
+    font-weight: 300;
+    color: rgba(249, 246, 240, 0.65);
+    line-height: 1.7;
+    max-width: 480px;
+    margin-bottom: 5px;
+    
 }
 
 /* Buttons */
 .hero-buttons {
-  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 24px;
+  margin-top: 0;
 }
 
 .hero-btn-primary,
@@ -826,16 +834,18 @@ body {
 
 /* Hero Buttons Wrapper */
 .hero-buttons-wrapper {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+     display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+
 }
 
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 24px;
+  margin-top: 0;
 }
 
 /* Update Scroll Indicator Styles */

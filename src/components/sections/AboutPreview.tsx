@@ -1,10 +1,11 @@
+'use client';
 import Link from "next/link";
 
 export default function AboutPreview() {
   return (
-    <section className="section-padding bg-[var(--c-cream)]">
+    <section className="bg-[var(--c-cream)] py-20">
       <div className="container-custom">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
 
           {/* LEFT — Image Stack */}
           <div className="relative">
@@ -51,10 +52,10 @@ export default function AboutPreview() {
           </div>
 
           {/* RIGHT — Content */}
-          <div className="lg:pl-8 pb-10">
+          <div className="lg:pl-8">
             
             {/* Section Label - Our Story */}
-            <div className="section-label">
+            <div className="section-label mb-4">
               <span className="eyebrow">Our Story</span>
               <span className="divider"></span>
             </div>
@@ -79,8 +80,8 @@ export default function AboutPreview() {
 
             {/* Description */}
             <p
-              className="text-[var(--c-muted)]"
-              style={{ fontSize: "1rem", lineHeight: 1.8, marginBottom: "2rem" }}
+              className="text-[var(--c-muted)] mb-6"
+              style={{ fontSize: "1rem", lineHeight: 1.7 }}
             >
               Gourmet Gateway India Limited is a leading food & beverage
               conglomerate with presence across India, Sri Lanka, and
@@ -93,19 +94,42 @@ export default function AboutPreview() {
               style={{
                 background: "var(--c-cream-dark)",
                 borderLeft: "3px solid var(--c-gold)",
-                padding: "1.5rem 1.75rem",
-                marginBottom: "2rem",
+                padding: "1.25rem 1.5rem",
+                marginBottom: "1.5rem",
                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                 fontStyle: "italic",
-                fontSize: "1.1rem",
+                fontSize: "1rem",
                 color: "var(--c-dark)",
-                lineHeight: 1.7,
+                lineHeight: 1.6,
               }}
             >
               "Our mission is to enrich lives through extraordinary dining
               experiences — maintaining the highest standards of quality,
               innovation, and satisfaction across all our brands."
             </blockquote>
+
+            {/* Discover Our Brands Button */}
+            <div className="mb-6">
+              <Link
+                href="/brands"
+                className="btn btn-outline-dark"
+                style={{
+                  display: "inline-block",
+                  padding: "10px 24px",
+                  fontSize: "10px",
+                  fontWeight: 500,
+                  letterSpacing: "0.2em",
+                  textTransform: "uppercase",
+                  textDecoration: "none",
+                  border: "1px solid var(--c-dark)",
+                  color: "var(--c-dark)",
+                  background: "transparent",
+                  transition: "all 0.3s ease",
+                }}
+              >
+                Discover Our Brands
+              </Link>
+            </div>
 
             {/* Feature Cards */}
             <div className="grid grid-cols-2 gap-4">
@@ -120,7 +144,7 @@ export default function AboutPreview() {
                   title: "Innovation",
                   desc: "Constantly elevating to exceed customer expectations",
                 },
-                  {
+                {
                   letter: "C",
                   title: "Customer First",
                   desc: "Our guests are at the heart of everything we do",
@@ -136,19 +160,19 @@ export default function AboutPreview() {
                   className="flex gap-3 items-start"
                   style={{
                     border: "1px solid var(--c-border)",
-                    padding: "1.25rem",
+                    padding: "1rem",
                     background: "white",
                   }}
                 >
                   <div
                     style={{
-                      width: "32px",
-                      height: "32px",
+                      width: "28px",
+                      height: "28px",
                       border: "1px solid var(--c-gold)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      fontSize: "11px",
+                      fontSize: "10px",
                       color: "var(--c-gold)",
                       flexShrink: 0,
                       fontWeight: 500,
@@ -158,10 +182,10 @@ export default function AboutPreview() {
                     {card.letter}
                   </div>
                   <div>
-                    <p style={{ fontWeight: 600, fontSize: "0.9rem", marginBottom: "0.3rem", color: "var(--c-dark)" }}>
+                    <p style={{ fontWeight: 600, fontSize: "0.85rem", marginBottom: "0.25rem", color: "var(--c-dark)" }}>
                       {card.title}
                     </p>
-                    <p style={{ fontSize: "0.8rem", color: "var(--c-muted)", lineHeight: 1.5 }}>
+                    <p style={{ fontSize: "0.75rem", color: "var(--c-muted)", lineHeight: 1.4 }}>
                       {card.desc}
                     </p>
                   </div>
