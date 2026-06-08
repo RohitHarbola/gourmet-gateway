@@ -6,36 +6,7 @@ import './BusinessOverview.css';
 const BusinessOverviewPage = () => {
   return (
     <div className="business-overview-page">
-       {/* ==========================================
-          HERO SECTION
-      ========================================== */}
-
-      <section className="relative min-h-screen flex items-center overflow-hidden">
-
-        
-
-        <div className="absolute inset-0 bg-black/60" />
-
-        <div className="relative z-10 container-custom">
-
-          <span className="eyebrow text-[var(--c-gold)]">
-            ABOUT GOURMET GATEWAY
-          </span>
-
-          <h1 className="display-xl text-white mt-6 max-w-5xl">
-            Bringing Exceptional
-            <br />
-            Dining Experiences
-            <br />
-            Across Markets
-          </h1>
-
-       
-
-        </div>
-
-      </section>
-
+      <Navbar />
       {/* Main Content Section */}
       <div className="et_pb_section et_pb_section_1 et_section_regular">
         {/* Rest of your content remains the same */}

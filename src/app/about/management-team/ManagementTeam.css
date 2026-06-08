@@ -97,6 +97,7 @@
   font-size: 36px;
   color: #e67e22;
   text-align: center;
+  margin-top: 2rem;
   margin-bottom: 20px;
   font-weight: 600;
 }
@@ -210,6 +211,7 @@
 
   .management-team-page .et_pb_text_0 h1 {
     font-size: 28px;
+    margin-top: 2rem;
   }
 
   .management-team-page .et_pb_toggle_title {
@@ -239,6 +241,7 @@
 
   .management-team-page .et_pb_text_0 h1 {
     font-size: 24px;
+    margin-top: 2rem;
   }
 
   .management-team-page .et_pb_fullwidth_header_container {

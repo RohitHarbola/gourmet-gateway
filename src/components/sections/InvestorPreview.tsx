@@ -33,19 +33,14 @@ const investorDocs = [
 
 export default function InvestorPreview() {
   return (
-    <section className="bg-[#111009] section-padding reveal">
+    <section className="bg-[#111009] py-16 reveal">
       <div className="container-custom">
 
         {/* Header */}
-
-        <div className="grid lg:grid-cols-2 gap-16 mb-20">
-
+        <div className="grid lg:grid-cols-2 gap-12 mb-12">
           <div>
-            <span className="eyebrow">
-              INVESTOR RELATIONS
-            </span>
-
-            <h2 className="display-lg mt-6 text-white">
+            <span className="eyebrow">INVESTOR RELATIONS</span>
+            <h2 className="display-lg mt-4 text-white">
               Transparency.
               <br />
               Governance.
@@ -54,8 +49,8 @@ export default function InvestorPreview() {
             </h2>
           </div>
 
-          <div className="lg:pt-16">
-            <p className="text-lg leading-8 text-white/70">
+          <div className="lg:pt-8">
+            <p className="text-base leading-7 text-white/70">
               We are committed to maintaining the highest standards
               of corporate governance, transparency and shareholder
               communication.
@@ -65,14 +60,14 @@ export default function InvestorPreview() {
               href="/investors"
               className="
                 inline-flex
-                mt-8
+                mt-6
                 border
                 border-[#B8965A]
-                px-8
-                py-4
+                px-6
+                py-3
                 uppercase
                 tracking-[0.2em]
-                text-sm
+                text-xs
                 text-white
                 transition-all
                 duration-300
@@ -82,18 +77,15 @@ export default function InvestorPreview() {
               View Investor Centre
             </Link>
           </div>
-
         </div>
 
         {/* Cards */}
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {investorDocs.map((item) => (
             <Link
               href={item.link}
               key={item.title}
-              className="investor-card group"
+              className="investor-card group h-full"
             >
               <div
                 className="
@@ -101,37 +93,37 @@ export default function InvestorPreview() {
                   border
                   border-white/10
                   bg-white/[0.03]
-                  p-8
+                  p-6
                   transition-all
                   duration-500
                   group-hover:border-[#B8965A]
+                  flex
+                  flex-col
                 "
               >
-                <div className="text-5xl mb-8">
+                <div className="text-4xl mb-5">
                   {item.icon}
                 </div>
 
-                <h3 className="text-2xl text-white font-serif mb-4">
+                <h3 className="text-xl text-white font-serif mb-3">
                   {item.title}
                 </h3>
 
-                <p className="text-white/60 leading-7">
+                <p className="text-white/60 text-sm leading-6">
                   {item.description}
                 </p>
 
-                <div className="mt-8 flex items-center justify-between">
-                  <span className="text-[#B8965A] text-sm uppercase tracking-[0.2em]">
+                <div className="mt-6 flex items-center justify-between">
+                  <span className="text-[#B8965A] text-[11px] uppercase tracking-[0.2em]">
                     View
                   </span>
-
-                  <span className="text-[#B8965A] text-xl">
+                  <span className="text-[#B8965A] text-lg">
                     →
                   </span>
                 </div>
               </div>
             </Link>
           ))}
-
         </div>
 
       </div>

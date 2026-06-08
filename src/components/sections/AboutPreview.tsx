@@ -108,30 +108,7 @@ export default function AboutPreview() {
               innovation, and satisfaction across all our brands."
             </blockquote>
 
-            {/* Discover Our Brands Button */}
-            <div className="mb-6">
-              <Link
-                href="/brands"
-                className="btn btn-outline-dark"
-                style={{
-                  display: "inline-block",
-                  padding: "10px 24px",
-                  fontSize: "10px",
-                  fontWeight: 500,
-                  letterSpacing: "0.2em",
-                  textTransform: "uppercase",
-                  textDecoration: "none",
-                  border: "1px solid var(--c-dark)",
-                  color: "var(--c-dark)",
-                  background: "transparent",
-                  transition: "all 0.3s ease",
-                }}
-              >
-                Discover Our Brands
-              </Link>
-            </div>
-
-            {/* Feature Cards */}
+            {/* Feature Cards with Button */}
             <div className="grid grid-cols-2 gap-4">
               {[
                 {
@@ -191,6 +168,29 @@ export default function AboutPreview() {
                   </div>
                 </div>
               ))}
+              
+              {/* Discover Our Brands Button - spanning both columns */}
+              <div className="col-span-2 mt-2">
+                <Link
+                  href="/brands"
+                  className="btn btn-outline-dark w-full text-center justify-center"
+                  style={{
+                    display: "inline-flex",
+                    padding: "14px 32px",
+                    fontSize: "10px",
+                    fontWeight: 500,
+                    letterSpacing: "0.2em",
+                    textTransform: "uppercase",
+                    textDecoration: "none",
+                    border: "0.1px solid var(--c-dark)",
+                    color: "var(--c-dark)",
+                    background: "transparent",
+                    transition: "all 0.3s ease",
+                  }}
+                >
+                  Discover Our Brands
+                </Link>
+              </div>
             </div>
           </div>
 

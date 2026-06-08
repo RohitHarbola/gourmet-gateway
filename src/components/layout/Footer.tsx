@@ -5,18 +5,16 @@ const navigationLinks = [
   { name: "Our Brands", href: "/brands" },
   { name: "Leadership", href: "/leadership" },
   { name: "Our Presence", href: "/presence" },
-  { name: "Careers", href: "/careers" },
-  { name: "Media & Press", href: "/media" },
 ];
 
 const investorLinks = [
-  { name: "Annual Reports", href: "/investors/annual-reports" },
-  { name: "Financial Statements", href: "/investors/financial-statements" },
-  { name: "Shareholder Info", href: "/investors/shareholder-info" },
-  { name: "Board Composition", href: "/investors/board-composition" },
+  { name: "Annual Reports", href: "/investors/financials" },
+  { name: "Financial Statements", href: "/investors/financials" },
+  { name: "Shareholder Information", href: "/investors/shareholders-information" },
+  { name: "Board Composition", href: "/investors/board-of-directors-composition" },
   { name: "Policies", href: "/investors/policies" },
-  { name: "Secretarial Reports", href: "/investors/secretarial-reports" },
-  { name: "Postal Ballot", href: "/investors/postal-ballot" },
+  { name: "Secretarial Reports", href: "/investors/secretarial-compliance-report" },
+  { name: "Postal Ballot", href: "/investors/postal-ballot-notice" },
 ];
 
 const brandLinks = [
@@ -26,10 +24,7 @@ const brandLinks = [
   { name: "Drizzle & Dust", href: "/brands/drizzle-dust" },
 ];
 
-const bottomLinks = [
-  { name: "Privacy Policy", href: "/privacy-policy" },
-  { name: "Terms of Use", href: "/terms-of-use" },
-];
+
 
 export default function Footer() {
   return (
@@ -120,13 +115,6 @@ export default function Footer() {
             <p className="footer-copyright">
               © 2017-2022 Gourmet Gateway India Limited. All Rights Reserved.
             </p>
-            <div className="footer-bottom-links">
-              {bottomLinks.map((link) => (
-                <Link key={link.name} href={link.href}>
-                  {link.name}
-                </Link>
-              ))}
-            </div>
           </div>
         </div>
       </div>

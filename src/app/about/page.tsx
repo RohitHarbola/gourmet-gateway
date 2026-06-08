@@ -39,7 +39,7 @@ export default function AboutPage() {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="eyebrow">WHO WE ARE</span>
+              <span className="eyebrow ">WHO WE ARE</span>
               <h2 className="display-lg mt-4">
                 A Growing Portfolio
                 Of Hospitality Brands

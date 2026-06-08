@@ -15,16 +15,16 @@ const navLinks = [
       { label: "Management Team", href: "/about/management-team" },
     ],
   },
-  {
-    label: "Our Brands",
-    href: "/brands",
-    dropdown: [
-      { label: "BARISTA COFFEE", href: "/brands/barista" },
-      { label: "KYLIN", href: "/brands/kylin" },
-      { label: "WANCHAI", href: "/brands/wanchai" },
-      { label: "DRIZZLE & DUST", href: "/brands/drizzle-dust" },
-    ],
-  },
+  // {
+  //   label: "Our Brands",
+  //   href: "/brands",
+  //   dropdown: [
+  //     { label: "BARISTA COFFEE", href: "/brands/barista" },
+  //     { label: "KYLIN", href: "/brands/kylin" },
+  //     { label: "WANCHAI", href: "/brands/wanchai" },
+  //     { label: "DRIZZLE & DUST", href: "/brands/drizzle-dust" },
+  //   ],
+  // },
   { label: "Presence", href: "/presence" },
   {
     label: "Investors",
@@ -40,7 +40,7 @@ const navLinks = [
           { label: "Investor's Information", href: "/investors/investors-information" },
           { label: "Archives", href: "/investors/archives" },
           { label: "Investors' Contact", href: "/investors/investors-contact" },
-          { label: "Corporate Social Responsibility", href: "/investors/csr" },
+          { label: "Corporate Social Responsibility", href: "/investors/corporate-social-responsibility" },
           { label: "Shareholder's Information", href: "/investors/shareholders-information" },
           { label: "Policies", href: "/investors/policies" },
           { label: "Board of Directors Composition", href: "/investors/board-of-directors-composition" },
@@ -52,7 +52,7 @@ const navLinks = [
       { label: "Audited Subsidiaries Financial", href: "/investors/audited-subsidiaries-financial" },
     ],
   },
-  { label: "Leadership", href: "/leadership" },
+  // { label: "Leadership", href: "/leadership" },
 ];
 
 export default function Navbar() {
@@ -225,7 +225,7 @@ export default function Navbar() {
                                 {/* Nested Dropdown Menu */}
                                 {openNestedDropdown === item.label && (
                                   <div 
-                                    className="absolute left-full top-0 w-56 bg-[#0d0c09] border border-white/10 py-2 shadow-2xl rounded-sm z-50"
+                                    className="absolute right-full top-0 w-56 bg-[#0d0c09] border border-white/10 py-2 shadow-2xl rounded-sm z-50"
                                     onMouseEnter={() => {
                                       if (nestedHoverTimeoutRef.current) {
                                         clearTimeout(nestedHoverTimeoutRef.current);

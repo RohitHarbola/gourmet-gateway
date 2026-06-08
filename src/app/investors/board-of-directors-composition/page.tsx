@@ -8,24 +8,13 @@ import './BoardOfDirectorsComposition.css';
 const BoardOfDirectorsCompositionPage = () => {
   return (
     <div className="board-composition-page">
-      {/* Hero Section */}
-      <div className="et_pb_section et_pb_fullwidth_section et_pb_section_0 et_section_regular">
-        <section className="et_pb_fullwidth_header et_pb_module et_pb_bg_layout_light et_pb_text_align_left et_pb_fullwidth_header_0">
-          <div className="et_pb_fullwidth_header_container left">
-            <div className="header-content-container center">
-              <div className="header-content">
-                <h1>Board of Directors Composition</h1>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+      <Navbar />
 
       {/* Main Content Section */}
-      <div className="et_pb_section et_pb_section_1 et_section_regular">
+      <div className="et_pb_section et_pb_section_1 et_section_regular" style={{ paddingTop: 'calc(var(--nav-h, 80px) + 48px)' }}>
         <div className="et_pb_row et_pb_row_0">
           <div className="et_pb_column et_pb_column_4_4 et_pb_column_0">
-            
+
             <div className="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left et_pb_text_0">
               <div className="et_pb_text_inner">
                 <h1>Board of Directors Composition</h1>
@@ -34,7 +23,7 @@ const BoardOfDirectorsCompositionPage = () => {
 
             <div className="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left et_pb_text_1">
               <div className="et_pb_text_inner">
-                
+
                 {/* Board of Directors/KMP Table */}
                 <h4>Board of Directors/KMP</h4>
                 <div className="table-responsive">

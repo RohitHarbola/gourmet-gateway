@@ -29,35 +29,6 @@ const ManagementTeamPage = () => {
     <div className="management-team-page">
       <Navbar />
 
-      {/* ==========================================
-          HERO SECTION
-      ========================================== */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2000')",
-          }}
-        />
-
-        <div className="absolute inset-0 bg-black/60" />
-
-        <div className="relative z-10 container-custom">
-          <span className="eyebrow text-[var(--c-gold)]">
-            ABOUT GOURMET GATEWAY
-          </span>
-
-          <h1 className="display-xl text-white mt-6 max-w-5xl">
-            Bringing Exceptional
-            <br />
-            Dining Experiences
-            <br />
-            Across Markets
-          </h1>
-        </div>
-      </section>
-
       {/* Main Content Section */}
       <div className="et_pb_section et_pb_section_1 et_section_regular">
         <div className="et_pb_row et_pb_row_0">

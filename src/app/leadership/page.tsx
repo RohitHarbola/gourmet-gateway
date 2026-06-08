@@ -31,46 +31,18 @@ const boardMembers = [
 export default function LeadershipPage() {
   return (
     <>
-      {/* HERO */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2000')",
-          }}
-        />
-
-        <div className="absolute inset-0 bg-black/65" />
-
-        <div className="relative z-10 container-custom">
-          <span className="eyebrow text-[var(--c-gold)]">LEADERSHIP</span>
-          <h1 className="display-xl text-white mt-6 max-w-5xl">
-            Driving Growth
-            <br />
-            Through Vision
-            <br />
-            & Excellence
-          </h1>
-          <p className="text-white/80 text-xl max-w-3xl mt-10 leading-9">
-            Meet the leaders shaping the future of Gourmet Gateway,
-            guiding strategic growth, innovation and operational excellence.
-          </p>
-        </div>
-      </section>
-
       {/* INTRODUCTION */}
-      <section className="section-padding bg-[var(--c-warm-white)]">
+      <section className="bg-[var(--c-warm-white)] py-16">
         <div className="container-custom">
           <div className="max-w-4xl">
             <span className="eyebrow">LEADERSHIP PHILOSOPHY</span>
-            <h2 className="display-lg mt-6">Leadership Built On Experience</h2>
-            <p className="mt-8 text-lg leading-9 text-[var(--c-muted)]">
+            <h2 className="display-lg mt-4">Leadership Built On Experience</h2>
+            <p className="mt-6 text-base leading-7 text-[var(--c-muted)]">
               Our leadership team combines decades of expertise
               across hospitality, retail, food services, finance
               and corporate governance.
             </p>
-            <p className="mt-6 text-lg leading-9 text-[var(--c-muted)]">
+            <p className="mt-4 text-base leading-7 text-[var(--c-muted)]">
               Together they guide Gourmet Gateway's strategy,
               growth initiatives and commitment to delivering
               exceptional customer experiences across all brands.
@@ -80,14 +52,14 @@ export default function LeadershipPage() {
       </section>
 
       {/* BOARD OF DIRECTORS */}
-      <section className="section-padding bg-[var(--c-cream)]">
+      <section className="bg-[var(--c-cream)] py-16">
         <div className="container-custom">
           <div className="text-center">
             <span className="eyebrow">BOARD OF DIRECTORS</span>
-            <h2 className="display-lg mt-6">Strategic Leadership</h2>
+            <h2 className="display-lg mt-4">Strategic Leadership</h2>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 mt-20">
+          <div className="grid lg:grid-cols-3 gap-6 mt-12">
             {boardMembers.map((member) => (
               <div
                 key={member.name}
@@ -98,10 +70,10 @@ export default function LeadershipPage() {
                   alt={member.name}
                   className="leader-img"
                 />
-                <div className="p-8">
+                <div className="p-6">
                   <span className="eyebrow">{member.designation}</span>
-                  <h3 className="text-3xl mt-4 font-serif">{member.name}</h3>
-                  <p className="mt-5 text-[var(--c-muted)] leading-8">
+                  <h3 className="text-2xl mt-3 font-serif">{member.name}</h3>
+                  <p className="mt-3 text-sm text-[var(--c-muted)] leading-6">
                     {member.description}
                   </p>
                 </div>
@@ -112,20 +84,20 @@ export default function LeadershipPage() {
       </section>
 
       {/* GOVERNANCE */}
-      <section className="bg-[var(--c-obsidian)] text-white section-padding">
+      <section className="bg-[var(--c-obsidian)] text-white py-16">
         <div className="container-custom">
           <div className="max-w-4xl">
             <span className="eyebrow">CORPORATE GOVERNANCE</span>
-            <h2 className="display-lg mt-6">
+            <h2 className="display-lg mt-4">
               Transparency,
               Accountability &
               Sustainable Growth
             </h2>
-            <p className="mt-10 text-white/70 text-lg leading-9">
+            <p className="mt-6 text-base leading-7 text-white/70">
               Strong governance practices are fundamental to
               building sustainable long-term value.
             </p>
-            <p className="mt-6 text-white/70 text-lg leading-9">
+            <p className="mt-4 text-base leading-7 text-white/70">
               We remain committed to ethical leadership,
               transparency and responsible decision-making
               across all areas of our business.
@@ -135,28 +107,38 @@ export default function LeadershipPage() {
       </section>
 
       {/* LEADERSHIP STATS */}
-      <section className="bg-[var(--c-obsidian)] text-white pb-32">
+      <section className="bg-[var(--c-obsidian)] text-white pb-16">
         <div className="container-custom">
-          <div className="grid md:grid-cols-4">
-            <div className="stat-card border-r border-white/10 p-10 text-center">
-              <div className="display-md text-[var(--c-gold)]">20+</div>
-              <p className="uppercase tracking-[0.2em] text-sm mt-3">
+          <div className="grid md:grid-cols-4 border border-white/10">
+            <div className="border-r border-b md:border-b-0 border-white/10 p-6 text-center">
+              <div className="font-serif text-4xl lg:text-5xl text-[var(--c-gold)] font-semibold">
+                20+
+              </div>
+              <p className="mt-2 uppercase tracking-[0.2em] text-[10px] text-white/50 font-light">
                 Years Experience
               </p>
             </div>
-            <div className="stat-card border-r border-white/10 p-10 text-center">
-              <div className="display-md text-[var(--c-gold)]">4+</div>
-              <p className="uppercase tracking-[0.2em] text-sm mt-3">
+            <div className="border-r border-b md:border-b-0 border-white/10 p-6 text-center">
+              <div className="font-serif text-4xl lg:text-5xl text-[var(--c-gold)] font-semibold">
+                4+
+              </div>
+              <p className="mt-2 uppercase tracking-[0.2em] text-[10px] text-white/50 font-light">
                 Brands Managed
               </p>
             </div>
-            <div className="stat-card border-r border-white/10 p-10 text-center">
-              <div className="display-md text-[var(--c-gold)]">3</div>
-              <p className="uppercase tracking-[0.2em] text-sm mt-3">Countries</p>
+            <div className="border-r border-b md:border-b-0 border-white/10 p-6 text-center">
+              <div className="font-serif text-4xl lg:text-5xl text-[var(--c-gold)] font-semibold">
+                3
+              </div>
+              <p className="mt-2 uppercase tracking-[0.2em] text-[10px] text-white/50 font-light">
+                Countries
+              </p>
             </div>
-            <div className="stat-card p-10 text-center">
-              <div className="display-md text-[var(--c-gold)]">1000+</div>
-              <p className="uppercase tracking-[0.2em] text-sm mt-3">
+            <div className="p-6 text-center">
+              <div className="font-serif text-4xl lg:text-5xl text-[var(--c-gold)] font-semibold">
+                1000+
+              </div>
+              <p className="mt-2 uppercase tracking-[0.2em] text-[10px] text-white/50 font-light">
                 Team Members
               </p>
             </div>
@@ -165,15 +147,15 @@ export default function LeadershipPage() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-[var(--c-cream)]">
+      <section className="bg-[var(--c-cream)] py-16">
         <div className="container-custom text-center">
           <span className="eyebrow">INVESTOR RELATIONS</span>
-          <h2 className="display-lg mt-6">
+          <h2 className="display-lg mt-4">
             Explore Corporate
             Governance &
             Investor Information
           </h2>
-          <p className="mt-8 text-lg text-[var(--c-muted)] max-w-3xl mx-auto">
+          <p className="mt-6 text-base text-[var(--c-muted)] max-w-3xl mx-auto">
             Learn more about Gourmet Gateway's governance
             framework, investor resources and corporate
             disclosures.
@@ -184,14 +166,14 @@ export default function LeadershipPage() {
               inline-flex
               items-center
               gap-3
-              mt-12
+              mt-8
               bg-[var(--c-gold)]
               text-white
-              px-10
-              py-5
+              px-8
+              py-4
               uppercase
               tracking-[0.2em]
-              text-sm
+              text-xs
               hover:-translate-y-1
               transition-all
             "
