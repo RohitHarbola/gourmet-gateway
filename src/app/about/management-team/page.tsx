@@ -7,7 +7,7 @@ import './ManagementTeam.css';
 
 const ManagementTeamPage = () => {
   // State to track which toggles are open
-  const [openToggles, setOpenToggles] = useState({
+  const [openToggles, setOpenToggles] = useState<Record<string, boolean>>({
     toggle0: true,
     toggle1: true,
     toggle2: true,
