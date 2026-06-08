@@ -1,28 +1,28 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 
 const navLinks = [
-  { label: "About", 
+  { 
+    label: "About", 
     href: "/about",
-     dropdown: [
+    dropdown: [
       { label: "About Us", href: "/about" },
       { label: "Business Overview", href: "/about/business-overview" },
       { label: "Management Team", href: "/about/management-team" },
-      
     ],
-   },
+  },
   {
     label: "Our Brands",
     href: "/brands",
     dropdown: [
-      { label: "BARISTA COFFEE", href: "/brands" },
-      { label: "KYLIN", href: "/brands" },
-      { label: "WANCHAI", href: "/brands" },
-      { label: "DRIZZLE & DUST", href: "/brands" },
+      { label: "BARISTA COFFEE", href: "/brands/barista" },
+      { label: "KYLIN", href: "/brands/kylin" },
+      { label: "WANCHAI", href: "/brands/wanchai" },
+      { label: "DRIZZLE & DUST", href: "/brands/drizzle-dust" },
     ],
   },
   { label: "Presence", href: "/presence" },
@@ -31,23 +31,25 @@ const navLinks = [
     href: "/investors",
     dropdown: [
       { label: "Investor Relations", href: "/investors" },
-      { label: "Disclosures Under Regulation 46 LODR", href: "/investors/financials",
-         dropdown: [
-          {label: "Postal Ballot Notice", href: "/investors/postal-ballot-notice"},
-        {label: "Annual Reports & Financials", href: "/investors/financials"},
-        {label: "Investor's Information", href: "/investors/investors-information"},
-        {label: "Archives", href: "/investors/archives"},
-       {label: "Investors' Contact", href: "/investors/investors-contact"},
-       {label: "Corporate Social Responsibility", href: "/investors/csr"},
-       {label: "Shareholder's Information", href: "/investors/shareholders-information"},
-       {label: "Policies", href: "/investors/policies"},
-       {label: "Board of Directors Composition", href: "/investors/board-of-directors-composition"},
-      ]},
+      { 
+        label: "Disclosures Under Regulation 46 LODR", 
+        href: "/investors/financials",
+        dropdown: [
+          { label: "Postal Ballot Notice", href: "/investors/postal-ballot-notice" },
+          { label: "Annual Reports & Financials", href: "/investors/financials" },
+          { label: "Investor's Information", href: "/investors/investors-information" },
+          { label: "Archives", href: "/investors/archives" },
+          { label: "Investors' Contact", href: "/investors/investors-contact" },
+          { label: "Corporate Social Responsibility", href: "/investors/csr" },
+          { label: "Shareholder's Information", href: "/investors/shareholders-information" },
+          { label: "Policies", href: "/investors/policies" },
+          { label: "Board of Directors Composition", href: "/investors/board-of-directors-composition" },
+        ],
+      },
       { label: "Secretarial compliance Report", href: "/investors/secretarial-compliance-report" },
       { label: "MOA and AOA", href: "/investors/moa-and-aoa" },
       { label: "Newspaper Add", href: "/investors/newspaper-add" },
       { label: "Audited Subsidiaries Financial", href: "/investors/audited-subsidiaries-financial" },
-      
     ],
   },
   { label: "Leadership", href: "/leadership" },
@@ -55,11 +57,98 @@ const navLinks = [
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [openNestedDropdown, setOpenNestedDropdown] = useState<string | null>(null);
+  
+  const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const nestedHoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Handle mouse enter for main dropdown
+  const handleMouseEnter = (label: string) => {
+    // Clear any pending close timeout
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+      hoverTimeoutRef.current = null;
+    }
+    // Open dropdown immediately or with small delay
+    setTimeout(() => {
+      setOpenDropdown(label);
+      setOpenNestedDropdown(null);
+    }, 20);
+  };
+
+  // Handle mouse leave for main dropdown
+  const handleMouseLeave = () => {
+    // Set timeout to close dropdown
+    hoverTimeoutRef.current = setTimeout(() => {
+      setOpenDropdown(null);
+      setOpenNestedDropdown(null);
+    }, 100);
+  };
+
+  // Handle mouse enter for nested dropdown
+  const handleNestedMouseEnter = (label: string) => {
+    if (nestedHoverTimeoutRef.current) {
+      clearTimeout(nestedHoverTimeoutRef.current);
+      nestedHoverTimeoutRef.current = null;
+    }
+    setTimeout(() => {
+      setOpenNestedDropdown(label);
+    }, 20);
+  };
+
+  // Handle mouse leave for nested dropdown
+  const handleNestedMouseLeave = () => {
+    nestedHoverTimeoutRef.current = setTimeout(() => {
+      setOpenNestedDropdown(null);
+    }, 100);
+  };
+
+  // Handle click on dropdown button
+  const handleDropdownClick = (label: string) => {
+    if (openDropdown === label) {
+      setOpenDropdown(null);
+      setOpenNestedDropdown(null);
+    } else {
+      setOpenDropdown(label);
+      setOpenNestedDropdown(null);
+    }
+  };
+
+  // Handle click on nested dropdown button
+  const handleNestedDropdownClick = (label: string) => {
+    if (openNestedDropdown === label) {
+      setOpenNestedDropdown(null);
+    } else {
+      setOpenNestedDropdown(label);
+    }
+  };
+
+  // Close dropdowns when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (!target.closest('.dropdown-container')) {
+        setOpenDropdown(null);
+        setOpenNestedDropdown(null);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, []);
+
+  // Cleanup timeouts on unmount
+  useEffect(() => {
+    return () => {
+      if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+      if (nestedHoverTimeoutRef.current) clearTimeout(nestedHoverTimeoutRef.current);
+    };
+  }, []);
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-black/70 backdrop-blur-md">
         <div className="mx-auto max-w-[1400px] px-8 flex h-[88px] items-center justify-between">
 
           {/* Logo */}
@@ -88,54 +177,103 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <div
                 key={link.label}
-                className="relative"
-                onMouseEnter={() => link.dropdown && setActiveDropdown(link.label)}
-                onMouseLeave={() => setActiveDropdown(null)}
+                className="relative dropdown-container"
+                onMouseEnter={() => link.dropdown && handleMouseEnter(link.label)}
+                onMouseLeave={() => link.dropdown && handleMouseLeave()}
               >
-                <Link
-                  href={link.href}
-                  className="flex items-center gap-1 px-4 py-2 text-[12px] uppercase tracking-[0.15em] text-white/80 hover:text-white transition-colors duration-200 font-light"
-                >
-                  {link.label}
-                  {link.dropdown && (
-                    <ChevronDown
-                      size={12}
-                      className={`transition-transform duration-200 ${
-                        activeDropdown === link.label ? "rotate-180" : ""
-                      }`}
-                    />
-                  )}
-                </Link>
+                {link.dropdown ? (
+                  <>
+                    <button
+                      onClick={() => handleDropdownClick(link.label)}
+                      className="flex items-center gap-1 px-4 py-2 text-[12px] uppercase tracking-[0.15em] text-white/80 hover:text-white transition-colors duration-200 font-light"
+                    >
+                      {link.label}
+                      <ChevronDown
+                        size={12}
+                        className={`transition-transform duration-200 ${
+                          openDropdown === link.label ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
 
-                {/* Dropdown */}
-                {link.dropdown && activeDropdown === link.label && (
-                  <div className="absolute top-full right-0 mt-2 w-56 bg-[#0d0c09]/95 backdrop-blur-sm border border-white/10 py-2 shadow-2xl rounded-sm">
-                 {link.dropdown.map((item) => (
-  <div key={item.label} className="relative group">
-    <Link
-      href={item.href}
-      className="flex items-center justify-between px-5 py-3 text-[11px] uppercase tracking-[0.12em] text-white/70 hover:text-white hover:bg-white/5 transition-colors duration-150"
-    >
-      {item.label}
-      {item.dropdown && <ChevronDown size={14} />}
-    </Link>
+                    {/* Dropdown Menu */}
+                    {openDropdown === link.label && (
+                      <div 
+                        className="absolute top-full left-0 mt-2 w-56 bg-[#0d0c09] border border-white/10 py-2 shadow-2xl rounded-sm z-50"
+                        onMouseEnter={() => {
+                          if (hoverTimeoutRef.current) {
+                            clearTimeout(hoverTimeoutRef.current);
+                            hoverTimeoutRef.current = null;
+                          }
+                        }}
+                        onMouseLeave={handleMouseLeave}
+                      >
+                        {link.dropdown.map((item) => (
+                          <div key={item.label} className="relative">
+                            {item.dropdown ? (
+                              <>
+                                <button
+                                  onClick={() => handleNestedDropdownClick(item.label)}
+                                  onMouseEnter={() => handleNestedMouseEnter(item.label)}
+                                  onMouseLeave={handleNestedMouseLeave}
+                                  className="flex items-center justify-between w-full px-5 py-3 text-[11px] uppercase tracking-[0.12em] text-white/70 hover:text-white hover:bg-white/5 transition-colors duration-150"
+                                >
+                                  {item.label}
+                                  <ChevronDown size={14} className="rotate-[-90deg]" />
+                                </button>
 
-    {item.dropdown && (
-      <div className="absolute left-full top-0 w-56 bg-[#0d0c09]/95 backdrop-blur-sm border border-white/10 hidden group-hover:block rounded-sm">
-        {item.dropdown.map((subItem) => (
-          <Link
-            key={subItem.label}
-            href={subItem.href}
-            className="block px-5 py-3 text-[11px] uppercase tracking-[0.12em] text-white/70 hover:text-white hover:bg-white/5"
-          >
-            {subItem.label}
-          </Link>
-        ))}
-      </div>
-    )}
-  </div>
-))}
-                  </div>
+                                {/* Nested Dropdown Menu */}
+                                {openNestedDropdown === item.label && (
+                                  <div 
+                                    className="absolute left-full top-0 w-56 bg-[#0d0c09] border border-white/10 py-2 shadow-2xl rounded-sm z-50"
+                                    onMouseEnter={() => {
+                                      if (nestedHoverTimeoutRef.current) {
+                                        clearTimeout(nestedHoverTimeoutRef.current);
+                                        nestedHoverTimeoutRef.current = null;
+                                      }
+                                    }}
+                                    onMouseLeave={handleNestedMouseLeave}
+                                  >
+                                    {item.dropdown.map((subItem) => (
+                                      <Link
+                                        key={subItem.label}
+                                        href={subItem.href}
+                                        className="block px-5 py-3 text-[11px] uppercase tracking-[0.12em] text-white/70 hover:text-white hover:bg-white/5"
+                                        onClick={() => {
+                                          setOpenDropdown(null);
+                                          setOpenNestedDropdown(null);
+                                        }}
+                                      >
+                                        {subItem.label}
+                                      </Link>
+                                    ))}
+                                  </div>
+                                )}
+                              </>
+                            ) : (
+                              <Link
+                                href={item.href}
+                                className="block px-5 py-3 text-[11px] uppercase tracking-[0.12em] text-white/70 hover:text-white hover:bg-white/5"
+                                onClick={() => {
+                                  setOpenDropdown(null);
+                                  setOpenNestedDropdown(null);
+                                }}
+                              >
+                                {item.label}
+                              </Link>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <Link
+                    href={link.href}
+                    className="flex items-center gap-1 px-4 py-2 text-[12px] uppercase tracking-[0.15em] text-white/80 hover:text-white transition-colors duration-200 font-light"
+                  >
+                    {link.label}
+                  </Link>
                 )}
               </div>
             ))}

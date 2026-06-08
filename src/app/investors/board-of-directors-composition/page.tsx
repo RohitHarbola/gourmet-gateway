@@ -8,8 +8,6 @@ import './BoardOfDirectorsComposition.css';
 const BoardOfDirectorsCompositionPage = () => {
   return (
     <div className="board-composition-page">
-      <Navbar />
-
       {/* Hero Section */}
       <div className="et_pb_section et_pb_fullwidth_section et_pb_section_0 et_section_regular">
         <section className="et_pb_fullwidth_header et_pb_module et_pb_bg_layout_light et_pb_text_align_left et_pb_fullwidth_header_0">
@@ -20,8 +18,6 @@ const BoardOfDirectorsCompositionPage = () => {
               </div>
             </div>
           </div>
-          <div className="et_pb_fullwidth_header_overlay"></div>
-          <div className="et_pb_fullwidth_header_scroll"></div>
         </section>
       </div>
 

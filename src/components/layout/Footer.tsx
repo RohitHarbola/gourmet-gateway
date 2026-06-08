@@ -74,20 +74,25 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Our Brands + Address Column */}
+            {/* Get Direction Column */}
             <div>
-              <h3 className="footer-heading">Our Brands</h3>
-              <ul className="footer-links footer-brands-list">
-                {brandLinks.map((link) => (
-                  <li key={link.name}>
-                    <Link href={link.href}>{link.name}</Link>
-                  </li>
-                ))}
-              </ul>
-
-              {/* Registered Address */}
+              <h3 className="footer-heading">Get Direction</h3>
+              <div className="footer-map">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.0014330047798!2d77.08320057522054!3d28.47950349101391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1924064684ff%3A0xa8f3c6de5a674aa2!2sVipul%20Agora%20Mall!5e0!3m2!1sen!2sin!4v1719381038986!5m2!1sen!2sin" 
+                  width="100%" 
+                  height="190" 
+                  style={{ border: 0 }}
+                  allowFullScreen 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Vipul Agora Mall Location"
+                />
+              </div>
+              
+              {/* Corporate Address */}
               <div className="footer-address">
-                <h3 className="footer-heading footer-address-heading">Registered Address</h3>
+                <h3 className="footer-heading footer-address-heading">Corporate Address</h3>
                 <address className="footer-address-text">
                   301–304, Vipul Agora Mall<br />
                   MG Road, Gurugram<br />
@@ -113,7 +118,7 @@ export default function Footer() {
         <div className="footer-container">
           <div className="footer-bottom-content">
             <p className="footer-copyright">
-              © 2024 Gourmet Gateway India Limited. All rights reserved.
+              © 2017-2022 Gourmet Gateway India Limited. All Rights Reserved.
             </p>
             <div className="footer-bottom-links">
               {bottomLinks.map((link) => (

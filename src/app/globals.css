@@ -789,3 +789,147 @@ body {
   text-transform: uppercase;
   color: var(--c-obsidian);
 }
+
+
+
+/* Footer Map Styles */
+.footer-map {
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: 190px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.footer-map iframe:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments for map */
+@media (max-width: 900px) {
+  .footer-map iframe {
+    height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-map iframe {
+    height: 200px;
+  }
+}
+
+
+/* Hero Buttons Wrapper */
+.hero-buttons-wrapper {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Update Scroll Indicator Styles */
+.hero-scroll-indicator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 0;
+}
+
+.hero-scroll-line {
+  height: 40px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.hero-scroll-text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+}
+
+/* Remove absolute positioning from scroll indicator */
+.hero-section .hero-scroll-indicator {
+  position: relative;
+  bottom: auto;
+  left: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-buttons-wrapper {
+    margin-top: 30px;
+    gap: 20px;
+  }
+  
+  .hero-scroll-line {
+    height: 30px;
+  }
+}
+
+/* Section Label Styles */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.section-label .eyebrow {
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--c-gold);
+  margin: 0;
+}
+
+.section-label .divider {
+  width: 40px;
+  height: 1px;
+  background: var(--c-gold);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-label {
+    margin-bottom: 1rem;
+  }
+  
+  .section-label .divider {
+    width: 30px;
+  }
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-outline-dark {
+  border: 1px solid var(--c-dark);
+  color: var(--c-dark);
+  background: transparent;
+}
+
+.btn-outline-dark:hover {
+  background: var(--c-dark);
+  color: white;
+}

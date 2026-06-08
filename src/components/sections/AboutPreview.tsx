@@ -52,6 +52,12 @@ export default function AboutPreview() {
 
           {/* RIGHT — Content */}
           <div className="lg:pl-8 pb-10">
+            
+            {/* Section Label - Our Story */}
+            <div className="section-label">
+              <span className="eyebrow">Our Story</span>
+              <span className="divider"></span>
+            </div>
 
             {/* Heading */}
             <h2
@@ -114,6 +120,16 @@ export default function AboutPreview() {
                   title: "Innovation",
                   desc: "Constantly elevating to exceed customer expectations",
                 },
+                  {
+                  letter: "C",
+                  title: "Customer First",
+                  desc: "Our guests are at the heart of everything we do",
+                },
+                {
+                  letter: "I",
+                  title: "Integrity",
+                  desc: "Transparency and trust with all stakeholders",
+                }
               ].map((card) => (
                 <div
                   key={card.title}

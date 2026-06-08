@@ -6,7 +6,7 @@ const investorDocs = [
     description:
       "Access historical annual reports, performance highlights and corporate updates.",
     icon: "📊",
-    link: "/investors/annual-reports",
+    link: "/investors/financials",
   },
   {
     title: "Financial Statements",
@@ -27,7 +27,7 @@ const investorDocs = [
     description:
       "Board committees, governance practices and regulatory information.",
     icon: "🏛️",
-    link: "/investors/governance",
+    link: "/investors/board-of-directors-composition",
   },
 ];
 
