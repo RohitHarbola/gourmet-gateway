@@ -9,8 +9,15 @@ const ArchivesPage = () => {
   // State for Annual General Meetings accordion
   const [openAGM, setOpenAGM] = useState(true);
   
+  type BoardMeetingYear =
+    | '2017-2018'
+    | '2016-2017'
+    | '2015-2016'
+    | '2014-2015'
+    | '2013-2014';
+
   // State for Board Meetings accordions
-  const [openBoardMeetings, setOpenBoardMeetings] = useState({
+  const [openBoardMeetings, setOpenBoardMeetings] = useState<Record<BoardMeetingYear, boolean>>({
     '2017-2018': true,
     '2016-2017': false,
     '2015-2016': false,
@@ -18,7 +25,7 @@ const ArchivesPage = () => {
     '2013-2014': false
   });
 
-  const toggleBoardMeeting = (year: string) => {
+  const toggleBoardMeeting = (year: BoardMeetingYear) => {
     setOpenBoardMeetings(prev => ({
       ...prev,
       [year]: !prev[year]

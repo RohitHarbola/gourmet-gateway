@@ -6,8 +6,29 @@ import Navbar from '../../../components/layout/Navbar';
 import './ShareholdersInformation.css';
 
 const ShareholdersInformationPage = () => {
+  type ShareholdingYear =
+    | '2025-2026'
+    | '2024-2025'
+    | '2023-2024'
+    | '2022-2023'
+    | '2021-2022'
+    | '2020-2021'
+    | '2019-2020'
+    | '2018-2019'
+    | '2017-2018'
+    | '2016-2017'
+    | '2015-2016'
+    | '2014-2015'
+    | '2013-2014';
+
+  type GovernanceSection =
+    | 'composition'
+    | 'directorsKMP'
+    | 'gov2024_25'
+    | 'gov2023_24';
+
   // State for Shareholding Pattern accordions
-  const [openShareholding, setOpenShareholding] = useState({
+  const [openShareholding, setOpenShareholding] = useState<Record<ShareholdingYear, boolean>>({
     '2025-2026': true,
     '2024-2025': false,
     '2023-2024': false,
@@ -24,21 +45,21 @@ const ShareholdersInformationPage = () => {
   });
 
   // State for Corporate Governance accordions
-  const [openGovernance, setOpenGovernance] = useState({
+  const [openGovernance, setOpenGovernance] = useState<Record<GovernanceSection, boolean>>({
     composition: true,
     directorsKMP: false,
     gov2024_25: false,
     gov2023_24: false
   });
 
-  const toggleShareholding = (year: string) => {
+  const toggleShareholding = (year: ShareholdingYear) => {
     setOpenShareholding(prev => ({
       ...prev,
       [year]: !prev[year]
     }));
   };
 
-  const toggleGovernance = (section: string) => {
+  const toggleGovernance = (section: GovernanceSection) => {
     setOpenGovernance(prev => ({
       ...prev,
       [section]: !prev[section]
@@ -289,11 +310,11 @@ const ShareholdersInformationPage = () => {
                     <table className="table table-bordered table-hover table-striped" border={0} width="100%" cellSpacing="0" cellPadding="0">
                       <thead>
                         <tr>
-                          <th width="4%">Sr. No.</th>
-                          <th width="18%">Name of Committee</th>
-                          <th width="22%">Name of Committee Members</th>
-                          <th width="15%">Designation</th>
-                          <th width="41%">Category</th>
+                          <th style={{ width: "4%" }}>Sr. No.</th>
+                          <th style={{ width: "18%" }}>Name of Committee</th>
+                          <th style={{ width: "22%" }}>Name of Committee Members</th>
+                          <th style={{ width: "15%" }}>Designation</th>
+                          <th style={{ width: "41%" }}>Category</th>
                         </tr>
                       </thead>
                       <tbody>

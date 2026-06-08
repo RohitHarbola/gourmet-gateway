@@ -29,7 +29,7 @@ const FinancialsPage = () => {
   // State for Subsidiary Financials toggle
   const [openSubsidiary, setOpenSubsidiary] = useState(true);
 
-  const toggleQuarterly = (key: string) => {
+  const toggleQuarterly = (key: keyof typeof openQuarterly) => {
     setOpenQuarterly(prev => ({
       ...prev,
       [key]: !prev[key]
