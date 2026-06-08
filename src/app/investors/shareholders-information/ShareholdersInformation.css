@@ -1,0 +1,277 @@
+/* ShareholdersInformation.css - Add these styles to your global.css file */
+
+/* Shareholder's Information Page Specific Styles */
+.shareholders-info-page {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Ensure navbar stays on top and visible */
+.shareholders-info-page > nav {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Main Content Section */
+.shareholders-info-page .et_pb_section_0 {
+  padding: 60px 0;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.shareholders-info-page .et_pb_row {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.shareholders-info-page .et_pb_row_0 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shareholders-info-page .et_pb_column_4_4 {
+  width: 100%;
+}
+
+/* Text Modules */
+.shareholders-info-page .et_pb_text {
+  margin-bottom: 30px;
+}
+
+.shareholders-info-page .et_pb_text_0 h1 {
+  font-size: 36px;
+  color: #e67e22;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.shareholders-info-page .et_pb_text_1 h3,
+.shareholders-info-page .et_pb_text_2 h3 {
+  font-size: 28px;
+  color: #e67e22;
+  margin: 30px 0 20px;
+  font-weight: 600;
+}
+
+/* Toggle Styles */
+.shareholders-info-page .et_pb_toggle {
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.shareholders-info-page .et_pb_toggle:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.shareholders-info-page .et_pb_toggle_title {
+  padding: 18px 25px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+  position: relative;
+  user-select: none;
+}
+
+.shareholders-info-page .et_pb_toggle_title:hover {
+  background: #f0f0f0;
+  color: #e67e22;
+}
+
+.shareholders-info-page .et_pb_toggle_title:after {
+  content: "▼";
+  float: right;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.shareholders-info-page .et_pb_toggle_close .et_pb_toggle_title:after {
+  transform: rotate(-90deg);
+}
+
+.shareholders-info-page .et_pb_toggle_open .et_pb_toggle_title:after {
+  transform: rotate(0deg);
+}
+
+.shareholders-info-page .et_pb_toggle_content {
+  padding: 20px 25px;
+  border-top: 1px solid #e0e0e0;
+  background: #fff;
+}
+
+.shareholders-info-page .et_pb_toggle_close .et_pb_toggle_content {
+  display: none;
+}
+
+.shareholders-info-page .et_pb_toggle_open .et_pb_toggle_content {
+  display: block;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* List Styles */
+.shareholders-info-page .et_pb_toggle_content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shareholders-info-page .et_pb_toggle_content ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.shareholders-info-page .et_pb_toggle_content ul li:last-child {
+  border-bottom: none;
+}
+
+.shareholders-info-page .et_pb_toggle_content ul li a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.shareholders-info-page .et_pb_toggle_content ul li a:hover {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
+/* Table Styles */
+.shareholders-info-page .table-responsive {
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+.shareholders-info-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.shareholders-info-page table th,
+.shareholders-info-page table td {
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.shareholders-info-page table th {
+  background: #f5f5f5;
+  font-weight: 600;
+  color: #333;
+}
+
+.shareholders-info-page table td {
+  color: #555;
+}
+
+.shareholders-info-page table tr:hover {
+  background: #f9f9f9;
+}
+
+/* Divider */
+.shareholders-info-page .et_pb_divider {
+  margin: 30px 0;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+.shareholders-info-page .et_pb_divider_0 {
+  margin: 30px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .shareholders-info-page .et_pb_section_0 {
+    padding: 40px 0;
+  }
+
+  .shareholders-info-page .et_pb_text_0 h1 {
+    font-size: 28px;
+  }
+
+  .shareholders-info-page .et_pb_text_1 h3,
+  .shareholders-info-page .et_pb_text_2 h3 {
+    font-size: 22px;
+  }
+
+  .shareholders-info-page .et_pb_toggle_title {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+
+  .shareholders-info-page .et_pb_toggle_content {
+    padding: 15px 20px;
+  }
+
+  .shareholders-info-page .et_pb_toggle_content ul li a {
+    font-size: 14px;
+  }
+
+  .shareholders-info-page table th,
+  .shareholders-info-page table td {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shareholders-info-page .et_pb_row {
+    padding: 0 15px;
+  }
+
+  .shareholders-info-page .et_pb_text_0 h1 {
+    font-size: 24px;
+  }
+
+  .shareholders-info-page .et_pb_text_1 h3,
+  .shareholders-info-page .et_pb_text_2 h3 {
+    font-size: 18px;
+  }
+
+  .shareholders-info-page .et_pb_toggle_title {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+
+  .shareholders-info-page .et_pb_toggle_content {
+    padding: 12px 15px;
+  }
+
+  .shareholders-info-page .et_pb_toggle_content ul li a {
+    font-size: 13px;
+  }
+
+  .shareholders-info-page table {
+    font-size: 11px;
+  }
+
+  .shareholders-info-page table th,
+  .shareholders-info-page table td {
+    padding: 6px 8px;
+  }
+}

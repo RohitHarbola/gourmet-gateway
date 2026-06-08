@@ -1,0 +1,158 @@
+/* Leadership.css - Add these styles to your global.css file */
+
+:root {
+  --c-cream: #F9F6F0;
+  --c-cream-dark: #F0EBE0;
+  --c-warm-white: #FDFAF6;
+  --c-obsidian: #111009;
+  --c-dark: #1C1A14;
+  --c-dark-mid: #2E2B22;
+  --c-brown: #5C4A30;
+  --c-gold: #B8965A;
+  --c-gold-light: #D4B07A;
+  --c-gold-pale: #EDD99A;
+  --c-green: #2D4A3E;
+  --c-green-light: #4A7A68;
+  --c-muted: #8A8070;
+  --c-border: rgba(92, 74, 48, 0.15);
+  --c-border-strong: rgba(92, 74, 48, 0.3);
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, sans-serif;
+  --nav-h: 80px;
+  --section-pad: clamp(80px, 10vw, 140px);
+  --container: 1280px;
+  --gutter: clamp(20px, 4vw, 60px);
+  --ease-silk: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out: cubic-bezier(0.0, 0, 0.2, 1);
+  --dur-fast: 200ms;
+  --dur-med: 400ms;
+  --dur-slow: 700ms;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--c-cream);
+  color: var(--c-dark);
+  overflow-x: hidden;
+  line-height: 1.65;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Leadership Page Specific Styles */
+.section {
+  padding: var(--section-pad) 0;
+}
+
+.section-padding {
+  padding: var(--section-pad) 0;
+}
+
+.container-custom {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* Typography */
+.display-xl {
+  font-size: clamp(48px, 8vw, 72px);
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: var(--font-display);
+}
+
+.display-lg {
+  font-size: clamp(36px, 6vw, 52px);
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: var(--font-display);
+}
+
+.display-md {
+  font-size: clamp(32px, 5vw, 42px);
+  font-weight: 700;
+  font-family: var(--font-display);
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  display: inline-block;
+  color: var(--c-gold);
+}
+
+/* Leader Image Styles - Your requested CSS */
+.leader-img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top;
+  filter: grayscale(30%) sepia(10%);
+  transition: filter var(--dur-slow), transform var(--dur-slow) var(--ease-silk);
+}
+
+.leadership-card:hover .leader-img {
+  filter: grayscale(0%) sepia(0%);
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .grid.lg\:grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  .grid.lg\:grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .leader-img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .stat-card {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .grid.md\:grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid.md\:grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: 30px !important;
+  }
+}

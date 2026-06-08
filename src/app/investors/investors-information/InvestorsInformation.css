@@ -1,0 +1,364 @@
+/* InvestorsInformation.css - Add these styles to your global.css file */
+
+/* Investors Information Page Specific Styles */
+.investors-information-page {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Ensure navbar stays on top and visible */
+.investors-information-page > nav {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Hero Section Styles */
+.investors-information-page .et_pb_fullwidth_section {
+  width: 100%;
+  position: relative;
+  clear: both;
+}
+
+.investors-information-page .et_pb_fullwidth_header {
+  position: relative;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  z-index: 1;
+}
+
+.investors-information-page .et_pb_fullwidth_header_container {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1280px;
+}
+
+.investors-information-page .header-content-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 200px;
+}
+
+.investors-information-page .header-content h1 {
+  font-size: 52px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.investors-information-page .et_pb_fullwidth_header_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Main Content Section */
+.investors-information-page .et_pb_section_1 {
+  padding: 60px 0;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.investors-information-page .et_pb_row {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.investors-information-page .et_pb_row_0 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.investors-information-page .et_pb_column_4_4 {
+  width: 100%;
+}
+
+/* Text Modules */
+.investors-information-page .et_pb_text {
+  margin-bottom: 30px;
+}
+
+.investors-information-page .et_pb_text_0 h1 {
+  font-size: 36px;
+  color: #e67e22;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.investors-information-page .et_pb_text_1 h3 {
+  font-size: 28px;
+  color: #e67e22;
+  margin: 30px 0 20px;
+  font-weight: 600;
+}
+
+/* Toggle Styles */
+.investors-information-page .et_pb_toggle {
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.investors-information-page .et_pb_toggle:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.investors-information-page .et_pb_toggle_title {
+  padding: 18px 25px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+  position: relative;
+  user-select: none;
+}
+
+.investors-information-page .et_pb_toggle_title:hover {
+  background: #f0f0f0;
+  color: #e67e22;
+}
+
+.investors-information-page .et_pb_toggle_title:after {
+  content: "▼";
+  float: right;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.investors-information-page .et_pb_toggle_close .et_pb_toggle_title:after {
+  transform: rotate(-90deg);
+}
+
+.investors-information-page .et_pb_toggle_open .et_pb_toggle_title:after {
+  transform: rotate(0deg);
+}
+
+.investors-information-page .et_pb_toggle_content {
+  padding: 20px 25px;
+  border-top: 1px solid #e0e0e0;
+  background: #fff;
+}
+
+.investors-information-page .et_pb_toggle_close .et_pb_toggle_content {
+  display: none;
+}
+
+.investors-information-page .et_pb_toggle_open .et_pb_toggle_content {
+  display: block;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tabs Styles */
+.investors-information-page .et_pb_tabs {
+  margin-bottom: 30px;
+}
+
+.investors-information-page .et_pb_tabs_controls {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.investors-information-page .et_pb_tabs_controls li {
+  margin-right: 5px;
+}
+
+.investors-information-page .et_pb_tabs_controls li a {
+  display: block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.investors-information-page .et_pb_tabs_controls li:hover a {
+  color: #e67e22;
+}
+
+.investors-information-page .et_pb_tabs_controls .et_pb_tab_active a {
+  color: #e67e22;
+  border-bottom: 3px solid #e67e22;
+}
+
+.investors-information-page .et_pb_tab {
+  display: none;
+  padding: 20px 0;
+}
+
+.investors-information-page .et_pb_tab.et_pb_active_content {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* List Styles */
+.investors-information-page .et_pb_toggle_content ul,
+.investors-information-page .et_pb_tab_content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.investors-information-page .et_pb_toggle_content ul li,
+.investors-information-page .et_pb_tab_content ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.investors-information-page .et_pb_toggle_content ul li:last-child,
+.investors-information-page .et_pb_tab_content ul li:last-child {
+  border-bottom: none;
+}
+
+.investors-information-page .et_pb_toggle_content ul li a,
+.investors-information-page .et_pb_tab_content ul li a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.investors-information-page .et_pb_toggle_content ul li a:hover,
+.investors-information-page .et_pb_tab_content ul li a:hover {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .investors-information-page .et_pb_fullwidth_header {
+    padding: 50px 0;
+  }
+
+  .investors-information-page .header-content h1 {
+    font-size: 36px;
+  }
+
+  .investors-information-page .et_pb_section_1 {
+    padding: 40px 0;
+  }
+
+  .investors-information-page .et_pb_text_0 h1 {
+    font-size: 28px;
+  }
+
+  .investors-information-page .et_pb_text_1 h3 {
+    font-size: 22px;
+  }
+
+  .investors-information-page .et_pb_toggle_title {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+
+  .investors-information-page .et_pb_toggle_content {
+    padding: 15px 20px;
+  }
+
+  .investors-information-page .et_pb_tabs_controls li a {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .investors-information-page .et_pb_toggle_content ul li a,
+  .investors-information-page .et_pb_tab_content ul li a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .investors-information-page .header-content h1 {
+    font-size: 28px;
+  }
+
+  .investors-information-page .et_pb_fullwidth_header_container {
+    padding: 0 20px;
+  }
+
+  .investors-information-page .et_pb_row {
+    padding: 0 15px;
+  }
+
+  .investors-information-page .et_pb_text_0 h1 {
+    font-size: 24px;
+  }
+
+  .investors-information-page .et_pb_text_1 h3 {
+    font-size: 18px;
+  }
+
+  .investors-information-page .et_pb_toggle_title {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+
+  .investors-information-page .et_pb_toggle_content {
+    padding: 12px 15px;
+  }
+
+  .investors-information-page .et_pb_tabs_controls {
+    flex-direction: column;
+    border-bottom: none;
+  }
+
+  .investors-information-page .et_pb_tabs_controls li {
+    margin-bottom: 5px;
+  }
+
+  .investors-information-page .et_pb_tabs_controls li a {
+    padding: 8px 12px;
+    border-left: 3px solid transparent;
+  }
+
+  .investors-information-page .et_pb_tabs_controls .et_pb_tab_active a {
+    border-left-color: #e67e22;
+    border-bottom: none;
+  }
+}

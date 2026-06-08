@@ -1,0 +1,208 @@
+/* BoardOfDirectorsComposition.css - Add these styles to your global.css file */
+
+/* Board of Directors Composition Page Specific Styles */
+.board-composition-page {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Ensure navbar stays on top and visible */
+.board-composition-page > nav {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Hero Section Styles */
+.board-composition-page .et_pb_fullwidth_section {
+  width: 100%;
+  position: relative;
+  clear: both;
+}
+
+.board-composition-page .et_pb_fullwidth_header {
+  position: relative;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  z-index: 1;
+}
+
+.board-composition-page .et_pb_fullwidth_header_container {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1280px;
+}
+
+.board-composition-page .header-content-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 200px;
+}
+
+.board-composition-page .header-content h1 {
+  font-size: 52px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.board-composition-page .et_pb_fullwidth_header_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Main Content Section */
+.board-composition-page .et_pb_section_1 {
+  padding: 60px 0;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.board-composition-page .et_pb_row {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.board-composition-page .et_pb_row_0 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.board-composition-page .et_pb_column_4_4 {
+  width: 100%;
+}
+
+/* Text Modules */
+.board-composition-page .et_pb_text {
+  margin-bottom: 30px;
+}
+
+.board-composition-page .et_pb_text_0 h1 {
+  font-size: 36px;
+  color: #e67e22;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.board-composition-page .et_pb_text_1 h4 {
+  font-size: 22px;
+  color: #333;
+  margin: 30px 0 15px;
+  font-weight: 600;
+  border-left: 4px solid #e67e22;
+  padding-left: 15px;
+}
+
+.board-composition-page .et_pb_text_1 h4:first-of-type {
+  margin-top: 0;
+}
+
+/* Table Styles */
+.board-composition-page .table-responsive {
+  overflow-x: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.board-composition-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  font-size: 14px;
+  background: #fff;
+}
+
+.board-composition-page table th,
+.board-composition-page table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.board-composition-page table th {
+  background: #f5f5f5;
+  font-weight: 600;
+  color: #333;
+}
+
+.board-composition-page table td {
+  color: #555;
+}
+
+.board-composition-page table tr:hover {
+  background: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .board-composition-page .et_pb_fullwidth_header {
+    padding: 50px 0;
+  }
+
+  .board-composition-page .header-content h1 {
+    font-size: 36px;
+  }
+
+  .board-composition-page .et_pb_section_1 {
+    padding: 40px 0;
+  }
+
+  .board-composition-page .et_pb_text_0 h1 {
+    font-size: 28px;
+  }
+
+  .board-composition-page .et_pb_text_1 h4 {
+    font-size: 18px;
+  }
+
+  .board-composition-page table th,
+  .board-composition-page table td {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .board-composition-page .header-content h1 {
+    font-size: 28px;
+  }
+
+  .board-composition-page .et_pb_fullwidth_header_container {
+    padding: 0 20px;
+  }
+
+  .board-composition-page .et_pb_row {
+    padding: 0 15px;
+  }
+
+  .board-composition-page .et_pb_text_0 h1 {
+    font-size: 24px;
+  }
+
+  .board-composition-page .et_pb_text_1 h4 {
+    font-size: 16px;
+  }
+
+  .board-composition-page table th,
+  .board-composition-page table td {
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+}
