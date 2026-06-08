@@ -234,7 +234,7 @@ const Hero = () => {
           align-items: center;
           gap: 24px;
           flex-wrap: nowrap;
-          margin-bottom: 35px;
+          margin-bottom: 38px;
         }
 
         /* Buttons */
