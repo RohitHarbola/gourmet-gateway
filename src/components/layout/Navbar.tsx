@@ -15,16 +15,6 @@ const navLinks = [
       { label: "Management Team", href: "/about/management-team" },
     ],
   },
-  // {
-  //   label: "Our Brands",
-  //   href: "/brands",
-  //   dropdown: [
-  //     { label: "BARISTA COFFEE", href: "/brands/barista" },
-  //     { label: "KYLIN", href: "/brands/kylin" },
-  //     { label: "WANCHAI", href: "/brands/wanchai" },
-  //     { label: "DRIZZLE & DUST", href: "/brands/drizzle-dust" },
-  //   ],
-  // },
   { label: "Presence", href: "/presence" },
   {
     label: "Investors",
@@ -52,25 +42,24 @@ const navLinks = [
       { label: "Audited Subsidiaries Financial", href: "/investors/audited-subsidiaries-financial" },
     ],
   },
-  // { label: "Leadership", href: "/leadership" },
 ];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [openNestedDropdown, setOpenNestedDropdown] = useState<string | null>(null);
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
+  const [mobileNestedOpen, setMobileNestedOpen] = useState<string | null>(null);
   
   const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const nestedHoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // Handle mouse enter for main dropdown
   const handleMouseEnter = (label: string) => {
-    // Clear any pending close timeout
     if (hoverTimeoutRef.current) {
       clearTimeout(hoverTimeoutRef.current);
       hoverTimeoutRef.current = null;
     }
-    // Open dropdown immediately or with small delay
     setTimeout(() => {
       setOpenDropdown(label);
       setOpenNestedDropdown(null);
@@ -79,7 +68,6 @@ export default function Navbar() {
 
   // Handle mouse leave for main dropdown
   const handleMouseLeave = () => {
-    // Set timeout to close dropdown
     hoverTimeoutRef.current = setTimeout(() => {
       setOpenDropdown(null);
       setOpenNestedDropdown(null);
@@ -121,6 +109,26 @@ export default function Navbar() {
       setOpenNestedDropdown(null);
     } else {
       setOpenNestedDropdown(label);
+    }
+  };
+
+  // Mobile dropdown toggle
+  const toggleMobileDropdown = (label: string) => {
+    if (mobileDropdownOpen === label) {
+      setMobileDropdownOpen(null);
+      setMobileNestedOpen(null);
+    } else {
+      setMobileDropdownOpen(label);
+      setMobileNestedOpen(null);
+    }
+  };
+
+  // Mobile nested dropdown toggle
+  const toggleMobileNested = (label: string) => {
+    if (mobileNestedOpen === label) {
+      setMobileNestedOpen(null);
+    } else {
+      setMobileNestedOpen(label);
     }
   };
 
@@ -301,14 +309,83 @@ export default function Navbar() {
         <div className="fixed inset-0 z-40 bg-[#0d0c09] pt-[88px] lg:hidden overflow-y-auto">
           <div className="flex flex-col divide-y divide-white/10">
             {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="px-8 py-5 text-xl font-light text-white hover:text-[#C9A96E] transition-colors"
-                onClick={() => setMobileOpen(false)}
-              >
-                {link.label}
-              </Link>
+              <div key={link.label} className="flex flex-col">
+                {/* Mobile Menu Item with dropdown */}
+                {link.dropdown ? (
+                  <>
+                    <button
+                      onClick={() => toggleMobileDropdown(link.label)}
+                      className="flex items-center justify-between px-8 py-5 text-xl font-light text-white hover:text-[#C9A96E] transition-colors"
+                    >
+                      {link.label}
+                      <ChevronDown
+                        size={18}
+                        className={`transition-transform duration-200 ${
+                          mobileDropdownOpen === link.label ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    
+                    {/* Mobile Dropdown Items */}
+                    {mobileDropdownOpen === link.label && (
+                      <div className="bg-black/30 pl-8">
+                        {link.dropdown.map((item) => (
+                          <div key={item.label}>
+                            {item.dropdown ? (
+                              <>
+                                <button
+                                  onClick={() => toggleMobileNested(item.label)}
+                                  className="flex items-center justify-between w-full px-8 py-4 text-lg font-light text-white/80 hover:text-[#C9A96E] transition-colors"
+                                >
+                                  {item.label}
+                                  <ChevronDown
+                                    size={14}
+                                    className={`transition-transform duration-200 ${
+                                      mobileNestedOpen === item.label ? "rotate-180" : ""
+                                    }`}
+                                  />
+                                </button>
+                                
+                                {/* Mobile Nested Dropdown Items */}
+                                {mobileNestedOpen === item.label && (
+                                  <div className="bg-black/20 pl-8">
+                                    {item.dropdown.map((subItem) => (
+                                      <Link
+                                        key={subItem.label}
+                                        href={subItem.href}
+                                        className="block px-8 py-3 text-base font-light text-white/70 hover:text-[#C9A96E] transition-colors"
+                                        onClick={() => setMobileOpen(false)}
+                                      >
+                                        {subItem.label}
+                                      </Link>
+                                    ))}
+                                  </div>
+                                )}
+                              </>
+                            ) : (
+                              <Link
+                                href={item.href}
+                                className="block px-8 py-4 text-lg font-light text-white/80 hover:text-[#C9A96E] transition-colors"
+                                onClick={() => setMobileOpen(false)}
+                              >
+                                {item.label}
+                              </Link>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <Link
+                    href={link.href}
+                    className="px-8 py-5 text-xl font-light text-white hover:text-[#C9A96E] transition-colors"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                )}
+              </div>
             ))}
             <Link
               href="/contact"

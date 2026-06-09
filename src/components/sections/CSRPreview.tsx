@@ -34,7 +34,7 @@ export default function CSRPreview() {
           </p>
 
           <Link
-            href="/investors/csr"
+            href="/investors/corporate-social-responsibility"
             className="
               inline-flex
               mt-8

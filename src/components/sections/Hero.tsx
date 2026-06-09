@@ -1,123 +1,3 @@
-// // components/hero.tsx
-// 'use client';
-
-// import React from 'react';
-// import Link from 'next/link';
-
-// const Hero = () => {
-//   return (
-//     <section id="hero" aria-label="Hero section" className="hero-section">
-//       {/* Background Image */}
-//       <div 
-//         className="hero-bg"
-//         role="img" 
-//         aria-label="Premium dining atmosphere"
-//         style={{
-//           backgroundImage: "url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1800&q=80')",
-//         }}
-//       />
-      
-//       {/* Dark overlay */}
-//       <div className="hero-overlay" />
-      
-//       {/* Noise Overlay */}
-//       <div className="hero-noise" aria-hidden="true" />
-
-//       {/* Hero Content */}
-//       <div className="hero-content-wrapper">
-        
-//         {/* Left Section */}
-//         <div className="hero-left">
-//           <div className="hero-badge">
-//             <span className="hero-badge-line"></span>
-//             <span className="hero-badge-text">
-//               BSE Listed · Scrip Code 506134
-//             </span>
-//           </div>
-          
-//           <h1 className="hero-title">
-//             Where<br />
-//             <em className="hero-title-em">Culinary</em>
-//             <br />
-//             Craft Meets<br />
-//             Commerce
-//           </h1>
-          
-//           <p className="hero-description">
-//             A listed food &amp; beverage conglomerate managing iconic brands across
-//             India, Sri Lanka, and Maldives — from specialty coffee to Pan Asian dining.
-//           </p>
-          
-//           <div className="hero-buttons-wrapper">
-//             <div className="hero-buttons">
-//               <Link 
-//                 href="/brands" 
-//                 className="hero-btn-primary"
-//               >
-//                 Explore Our Brands
-//               </Link>
-//               <Link 
-//                 href="/investors" 
-//                 className="hero-btn-secondary"
-//               >
-//                 Investor Relations
-//               </Link>
-//             </div>
-            
-//             {/* Scroll Indicator - Below buttons */}
-//             <div className="hero-scroll-indicator" aria-hidden="true">
-//               <div className="hero-scroll-line"></div>
-//               <span className="hero-scroll-text">Scroll</span>
-//             </div>
-//           </div>
-//         </div>
-        
-//         {/* Right Section - Stats */}
-//         <div className="hero-stats">
-//           <div className="hero-stats-container">
-//             {/* Stat 1 */}
-//             <div className="hero-stat-item">
-//               <div className="hero-stat-value">
-//                 4<span className="hero-stat-plus">+</span>
-//               </div>
-//               <div className="hero-stat-label">Iconic Brands</div>
-//             </div>
-            
-//             {/* Stat 2 */}
-//             <div className="hero-stat-item">
-//               <div className="hero-stat-value">3</div>
-//               <div className="hero-stat-label">Countries</div>
-//             </div>
-            
-//             {/* Stat 3 */}
-//             <div className="hero-stat-item">
-//               <div className="hero-stat-value">
-//                 200<span className="hero-stat-plus">+</span>
-//               </div>
-//               <div className="hero-stat-label">Outlets Nationwide</div>
-//             </div>
-            
-//             {/* Stat 4 */}
-//             <div className="hero-stat-item">
-//               <div className="hero-stat-value">
-//                 24<span className="hero-stat-year">yr</span>
-//               </div>
-//               <div className="hero-stat-label">Heritage Since 2000</div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-
-//     </section>
-//   );
-// };
-
-// export default Hero;
-
-
-
-
-// components/hero.tsx
 // components/hero.tsx
 'use client';
 
@@ -138,8 +18,23 @@ const Hero = () => {
           min-height: 700px;
           display: flex;
           align-items: flex-end;
-          overflow: hidden;
+          overflow-y: auto;
+          overflow-x: hidden;
           background: var(--c-obsidian);
+        }
+
+        @media (max-width: 768px) {
+          #hero {
+            min-height: 100svh;
+            height: auto;
+            align-items: flex-start;
+          }
+        }
+
+        @media (max-width: 480px) {
+          #hero {
+            min-height: 100svh;
+          }
         }
 
         .hero-bg {
@@ -160,37 +55,79 @@ const Hero = () => {
           pointer-events: none;
         }
 
+        /* ── DESKTOP layout ── */
         .hero-content {
           position: relative;
           z-index: 2;
           width: 100%;
           max-width: var(--container);
           margin: 0 auto;
-          padding: 0 var(--gutter) clamp(60px, 8vh, 120px);
+          padding: 0 var(--gutter) clamp(40px, 8vh, 120px);
           display: grid;
           grid-template-columns: 1fr auto;
           align-items: flex-end;
           gap: 0;
         }
 
+        /* ── MOBILE layout: single column, flex, natural order ── */
+        @media (max-width: 900px) {
+          .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: flex-end;
+            padding: 0 20px 72px;
+            min-height: 100svh;
+            gap: 0;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-content {
+            padding: 0 16px 64px;
+          }
+        }
+
+        /* ── LEFT block ── */
         .hero-left {
           max-width: 680px;
           padding-right: 40px;
         }
 
+        @media (max-width: 900px) {
+          .hero-left {
+            padding-right: 0;
+            max-width: 100%;
+            /* sits first naturally */
+          }
+        }
+
         .hero-eyebrow {
           display: flex;
           align-items: center;
-          gap: 16px;
-          margin-bottom: 28px;
+          gap: 12px;
+          margin-bottom: 16px;
+        }
+
+        @media (max-width: 768px) {
+          .hero-eyebrow {
+            gap: 8px;
+            margin-bottom: 12px;
+          }
         }
 
         .hero-eyebrow-line {
-          width: 40px;
+          width: 30px;
           height: 1px;
           background: var(--c-gold);
           display: block;
           flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+          .hero-eyebrow-line {
+            width: 24px;
+          }
         }
 
         .hero-eyebrow-text {
@@ -202,14 +139,37 @@ const Hero = () => {
           color: var(--c-gold);
         }
 
+        @media (max-width: 480px) {
+          .hero-eyebrow-text {
+            font-size: 9px;
+            letter-spacing: 0.15em;
+          }
+        }
+
         .hero-headline {
           font-family: var(--font-display);
-          font-size: clamp(54px, 7.5vw, 112px);
-          font-weight: 300;
+          font-size: clamp(40px, 7.5vw, 108px);
+          font-weight: 200;
           line-height: 0.92;
           letter-spacing: -0.025em;
           color: var(--c-cream);
-          margin-bottom: 32px;
+          margin-bottom: 16px;
+        }
+
+        @media (max-width: 900px) {
+          .hero-headline {
+            font-size: clamp(36px, 10vw, 64px);
+            line-height: 1;
+            margin-bottom: 14px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-headline {
+            font-size: clamp(34px, 11vw, 52px);
+            line-height: 1.02;
+            margin-bottom: 12px;
+          }
         }
 
         .hero-headline em {
@@ -220,32 +180,66 @@ const Hero = () => {
 
         .hero-subtext {
           font-family: var(--font-body);
-          font-size: clamp(15px, 1.3vw, 18px);
+          font-size: clamp(13px, 1.3vw, 18px);
           font-weight: 300;
           color: rgba(249,246,240,0.65);
-          line-height: 1.7;
+          line-height: 1.6;
           max-width: 480px;
-          margin-bottom: 44px;
+          margin-bottom: 0; /* spacing handled by hero-actions margin-top */
         }
 
+        @media (max-width: 900px) {
+          .hero-subtext {
+            max-width: 100%;
+            font-size: 14px;
+            line-height: 1.55;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-subtext {
+            font-size: 13px;
+            line-height: 1.5;
+          }
+        }
+
+        /* ── ACTIONS ── */
         .hero-actions {
           display: flex;
           flex-direction: row;
           align-items: center;
-          gap: 24px;
-          flex-wrap: nowrap;
-          margin-bottom: 38px;
+          gap: 16px;
+          flex-wrap: wrap;
+          margin-top: 28px;
+          margin-bottom: 40px; /* desktop: no bottom spacing needed here */
         }
 
-        /* Buttons */
+        @media (max-width: 900px) {
+          .hero-actions {
+            margin-top: 20px;
+            margin-bottom: 0;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-actions {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 10px;
+            margin-top: 18px;
+            width: 100%;
+          }
+        }
+
+        /* ── BUTTONS ── */
         .hero-btn {
           display: inline-flex;
           align-items: center;
           justify-content: center;
           gap: 10px;
-          padding: 14px 32px;
+          padding: 12px 28px;
           font-family: var(--font-body);
-          font-size: 12px;
+          font-size: 11px;
           font-weight: 500;
           letter-spacing: 0.14em;
           text-transform: uppercase;
@@ -255,6 +249,15 @@ const Hero = () => {
           overflow: hidden;
           text-decoration: none;
           white-space: nowrap;
+        }
+
+        @media (max-width: 480px) {
+          .hero-btn {
+            padding: 14px 20px;
+            font-size: 11px;
+            width: 100%;
+            text-align: center;
+          }
         }
 
         .hero-btn::after {
@@ -292,12 +295,20 @@ const Hero = () => {
           color: var(--c-gold);
         }
 
-        /* Right / Stats */
+        /* ── RIGHT / STATS (desktop only: absolute column beside left) ── */
         .hero-right {
           display: flex;
           justify-content: flex-end;
           align-items: flex-end;
           align-self: stretch;
+        }
+
+        @media (max-width: 900px) {
+          .hero-right {
+            justify-content: flex-start;
+            align-items: stretch;
+            margin-top: 20px; /* gap between buttons and stats */
+          }
         }
 
         .hero-stats {
@@ -311,13 +322,46 @@ const Hero = () => {
           margin-left: 70px;
         }
 
+        @media (max-width: 1024px) {
+          .hero-stats {
+            width: 200px;
+            margin-left: 40px;
+          }
+        }
+
+        @media (max-width: 900px) {
+          .hero-stats {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            margin-left: 0;
+            margin-bottom: 0;
+            gap: 1px;
+          }
+        }
+
         .hero-stat {
-          padding: 20px 24px;
+          padding: 16px 20px;
           background: rgba(249,246,240,0.05);
           backdrop-filter: blur(8px);
           -webkit-backdrop-filter: blur(8px);
           border-left: 1px solid rgba(184,150,90,0.4);
           transition: background var(--dur-med);
+        }
+
+        @media (max-width: 900px) {
+          .hero-stat {
+            flex: 1 1 calc(50% - 1px);
+            padding: 14px 16px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-stat {
+            flex: 1 1 calc(50% - 1px);
+            padding: 12px 14px;
+          }
         }
 
         .hero-stat:hover {
@@ -326,44 +370,95 @@ const Hero = () => {
 
         .hero-stat-num {
           font-family: var(--font-display);
-          font-size: 38px;
+          font-size: 32px;
           font-weight: 300;
           color: var(--c-cream);
           line-height: 1;
           margin-bottom: 4px;
         }
 
+        @media (max-width: 900px) {
+          .hero-stat-num {
+            font-size: 26px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-stat-num {
+            font-size: 22px;
+          }
+        }
+
         .hero-stat-num .stat-suffix {
-          font-size: 20px;
+          font-size: 18px;
+        }
+
+        @media (max-width: 480px) {
+          .hero-stat-num .stat-suffix {
+            font-size: 14px;
+          }
         }
 
         .hero-stat-label {
           font-family: var(--font-body);
-          font-size: 10px;
+          font-size: 9px;
           font-weight: 400;
           letter-spacing: 0.15em;
           text-transform: uppercase;
           color: var(--c-gold);
         }
 
-        /* Scroll indicator */
+        @media (max-width: 900px) {
+          .hero-stat-label {
+            font-size: 8px;
+            letter-spacing: 0.12em;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-stat-label {
+            font-size: 7px;
+            letter-spacing: 0.1em;
+          }
+        }
+
+        /* ── SCROLL INDICATOR ── */
         .hero-scroll {
           position: absolute;
-          bottom: 32px;
+          bottom: 24px;
           left: 50%;
           transform: translateX(-50%);
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 8px;
+          gap: 6px;
           z-index: 3;
+        }
+
+        @media (max-width: 768px) {
+          .hero-scroll {
+            bottom: 16px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-scroll {
+            bottom: 12px;
+            gap: 4px;
+          }
         }
 
         .hero-scroll-line {
           width: 1px;
-          height: 48px;
+          height: 40px;
           background: linear-gradient(to bottom, transparent, var(--c-gold));
           animation: heroScrollPulse 2s ease-in-out infinite;
+        }
+
+        @media (max-width: 768px) {
+          .hero-scroll-line {
+            height: 28px;
+          }
         }
 
         @keyframes heroScrollPulse {
@@ -373,48 +468,16 @@ const Hero = () => {
 
         .hero-scroll-text {
           font-family: var(--font-body);
-          font-size: 9px;
+          font-size: 8px;
           letter-spacing: 0.2em;
           text-transform: uppercase;
           color: rgba(249,246,240,0.4);
           writing-mode: vertical-rl;
         }
 
-        /* ===========================
-           RESPONSIVE
-        =========================== */
-        @media (max-width: 900px) {
-          .hero-content {
-            grid-template-columns: 1fr;
-            padding-bottom: clamp(80px, 12vh, 120px);
-          }
-
-          .hero-left {
-            padding-right: 0;
-          }
-
-          .hero-right {
-            justify-content: flex-start;
-          }
-
-          .hero-stats {
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: 100%;
-            height: auto;
-          }
-
-          .hero-stat {
-            flex: 1;
-            min-width: 120px;
-          }
-        }
-
         @media (max-width: 480px) {
-          .hero-actions {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 12px;
+          .hero-scroll-text {
+            font-size: 6px;
           }
         }
       `}</style>
@@ -433,7 +496,7 @@ const Hero = () => {
         {/* Hero Content */}
         <div className="hero-content">
 
-          {/* Left Section */}
+          {/* Left Section — eyebrow + headline + subtext + buttons */}
           <div className="hero-left">
             <div className="hero-eyebrow">
               <span className="hero-eyebrow-line" aria-hidden="true" />
@@ -464,7 +527,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Section - Stats */}
+          {/* Right Section — Stats (desktop: right column / mobile: below buttons) */}
           <div className="hero-right" aria-hidden="true">
             <div className="hero-stats">
               <div className="hero-stat">

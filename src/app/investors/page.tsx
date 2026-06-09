@@ -215,7 +215,7 @@ export default function InvestorsPage() {
             investor relations team.
           </p>
           <Link
-            href="/investors-contact"
+            href="/contact"
             className="inline-flex items-center gap-3 mt-10 bg-[var(--c-gold)] text-white px-10 py-4 uppercase tracking-[0.2em] text-sm hover:-translate-y-1 transition-all"
           >
             Contact Investor Relations →
