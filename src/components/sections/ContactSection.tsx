@@ -258,7 +258,6 @@
 //   );
 // }
 
-
 "use client";
 
 import { useState, useRef, useEffect } from "react";
@@ -447,18 +446,18 @@ export default function ContactSection() {
   }, []);
 
   return (
-    <section className="bg-[#F5F1EA] py-16 lg:py-20">
+    <section className="bg-[#F5F1EA] pt-24 pb-12 lg:py-16">
       <div className="max-w-[1600px] mx-auto">
         <div className="grid lg:grid-cols-2">
-          {/* LEFT SIDE */}
-          <div className="px-6 lg:px-12 py-12 lg:py-16 border-b lg:border-b-0 lg:border-r border-[#E6DDD0]">
+          {/* LEFT SIDE - Reduced size */}
+          <div className="px-4 lg:px-8 py-6 lg:py-10 border-b lg:border-b-0 lg:border-r border-[#E6DDD0]">
             <h2
               className="
                 font-serif
                 text-[#1A1A1A]
-                text-5xl
-                md:text-6xl
-                lg:text-7xl
+                text-3xl
+                md:text-4xl
+                lg:text-5xl
                 leading-[1.1]
                 tracking-[-0.02em]
               "
@@ -470,134 +469,134 @@ export default function ContactSection() {
               </span>
             </h2>
 
-            <p className="mt-6 max-w-xl text-base md:text-lg text-[#746C63] leading-relaxed">
+            <p className="mt-4 max-w-xl text-xs md:text-sm text-[#746C63] leading-relaxed">
               Whether you're an investor, a potential partner,
               a franchise enquirer, or a media professional —
               we'd love to hear from you.
             </p>
 
             {/* Corporate Office */}
-            <div className="mt-12">
-              <p className="contact-label text-xs md:text-sm tracking-[0.2em]">CORPORATE OFFICE</p>
-              <div className="mt-3 space-y-1">
-                <p className="contact-detail text-base md:text-lg font-medium">
+            <div className="mt-6">
+              <p className="contact-label text-[10px] md:text-xs tracking-[0.2em]">CORPORATE OFFICE</p>
+              <div className="mt-2 space-y-0.5">
+                <p className="contact-detail text-xs md:text-sm font-medium">
                   301–304, Vipul Agora Mall
                 </p>
-                <p className="contact-detail text-base md:text-lg font-medium">
+                <p className="contact-detail text-xs md:text-sm font-medium">
                   MG Road, Gurugram
                 </p>
-                <p className="contact-detail text-base md:text-lg font-medium">
+                <p className="contact-detail text-xs md:text-sm font-medium">
                   Haryana 122002, India
                 </p>
               </div>
             </div>
 
             {/* Exchange Listing */}
-            <div className="mt-10">
-              <p className="contact-label text-xs md:text-sm tracking-[0.2em]">EXCHANGE LISTING</p>
-              <div className="mt-3 space-y-1">
-                <p className="contact-detail text-base md:text-lg font-medium">
+            <div className="mt-6">
+              <p className="contact-label text-[10px] md:text-xs tracking-[0.2em]">EXCHANGE LISTING</p>
+              <div className="mt-2 space-y-0.5">
+                <p className="contact-detail text-xs md:text-sm font-medium">
                   BSE Limited
                 </p>
-                <p className="contact-detail text-base md:text-lg font-medium">
+                <p className="contact-detail text-xs md:text-sm font-medium">
                   Scrip Code: 506134
                 </p>
-                <p className="contact-detail text-base md:text-lg font-medium">
+                <p className="contact-detail text-xs md:text-sm font-medium">
                   Symbol: INTELLCAP
                 </p>
               </div>
             </div>
 
             {/* Brand Enquiries */}
-            <div className="mt-10">
-              <p className="contact-label text-xs md:text-sm tracking-[0.2em]">BRAND ENQUIRIES</p>
-              <div className="mt-3">
-                <p className="contact-detail text-base md:text-lg font-medium">
+            <div className="mt-6">
+              <p className="contact-label text-[10px] md:text-xs tracking-[0.2em]">BRAND ENQUIRIES</p>
+              <div className="mt-2">
+                <p className="contact-detail text-xs md:text-sm font-medium">
                   +91 87501 31314
                 </p>
               </div>
             </div>
           </div>
 
-          {/* RIGHT SIDE */}
-          <div className="px-6 lg:px-12 py-12 lg:py-16">
-            <h3 className="font-serif text-3xl md:text-4xl text-[#2A241D]">
+          {/* RIGHT SIDE - Unchanged */}
+          <div className="px-6 lg:px-12 py-8 lg:py-16">
+            <h3 className="font-serif text-2xl md:text-3xl text-[#2A241D]">
               Send Us a Message
             </h3>
 
-            <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+            <form onSubmit={handleSubmit} className="mt-6 space-y-4">
               {/* Names */}
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label className="contact-label text-xs md:text-sm tracking-[0.2em]">FIRST NAME</label>
+                  <label className="contact-label text-[10px] md:text-xs tracking-[0.2em]">FIRST NAME</label>
                   <input
                     type="text"
                     name="firstName"
                     placeholder="Your first name"
                     value={formData.firstName}
                     onChange={handleChange}
-                    className={`contact-input text-sm md:text-base ${errors.firstName ? 'error-border border-red-500' : ''}`}
+                    className={`contact-input text-sm md:text-base py-2 ${errors.firstName ? 'error-border border-red-500' : ''}`}
                   />
                   {errors.firstName && (
-                    <p className="text-red-500 text-xs mt-1">{errors.firstName}</p>
+                    <p className="text-red-500 text-[10px] mt-1">{errors.firstName}</p>
                   )}
                 </div>
                 <div>
-                  <label className="contact-label text-xs md:text-sm tracking-[0.2em]">LAST NAME</label>
+                  <label className="contact-label text-[10px] md:text-xs tracking-[0.2em]">LAST NAME</label>
                   <input
                     type="text"
                     name="lastName"
                     placeholder="Your last name"
                     value={formData.lastName}
                     onChange={handleChange}
-                    className={`contact-input text-sm md:text-base ${errors.lastName ? 'error-border border-red-500' : ''}`}
+                    className={`contact-input text-sm md:text-base py-2 ${errors.lastName ? 'error-border border-red-500' : ''}`}
                   />
                   {errors.lastName && (
-                    <p className="text-red-500 text-xs mt-1">{errors.lastName}</p>
+                    <p className="text-red-500 text-[10px] mt-1">{errors.lastName}</p>
                   )}
                 </div>
               </div>
 
               {/* Email */}
               <div>
-                <label className="contact-label text-xs md:text-sm tracking-[0.2em]">EMAIL ADDRESS</label>
+                <label className="contact-label text-[10px] md:text-xs tracking-[0.2em]">EMAIL ADDRESS</label>
                 <input
                   type="email"
                   name="email"
                   placeholder="you@company.com"
                   value={formData.email}
                   onChange={handleChange}
-                  className={`contact-input text-sm md:text-base ${errors.email ? 'error-border border-red-500' : ''}`}
+                  className={`contact-input text-sm md:text-base py-2 ${errors.email ? 'error-border border-red-500' : ''}`}
                 />
                 {errors.email && (
-                  <p className="text-red-500 text-xs mt-1">{errors.email}</p>
+                  <p className="text-red-500 text-[10px] mt-1">{errors.email}</p>
                 )}
               </div>
 
               {/* Phone */}
               <div>
-                <label className="contact-label text-xs md:text-sm tracking-[0.2em]">PHONE NUMBER</label>
+                <label className="contact-label text-[10px] md:text-xs tracking-[0.2em]">PHONE NUMBER</label>
                 <input
                   type="tel"
                   name="phone"
                   placeholder="+91 XXXXX XXXXX"
                   value={formData.phone}
                   onChange={handleChange}
-                  className={`contact-input text-sm md:text-base ${errors.phone ? 'error-border border-red-500' : ''}`}
+                  className={`contact-input text-sm md:text-base py-2 ${errors.phone ? 'error-border border-red-500' : ''}`}
                 />
                 {errors.phone && (
-                  <p className="text-red-500 text-xs mt-1">{errors.phone}</p>
+                  <p className="text-red-500 text-[10px] mt-1">{errors.phone}</p>
                 )}
               </div>
 
               {/* Enquiry Type */}
               <div>
-                <label className="contact-label text-xs md:text-sm tracking-[0.2em]">ENQUIRY TYPE</label>
+                <label className="contact-label text-[10px] md:text-xs tracking-[0.2em]">ENQUIRY TYPE</label>
                 <select
                   name="enquiryType"
                   value={formData.enquiryType}
                   onChange={handleChange}
-                  className="contact-input text-sm md:text-base"
+                  className="contact-input text-sm md:text-base py-2"
                 >
                   <option value="">Select enquiry type</option>
                   <option value="Investor Relations">Investor Relations</option>
@@ -610,28 +609,28 @@ export default function ContactSection() {
 
               {/* Message */}
               <div>
-                <label className="contact-label text-xs md:text-sm tracking-[0.2em]">YOUR MESSAGE</label>
+                <label className="contact-label text-[10px] md:text-xs tracking-[0.2em]">YOUR MESSAGE</label>
                 <textarea
-                  rows={4}
+                  rows={3}
                   name="message"
                   placeholder="Tell us how we can help you..."
                   value={formData.message}
                   onChange={handleChange}
-                  className="contact-input resize-none text-sm md:text-base"
+                  className="contact-input resize-none text-sm md:text-base py-2"
                 />
               </div>
 
               {/* Submit */}
-              <div ref={submitButtonRef} className="pt-4">
+              <div ref={submitButtonRef} className="pt-2">
                 <button
                   type="submit"
                   disabled={status === "loading"}
                   className="
                     inline-flex items-center gap-2
                     bg-[#B8965A] text-white
-                    px-8 py-3
+                    px-6 py-2.5
                     uppercase
-                    tracking-[0.2em] text-xs md:text-sm
+                    tracking-[0.2em] text-[10px] md:text-xs
                     transition-all duration-300
                     hover:bg-[#A3834D] hover:-translate-y-1
                     disabled:opacity-60 disabled:cursor-not-allowed disabled:translate-y-0
@@ -642,12 +641,12 @@ export default function ContactSection() {
                 </button>
 
                 {status === "success" && (
-                  <p className="mt-4 text-sm text-green-700 tracking-wide success-message">
+                  <p className="mt-3 text-xs text-green-700 tracking-wide success-message">
                     ✓ Message sent successfully. We'll be in touch soon.
                   </p>
                 )}
                 {status === "error" && (
-                  <p className="mt-4 text-sm text-red-600 tracking-wide">
+                  <p className="mt-3 text-xs text-red-600 tracking-wide">
                     ✗ Something went wrong. Please try again or email us directly.
                   </p>
                 )}

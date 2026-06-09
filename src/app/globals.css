@@ -474,7 +474,7 @@ body {
 .contact-input {
   width: 100%;
   border-bottom: 1px solid #cfc6b9;
-  padding: 14px 0;
+  padding:4px;
   background: transparent;
   outline: none;
   transition: all 0.3s ease;
@@ -769,7 +769,7 @@ body {
   }
   
   .hero-left {
-    padding-bottom: 350px;
+    padding-bottom: 30px;
   }
   
   .hero-buttons {
