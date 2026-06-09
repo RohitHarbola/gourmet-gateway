@@ -152,7 +152,7 @@ const Hero = () => {
           font-weight: 200;
           line-height: 0.92;
           letter-spacing: -0.025em;
-          color: var(--c-cream);
+          color: #E1D9D1;
           margin-bottom: 16px;
         }
 
@@ -182,7 +182,7 @@ const Hero = () => {
           font-family: var(--font-body);
           font-size: clamp(13px, 1.3vw, 18px);
           font-weight: 300;
-          color: rgba(249,246,240,0.65);
+          color: #E1D9D1;
           line-height: 1.6;
           max-width: 480px;
           margin-bottom: 0; /* spacing handled by hero-actions margin-top */

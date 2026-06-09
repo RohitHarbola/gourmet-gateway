@@ -207,7 +207,7 @@ export default function Navbar() {
                     {/* Dropdown Menu */}
                     {openDropdown === link.label && (
                       <div 
-                        className="absolute top-full left-0 mt-2 w-56 bg-[#0d0c09] border border-white/10 py-2 shadow-2xl rounded-sm z-50"
+                        className="absolute top-full left-0 mt-2 w-64 bg-[#0d0c09] border border-white/10 py-2 shadow-2xl rounded-sm z-50"
                         onMouseEnter={() => {
                           if (hoverTimeoutRef.current) {
                             clearTimeout(hoverTimeoutRef.current);
@@ -230,10 +230,10 @@ export default function Navbar() {
                                   <ChevronDown size={14} className="rotate-[-90deg]" />
                                 </button>
 
-                                {/* Nested Dropdown Menu */}
+                                {/* Nested Dropdown Menu - Opening to the right */}
                                 {openNestedDropdown === item.label && (
                                   <div 
-                                    className="absolute right-full top-0 w-56 bg-[#0d0c09] border border-white/10 py-2 shadow-2xl rounded-sm z-50"
+                                    className="absolute right-full top-0 mr-1 w-64 bg-[#0d0c09] border border-white/10 py-2 shadow-2xl rounded-sm z-50"
                                     onMouseEnter={() => {
                                       if (nestedHoverTimeoutRef.current) {
                                         clearTimeout(nestedHoverTimeoutRef.current);
@@ -315,11 +315,11 @@ export default function Navbar() {
                   <>
                     <button
                       onClick={() => toggleMobileDropdown(link.label)}
-                      className="flex items-center justify-between px-8 py-5 text-xl font-light text-white hover:text-[#C9A96E] transition-colors"
+                      className="flex items-center justify-between px-6 py-5 text-lg uppercase tracking-[0.15em] text-white/80 hover:text-[#C9A96E] transition-colors font-light"
                     >
                       {link.label}
                       <ChevronDown
-                        size={18}
+                        size={16}
                         className={`transition-transform duration-200 ${
                           mobileDropdownOpen === link.label ? "rotate-180" : ""
                         }`}
@@ -328,18 +328,18 @@ export default function Navbar() {
                     
                     {/* Mobile Dropdown Items */}
                     {mobileDropdownOpen === link.label && (
-                      <div className="bg-black/30 pl-8">
+                      <div className="bg-black/30">
                         {link.dropdown.map((item) => (
                           <div key={item.label}>
                             {item.dropdown ? (
                               <>
                                 <button
                                   onClick={() => toggleMobileNested(item.label)}
-                                  className="flex items-center justify-between w-full px-8 py-4 text-lg font-light text-white/80 hover:text-[#C9A96E] transition-colors"
+                                  className="flex items-center justify-between w-full px-8 py-4 text-sm uppercase tracking-[0.12em] text-white/70 hover:text-[#C9A96E] transition-colors font-light"
                                 >
                                   {item.label}
                                   <ChevronDown
-                                    size={14}
+                                    size={12}
                                     className={`transition-transform duration-200 ${
                                       mobileNestedOpen === item.label ? "rotate-180" : ""
                                     }`}
@@ -348,12 +348,12 @@ export default function Navbar() {
                                 
                                 {/* Mobile Nested Dropdown Items */}
                                 {mobileNestedOpen === item.label && (
-                                  <div className="bg-black/20 pl-5">
+                                  <div className="bg-black/20">
                                     {item.dropdown.map((subItem) => (
                                       <Link
                                         key={subItem.label}
                                         href={subItem.href}
-                                        className="block px-8 py-3 text-base font-light text-white/70 hover:text-[#C9A96E] transition-colors"
+                                        className="block px-10 py-3 text-xs uppercase tracking-[0.1em] text-white/60 hover:text-[#C9A96E] transition-colors font-light"
                                         onClick={() => setMobileOpen(false)}
                                       >
                                         {subItem.label}
@@ -365,7 +365,7 @@ export default function Navbar() {
                             ) : (
                               <Link
                                 href={item.href}
-                                className="block px-8 py-4 text-lg font-light text-white/80 hover:text-[#C9A96E] transition-colors"
+                                className="block px-8 py-4 text-sm uppercase tracking-[0.12em] text-white/70 hover:text-[#C9A96E] transition-colors font-light"
                                 onClick={() => setMobileOpen(false)}
                               >
                                 {item.label}
@@ -379,7 +379,7 @@ export default function Navbar() {
                 ) : (
                   <Link
                     href={link.href}
-                    className="px-8 py-5 text-xl font-light text-white hover:text-[#C9A96E] transition-colors"
+                    className="px-6 py-5 text-lg uppercase tracking-[0.15em] text-white/80 hover:text-[#C9A96E] transition-colors font-light"
                     onClick={() => setMobileOpen(false)}
                   >
                     {link.label}
@@ -389,7 +389,7 @@ export default function Navbar() {
             ))}
             <Link
               href="/contact"
-              className="mx-8 mt-6 bg-[#C9A96E] px-6 py-4 text-center text-sm uppercase tracking-[0.2em] text-white"
+              className="mx-6 mt-6 bg-[#C9A96E] px-6 py-4 text-center text-sm uppercase tracking-[0.2em] text-white hover:bg-[#b8965a] transition-colors font-light"
               onClick={() => setMobileOpen(false)}
             >
               Contact Us
