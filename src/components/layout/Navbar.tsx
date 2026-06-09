@@ -225,9 +225,10 @@ export default function Navbar() {
                                   onMouseEnter={() => handleNestedMouseEnter(item.label)}
                                   onMouseLeave={handleNestedMouseLeave}
                                   className="flex items-center justify-between w-full px-5 py-3 text-[11px] uppercase tracking-[0.12em] text-white/70 hover:text-white hover:bg-white/5 transition-colors duration-150"
+
                                 >
-                                  {item.label}
-                                  <ChevronDown size={14} className="rotate-[-90deg]" />
+                                    <span className="text-left">{item.label}</span>
+                                  <ChevronDown size={14} className="rotate-[-90deg] flex-shrink-0 opacity-60"  />
                                 </button>
 
                                 {/* Nested Dropdown Menu - Opening to the right */}
