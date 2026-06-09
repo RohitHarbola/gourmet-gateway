@@ -348,7 +348,7 @@ export default function Navbar() {
                                 
                                 {/* Mobile Nested Dropdown Items */}
                                 {mobileNestedOpen === item.label && (
-                                  <div className="bg-black/20 pl-8">
+                                  <div className="bg-black/20 pl-5">
                                     {item.dropdown.map((subItem) => (
                                       <Link
                                         key={subItem.label}
