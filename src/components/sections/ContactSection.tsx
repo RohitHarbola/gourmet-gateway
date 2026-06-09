@@ -259,7 +259,6 @@
 // }
 
 
-
 "use client";
 
 import { useState, useRef, useEffect } from "react";
@@ -283,6 +282,8 @@ export default function ContactSection() {
 
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const submitButtonRef = useRef<HTMLDivElement>(null);
+  const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const lastFieldRef = useRef<string>("");
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -303,14 +304,24 @@ export default function ContactSection() {
       }));
     }
 
-    // Auto-scroll to submit button when user fills any field
-    if (submitButtonRef.current && value.trim() !== "") {
-      setTimeout(() => {
+    // Only auto-scroll when user is filling the last few fields (phone, enquiryType, or message)
+    const isLastField = name === "phone" || name === "enquiryType" || name === "message";
+    const hasValue = value.trim() !== "";
+    
+    if (submitButtonRef.current && hasValue && isLastField) {
+      // Clear existing timeout
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current);
+      }
+      
+      // Add a delay before scrolling to allow user to finish typing
+      scrollTimeoutRef.current = setTimeout(() => {
         submitButtonRef.current?.scrollIntoView({ 
           behavior: 'smooth', 
           block: 'nearest'
         });
-      }, 100);
+        scrollTimeoutRef.current = null;
+      }, 500);
     }
   };
 
@@ -425,6 +436,15 @@ export default function ContactSection() {
       setStatus("error");
     }
   };
+
+  // Cleanup timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current);
+      }
+    };
+  }, []);
 
   return (
     <section className="bg-[#F5F1EA] py-16 lg:py-20">
