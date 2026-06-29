@@ -7,7 +7,7 @@ import BrandShowcase from "../components/sections/BrandShowcase";
 import GeographicPresence from "../components/sections/GeographicPresence";
 import LeadershipPreview from "../components/sections/LeadershipPreview";
 import InvestorPreview from "../components/sections/InvestorPreview";
-import CSRPreview from "../components/sections/CSRPreview";
+// import CSRPreview from "../components/sections/CSRPreview";
 import ContactSection from "../components/sections/ContactSection";
 
 export default function HomePage() {
@@ -22,7 +22,6 @@ export default function HomePage() {
           <GeographicPresence />
            <LeadershipPreview />
            <InvestorPreview />
-           <CSRPreview />
            <ContactSection />
     </>
   );

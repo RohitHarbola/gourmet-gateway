@@ -538,20 +538,26 @@ const Hero = () => {
               </div>
 
               <div className="hero-stat">
-                <div className="hero-stat-num">3</div>
+                <div className="hero-stat-num">3+</div>
                 <div className="hero-stat-label">Countries</div>
               </div>
 
               <div className="hero-stat">
                 <div className="hero-stat-num">
-                  200<span className="stat-suffix">+</span>
+                  430<span className="stat-suffix">+</span>
                 </div>
-                <div className="hero-stat-label">Outlets Nationwide</div>
+                <div className="hero-stat-label">Outlets</div>
+              </div>
+                 <div className="hero-stat">
+                <div className="hero-stat-num">
+                  170+<span className="stat-suffix">+</span>
+                </div>
+                <div className="hero-stat-label">Cities</div>
               </div>
 
               <div className="hero-stat">
                 <div className="hero-stat-num">
-                  24<span className="stat-suffix">yr</span>
+                  26<span className="stat-suffix">yr</span>
                 </div>
                 <div className="hero-stat-label">Heritage Since 2000</div>
               </div>
