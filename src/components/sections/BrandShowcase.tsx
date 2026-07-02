@@ -20,7 +20,7 @@ const brands = [
     description:
       "An elevated Pan-Asian dining destination bringing together authentic flavours and modern culinary artistry. From sushi and dim sum to signature mains, Kylin delivers sophisticated Asian experiences.",
     image:
-      "assets/Kylin.png",
+      "assets/kylin.png",
     website: "https://kylinexperience.com/",
     externalLink: true,
   },
