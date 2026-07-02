@@ -5,37 +5,45 @@ const brands = [
     name: "Barista Coffee",
     slug: "barista",
     category: "Cafe Chain",
-    image:
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1600",
     description:
-      "One of India's most recognised café brands, delivering premium coffee experiences, handcrafted beverages and welcoming spaces.",
+      "India's pioneering coffeehouse brand offering handcrafted beverages, signature food, and warm spaces where conversations flourish. With decades of heritage, Barista continues to evolve while staying rooted in authentic coffee culture",
+    image:
+      "assets/Barista.png",
+    website: "https://www.barista.co.in/",
+    externalLink: true,
   },
   {
     name: "Kylin",
     slug: "kylin",
     category: "Pan Asian Dining",
-    image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1600",
     description:
-      "Contemporary Asian dining inspired by authentic flavours, sophisticated interiors and culinary innovation.",
+      "An elevated Pan-Asian dining destination bringing together authentic flavours and modern culinary artistry. From sushi and dim sum to signature mains, Kylin delivers sophisticated Asian experiences.",
+    image:
+      "assets/Kylin.png",
+    website: "https://kylinexperience.com/",
+    externalLink: true,
   },
   {
-    name: "Wanchai",
-    slug: "wanchai",
+    name: "Café Meular ",
+    slug: "Café Meular ",
     category: "Asian QSR",
-    image:
-      "https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1600",
     description:
-      "Fast, fresh and flavourful Asian cuisine designed for modern lifestyles and contemporary dining preferences.",
+      "A heritage café experience designed around artisanal coffee, curated food, and elevated aesthetics. Café Meular celebrates slow moments, meaningful conversations, and thoughtfully crafted indulgence.",
+    image:
+      "assets/Cafe-Meular.png",
+    website: "https://www.instagram.com/cafemeular.barista",
+    externalLink: false,
   },
   {
     name: "Drizzle & Dust",
     slug: "drizzle-dust",
     category: "Patisserie",
-    image:
-      "https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=1600",
     description:
-      "Premium artisanal desserts, handcrafted pastries and indulgent sweet experiences for every occasion.",
+      "A destination for handcrafted desserts, artisanal pastries, and celebration cakes that transform everyday moments into memorable occasions through creativity and craftsmanship.",
+    image:
+      "https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=1400",
+    website: "https://drizzleanddust.in/",
+    externalLink: true,
   },
 ];
 
@@ -150,19 +158,20 @@ export default function BrandsPage() {
 
             <div className="stat-card border-r border-white/10 p-10 text-center">
               <div className="display-md text-[var(--c-gold)]">
-                4+
+                5+
               </div>
               <p className="mt-3 uppercase tracking-[0.2em] text-sm">
-                Brands
+               Iconic Brands
               </p>
             </div>
+            
 
             <div className="stat-card border-r border-white/10 p-10 text-center">
               <div className="display-md text-[var(--c-gold)]">
-                200+
+                170+
               </div>
               <p className="mt-3 uppercase tracking-[0.2em] text-sm">
-                Locations
+                Cities
               </p>
             </div>
 
@@ -177,7 +186,7 @@ export default function BrandsPage() {
 
             <div className="stat-card p-10 text-center">
               <div className="display-md text-[var(--c-gold)]">
-                24+
+                26+
               </div>
               <p className="mt-3 uppercase tracking-[0.2em] text-sm">
                 Years
@@ -203,8 +212,7 @@ export default function BrandsPage() {
           </span>
 
           <h2 className="display-lg mt-6">
-            Ready To Experience
-            Our Hospitality Brands?
+           Become a Franchise Partner
           </h2>
 
           <p className="mt-8 text-lg text-[var(--c-muted)] max-w-2xl mx-auto">

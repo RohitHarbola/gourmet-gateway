@@ -7,9 +7,9 @@ const brands = [
     slug: "barista",
     category: "Cafe Chain",
     description:
-      "The pioneer of coffee culture in India delivering a true coffee experience in warm and friendly environments.",
+      "India's pioneering coffeehouse brand offering handcrafted beverages, signature food, and warm spaces where conversations flourish. With decades of heritage, Barista continues to evolve while staying rooted in authentic coffee culture",
     image:
-      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1400",
+      "assets/Barista.png",
     website: "https://www.barista.co.in/",
     externalLink: true,
   },
@@ -18,21 +18,21 @@ const brands = [
     slug: "kylin",
     category: "Pan Asian Dining",
     description:
-      "Contemporary Asian dining featuring authentic flavors and modern culinary innovation.",
+      "An elevated Pan-Asian dining destination bringing together authentic flavours and modern culinary artistry. From sushi and dim sum to signature mains, Kylin delivers sophisticated Asian experiences.",
     image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1400",
+      "assets/Kylin.png",
     website: "https://kylinexperience.com/",
     externalLink: true,
   },
   {
-    name: "Wanchai",
-    slug: "wanchai",
+    name: "Café Meular ",
+    slug: "Café Meular ",
     category: "Asian QSR",
     description:
-      "Fast casual Asian cuisine crafted for modern lifestyles and evolving tastes.",
+      "A heritage café experience designed around artisanal coffee, curated food, and elevated aesthetics. Café Meular celebrates slow moments, meaningful conversations, and thoughtfully crafted indulgence.",
     image:
-      "https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1400",
-    website: "/brands/wanchai",
+      "assets/Cafe-Meular.png",
+    website: "https://www.instagram.com/cafemeular.barista",
     externalLink: false,
   },
   {
@@ -40,7 +40,7 @@ const brands = [
     slug: "drizzle-dust",
     category: "Patisserie",
     description:
-      "Premium desserts, artisanal pastries and handcrafted indulgent creations.",
+      "A destination for handcrafted desserts, artisanal pastries, and celebration cakes that transform everyday moments into memorable occasions through creativity and craftsmanship.",
     image:
       "https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=1400",
     website: "https://drizzleanddust.in/",
@@ -50,7 +50,7 @@ const brands = [
 
 export default function BrandShowcase() {
   return (
-    <section className="section-padding bg-[var(--c-cream)] reveal">
+    <section className="section-padding bg-[var(--c-cream)] reveal"  id="brands">
       <div className="container-custom">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="eyebrow">OUR BRANDS</span>
@@ -110,7 +110,7 @@ export default function BrandShowcase() {
                       </span>
                     ) : (
                       <span className="inline-block mt-5 text-[#B8965A] uppercase tracking-[0.2em] text-sm opacity-0 transition-all duration-500 group-hover:opacity-100">
-                        Explore Brand →
+                        Visit →
                       </span>
                     )}
                   </div>

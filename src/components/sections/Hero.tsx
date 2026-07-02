@@ -506,15 +506,16 @@ const Hero = () => {
             </div>
 
             <h1 className="hero-headline">
-              Where<br />
-              <em>Culinary</em><br />
-              Craft Meets<br />
-              Commerce
+              Curating<br />
+              <em>Exceptional </em><br />
+              Food Experiences <br />
+            
             </h1>
 
             <p className="hero-subtext">
-              A listed food &amp; beverage conglomerate managing iconic brands across
-              India, Sri Lanka, and Maldives — from specialty coffee to Pan Asian dining.
+            From iconic coffeehouses  &amp; artisanal cafés to 
+            award-winning Pan-Asian dining and indulgent desserts,
+            Gourmet Gateway brings together brands that delight millions of guests across every occasion.
             </p>
 
             <div className="hero-actions">
@@ -532,7 +533,7 @@ const Hero = () => {
             <div className="hero-stats">
               <div className="hero-stat">
                 <div className="hero-stat-num">
-                  4<span className="stat-suffix">+</span>
+                  5<span className="stat-suffix"></span>
                 </div>
                 <div className="hero-stat-label">Iconic Brands</div>
               </div>
@@ -544,22 +545,22 @@ const Hero = () => {
 
               <div className="hero-stat">
                 <div className="hero-stat-num">
-                  430<span className="stat-suffix">+</span>
+                  560<span className="stat-suffix">+</span>
                 </div>
                 <div className="hero-stat-label">Outlets</div>
               </div>
                  <div className="hero-stat">
                 <div className="hero-stat-num">
-                  170+<span className="stat-suffix">+</span>
+                  170<span className="stat-suffix">+</span>
                 </div>
                 <div className="hero-stat-label">Cities</div>
               </div>
 
               <div className="hero-stat">
                 <div className="hero-stat-num">
-                  26<span className="stat-suffix">yr</span>
+                  26<span className="stat-suffix">yrs</span>
                 </div>
-                <div className="hero-stat-label">Heritage Since 2000</div>
+                <div className="hero-stat-label">Since 2000</div>
               </div>
             </div>
           </div>

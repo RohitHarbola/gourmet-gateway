@@ -83,10 +83,7 @@ export default function AboutPreview() {
               className="text-[var(--c-muted)] mb-6"
               style={{ fontSize: "1rem", lineHeight: 1.7 }}
             >
-              Gourmet Gateway India Limited is a leading food & beverage
-              conglomerate with presence across India, Sri Lanka, and
-              Maldives — dedicated to bringing diverse, high-quality dining
-              experiences to every guest, every day.
+              Gourmet Gateway is home to a portfolio of distinctive food and beverage brands, each crafted to serve unique customer occasions while sharing a common commitment to quality, innovation, and hospitality. Our ecosystem spans premium cafés, lifestyle dining, quick-service formats, and artisanal dessert concepts, enabling us to connect with consumers throughout the day across India, Sri Lanka and Maldives.
             </p>
 
             {/* Quote Block */}
@@ -103,9 +100,10 @@ export default function AboutPreview() {
                 lineHeight: 1.6,
               }}
             >
-              "Our mission is to enrich lives through extraordinary dining
+              {/* "Our mission is to enrich lives through extraordinary dining
               experiences — maintaining the highest standards of quality,
-              innovation, and satisfaction across all our brands."
+              innovation, and satisfaction across all our brands." */}
+              "Discover the Story Behind Drizzle and Dust"
             </blockquote>
 
             {/* Feature Cards with Button */}

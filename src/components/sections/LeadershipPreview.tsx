@@ -30,7 +30,7 @@ const boardMembers = [
 
 export default function LeadershipPreview() {
   return (
-    <section className="bg-[var(--c-cream)] py-16 reveal">
+    <section className="bg-[var(--c-cream)] py-16 reveal" id="leadership">
       <div className="container-custom">
 
         {/* Header */}
@@ -38,18 +38,14 @@ export default function LeadershipPreview() {
           <div>
             <span className="eyebrow">LEADERSHIP</span>
             <h2 className="display-lg mt-4">
-              Guiding Vision.
-              <br />
-              Driving Growth.
+             Building the Future of
+             Food & Beverage
             </h2>
           </div>
 
           <div className="lg:pt-8">
             <p className="text-base leading-7 text-[var(--c-muted)]">
-              Our leadership team brings together decades of
-              experience in hospitality, retail, finance and
-              strategic business expansion, helping shape the
-              future of Gourmet Gateway.
+             Our leadership team combines entrepreneurial thinking with deep expertise across hospitality, retail, operations, marketing, and brand building. Together, they are committed to scaling businesses that delight customers while creating long-term value for stakeholders.
             </p>
 
             <Link

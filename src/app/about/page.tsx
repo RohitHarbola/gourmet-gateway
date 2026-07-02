@@ -47,10 +47,9 @@ export default function AboutPage() {
               <div className="mt-8 space-y-4 text-base leading-7 text-[var(--c-muted)]">
                 <p>
                   <strong className="text-[var(--c-dark)]">
-                    Gourmet Gateway India Limited
+                    Gourmet Gateway 
                   </strong>{" "}
-                  is a leading food and beverage company with
-                  presence across India, Sri Lanka and Maldives.
+                 is a diversified food and beverage company with a portfolio of brands that cater to evolving consumer tastes and lifestyles. Through innovation, operational excellence, and customer-centric experiences, we create destinations where people connect over great food and memorable moments.
                 </p>
                 <p>
                   Our portfolio spans café chains,
@@ -58,16 +57,11 @@ export default function AboutPage() {
                   Indian food QSR businesses
                   and premium patisserie experiences.
                 </p>
-                <p>
-                  Through innovation, quality and
-                  operational excellence, we continue
-                  to create memorable dining experiences
-                  for customers across multiple markets.
-                </p>
+               
                 <p>
                   Our portfolio includes
                   Barista Coffee, Kylin,
-                  Wanchai and Drizzle & Dust,
+                  Café Meular and Drizzle & Dust,
                   each delivering a unique culinary identity.
                 </p>
               </div>

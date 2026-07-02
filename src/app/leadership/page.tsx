@@ -36,11 +36,9 @@ export default function LeadershipPage() {
         <div className="container-custom">
           <div className="max-w-4xl">
             <span className="eyebrow">LEADERSHIP PHILOSOPHY</span>
-            <h2 className="display-lg mt-4">Leadership Built On Experience</h2>
+            <h2 className="display-lg mt-4">Building the Future of Food & Beverage</h2>
             <p className="mt-6 text-base leading-7 text-[var(--c-muted)]">
-              Our leadership team combines decades of expertise
-              across hospitality, retail, food services, finance
-              and corporate governance.
+            Our leadership team combines entrepreneurial thinking with deep expertise across hospitality, retail, operations, marketing, and brand building. Together, they are committed to scaling businesses that delight customers while creating long-term value for stakeholders.
             </p>
             <p className="mt-4 text-base leading-7 text-[var(--c-muted)]">
               Together they guide Gourmet Gateway's strategy,
@@ -112,7 +110,7 @@ export default function LeadershipPage() {
           <div className="grid md:grid-cols-4 border border-white/10">
             <div className="border-r border-b md:border-b-0 border-white/10 p-6 text-center">
               <div className="font-serif text-4xl lg:text-5xl text-[var(--c-gold)] font-semibold">
-                20+
+                26+
               </div>
               <p className="mt-2 uppercase tracking-[0.2em] text-[10px] text-white/50 font-light">
                 Years Experience
@@ -120,7 +118,7 @@ export default function LeadershipPage() {
             </div>
             <div className="border-r border-b md:border-b-0 border-white/10 p-6 text-center">
               <div className="font-serif text-4xl lg:text-5xl text-[var(--c-gold)] font-semibold">
-                4+
+                5+
               </div>
               <p className="mt-2 uppercase tracking-[0.2em] text-[10px] text-white/50 font-light">
                 Brands Managed

@@ -1,7 +1,7 @@
 const countries = [
   {
     name: "India",
-    outlets: "180+",
+    outlets: "468+",
     description:
       "Our largest market with cafés, restaurants and premium dining concepts across major cities.",
     image:
@@ -9,7 +9,7 @@ const countries = [
   },
   {
     name: "Sri Lanka",
-    outlets: "15+",
+    outlets: "90+",
     description:
       "Expanding premium hospitality experiences through strategic locations and partnerships.",
     image:
@@ -17,7 +17,7 @@ const countries = [
   },
   {
     name: "Maldives",
-    outlets: "5+",
+    outlets: "2+",
     description:
       "Luxury hospitality offerings designed for world-class tourism destinations.",
     image:

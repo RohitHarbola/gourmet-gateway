@@ -56,21 +56,31 @@ export default function Statistics() {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 border border-white/10">
+        <div className="grid grid-cols-2 lg:grid-cols-5 border border-white/10">
           {/* Years */}
           <div className="border-r border-b lg:border-b-0 border-white/10 p-6 lg:p-8 text-center">
             <h3 className="font-serif text-4xl lg:text-5xl text-[#B8965A] font-semibold">
-              <Counter end={24} suffix="+" />
+              <Counter end={26} suffix="+" />
             </h3>
             <p className="mt-2 uppercase tracking-[0.2em] text-[10px] text-white/50 font-light">
-              Years
+              Years (Since 2000)
+            </p>
+          </div>
+
+          {/* Cities */}
+          <div className="border-r border-b lg:border-b-0 border-white/10 p-6 lg:p-8 text-center">
+            <h3 className="font-serif text-4xl lg:text-5xl text-[#B8965A] font-semibold">
+              <Counter end={170} suffix="+" />
+            </h3>
+            <p className="mt-2 uppercase tracking-[0.2em] text-[10px] text-white/50 font-light">
+              Cities
             </p>
           </div>
 
           {/* Outlets */}
           <div className="border-r border-b lg:border-b-0 border-white/10 p-6 lg:p-8 text-center">
             <h3 className="font-serif text-4xl lg:text-5xl text-[#B8965A] font-semibold">
-              <Counter end={200} suffix="+" />
+              <Counter end={560} suffix="+" />
             </h3>
             <p className="mt-2 uppercase tracking-[0.2em] text-[10px] text-white/50 font-light">
               Outlets
@@ -80,15 +90,15 @@ export default function Statistics() {
           {/* Brands */}
           <div className="border-r border-b lg:border-b-0 border-white/10 p-6 lg:p-8 text-center">
             <h3 className="font-serif text-4xl lg:text-5xl text-[#B8965A] font-semibold">
-              <Counter end={4} suffix="+" />
+              <Counter end={5} suffix="+" />
             </h3>
             <p className="mt-2 uppercase tracking-[0.2em] text-[10px] text-white/50 font-light">
-              Brands
+              Iconic Brands
             </p>
           </div>
 
           {/* Countries */}
-          <div className="border-b lg:border-b-0 border-white/10 p-6 lg:p-8 text-center">
+          <div className="p-6 lg:p-8 text-center">
             <h3 className="font-serif text-4xl lg:text-5xl text-[#B8965A] font-semibold">
               <Counter end={3} />
             </h3>
