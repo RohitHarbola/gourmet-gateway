@@ -148,7 +148,7 @@ const Hero = () => {
 
         .hero-headline {
           font-family: var(--font-display);
-          font-size: clamp(40px, 7.5vw, 107px);
+          font-size: clamp(39px, 7.5vw, 105px);
           font-weight: 200;
           line-height: 0.92;
           letter-spacing: -0.025em;
