@@ -90,7 +90,7 @@ export default function GeographicPresence() {
                     {country.outlets}
                   </span>
                   <span className="text-white/60 uppercase text-[10px] tracking-[0.2em]">
-                    Locations
+                    Outlets
                   </span>
                 </div>
 

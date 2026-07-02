@@ -153,7 +153,7 @@ const Hero = () => {
           line-height: 0.92;
           letter-spacing: -0.025em;
           color: #E1D9D1;
-          margin-bottom: 16px;
+          margin-bottom: 15px;
         }
 
         @media (max-width: 900px) {
@@ -505,11 +505,17 @@ const Hero = () => {
               </span>
             </div>
 
-            <h1 className="hero-headline">
+            {/* <h1 className="hero-headline">
               Curating<br />
               <em>Exceptional </em><br />
               Food Experiences <br />
             
+            </h1> */}
+
+              <h1 className="hero-headline">
+              Curating <br />
+              <em>Exceptional </em><br />
+              Food Experiences<br />
             </h1>
 
             <p className="hero-subtext">
