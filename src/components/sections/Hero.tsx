@@ -148,12 +148,12 @@ const Hero = () => {
 
         .hero-headline {
           font-family: var(--font-display);
-          font-size: clamp(40px, 7.5vw, 108px);
+          font-size: clamp(40px, 7.5vw, 107px);
           font-weight: 200;
           line-height: 0.92;
           letter-spacing: -0.025em;
           color: #E1D9D1;
-          margin-bottom: 15px;
+          margin-bottom: 14px;
         }
 
         @media (max-width: 900px) {
