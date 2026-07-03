@@ -506,16 +506,6 @@ export default function ContactSection() {
                 </p>
               </div>
             </div>
-
-            {/* Brand Enquiries */}
-            <div className="mt-6">
-              <p className="contact-label text-[10px] md:text-xs tracking-[0.2em]">BRAND ENQUIRIES</p>
-              <div className="mt-2">
-                <p className="contact-detail text-xs md:text-sm font-medium">
-                  +91 87501 31314
-                </p>
-              </div>
-            </div>
           </div>
 
           {/* RIGHT SIDE - Unchanged */}
