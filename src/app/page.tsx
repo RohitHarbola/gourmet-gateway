@@ -20,7 +20,7 @@ export default function HomePage() {
         <Statistics />
          <BrandShowcase />
           <GeographicPresence />
-           <LeadershipPreview />
+           {/* <LeadershipPreview /> */}
            <InvestorPreview />
            <ContactSection />
     </>
