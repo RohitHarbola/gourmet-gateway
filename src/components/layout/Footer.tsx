@@ -41,7 +41,7 @@ export default function Footer() {
                 Creating exceptional dining experiences across India, Sri Lanka and Maldives.
               </p>
               <div className="footer-bse-info">
-                <span>BSE: 506134 - INTELLCAP</span>
+                <span>BSE: 506134 - GOURMET</span>
               </div>
             </div>
 

@@ -257,7 +257,6 @@
 //     </section>
 //   );
 // }
-
 "use client";
 
 import { useState, useRef, useEffect } from "react";
@@ -449,15 +448,15 @@ export default function ContactSection() {
     <section className="bg-[#F5F1EA] pt-24 pb-12 lg:py-16">
       <div className="max-w-[1600px] mx-auto">
         <div className="grid lg:grid-cols-2">
-          {/* LEFT SIDE - Reduced size */}
-          <div className="px-4 lg:px-8 py-6 lg:py-10 border-b lg:border-b-0 lg:border-r border-[#E6DDD0]">
+          {/* LEFT SIDE - Reduced font sizes and improved alignment */}
+          <div className="px-4 lg:px-6 py-6 lg:py-9 border-b lg:border-b-0 lg:border-r border-[#E6DDD0]">
             <h2
               className="
                 font-serif
                 text-[#1A1A1A]
-                text-3xl
+                text-2xl
+                sm:text-3xl
                 md:text-4xl
-                lg:text-5xl
                 leading-[1.1]
                 tracking-[-0.02em]
               "
@@ -469,40 +468,73 @@ export default function ContactSection() {
               </span>
             </h2>
 
-            <p className="mt-4 max-w-xl text-xs md:text-sm text-[#746C63] leading-relaxed">
+            <p className="mt-3 max-w-xl text-xs text-[#746C63] leading-relaxed">
               Whether you're an investor, a potential partner,
               a franchise enquirer, or a media professional —
               we'd love to hear from you.
             </p>
 
             {/* Corporate Office */}
-            <div className="mt-6">
-              <p className="contact-label text-[10px] md:text-xs tracking-[0.2em]">CORPORATE OFFICE</p>
-              <div className="mt-2 space-y-0.5">
-                <p className="contact-detail text-xs md:text-sm font-medium">
+            <div className="mt-5">
+              <p className="contact-label text-[10px] tracking-[0.15em] uppercase text-[#8A6A3B] font-medium">
+                CORPORATE OFFICE
+              </p>
+              <div className="mt-1.5 space-y-0.5">
+                <p className="contact-detail text-xs text-[#2A241D] font-medium">
                   301–304, Vipul Agora Mall
                 </p>
-                <p className="contact-detail text-xs md:text-sm font-medium">
+                <p className="contact-detail text-xs text-[#2A241D] font-medium">
                   MG Road, Gurugram
                 </p>
-                <p className="contact-detail text-xs md:text-sm font-medium">
+                <p className="contact-detail text-xs text-[#2A241D] font-medium">
                   Haryana 122002, India
                 </p>
               </div>
             </div>
 
+            {/* Registered Office */}
+            <div className="mt-5">
+              <p className="contact-label text-[10px] tracking-[0.15em] uppercase text-[#8A6A3B] font-medium">
+                REGISTERED OFFICE
+              </p>
+              <div className="mt-1.5 space-y-0.5">
+                <p className="contact-detail text-xs text-[#2A241D] font-medium leading-relaxed">
+                  Village Dabodha, Khasra No 4/18,22,23,24,5 <br />
+                  11,6/2,3,4, Tehsil Farrukhnagar, <br />
+                  Gurugram, Haryana, 122506
+                </p>
+              </div>
+            </div>
+
             {/* Exchange Listing */}
-            <div className="mt-6">
-              <p className="contact-label text-[10px] md:text-xs tracking-[0.2em]">EXCHANGE LISTING</p>
-              <div className="mt-2 space-y-0.5">
-                <p className="contact-detail text-xs md:text-sm font-medium">
+            <div className="mt-5">
+              <p className="contact-label text-[10px] tracking-[0.15em] uppercase text-[#8A6A3B] font-medium">
+                EXCHANGE LISTING
+              </p>
+              <div className="mt-1.5 space-y-0.5">
+                <p className="contact-detail text-xs text-[#2A241D] font-medium">
                   BSE Limited
                 </p>
-                <p className="contact-detail text-xs md:text-sm font-medium">
+                <p className="contact-detail text-xs text-[#2A241D] font-medium">
                   Scrip Code: 506134
                 </p>
-                <p className="contact-detail text-xs md:text-sm font-medium">
-                  Symbol: INTELLCAP
+                <p className="contact-detail text-xs text-[#2A241D] font-medium">
+                  Symbol: GOURMET
+                </p>
+              </div>
+            </div>
+
+            {/* Contact Details */}
+            <div className="mt-5">
+              <p className="contact-label text-[10px] tracking-[0.15em] uppercase text-[#8A6A3B] font-medium">
+                CONTACT
+              </p>
+              <div className="mt-1.5 space-y-0.5">
+                <p className="contact-detail text-xs text-[#2A241D] font-medium">
+                  Email: amfinecompliance@gmail.com
+                </p>
+                <p className="contact-detail text-xs text-[#2A241D] font-medium">
+                  Phone: 8750131314
                 </p>
               </div>
             </div>
@@ -647,4 +679,4 @@ export default function ContactSection() {
       </div>
     </section>
   );
-}
+} 
