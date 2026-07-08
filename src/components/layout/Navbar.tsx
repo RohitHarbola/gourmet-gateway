@@ -38,7 +38,7 @@ const navLinks = [
       },
       { label: "Secretarial compliance Report", href: "/investors/secretarial-compliance-report" },
       { label: "MOA and AOA", href: "/investors/moa-and-aoa" },
-      { label: "Newspaper Add", href: "/investors/newspaper-add" },
+      { label: "Newspaper Advertisement", href: "/investors/newspaper-add" },
       { label: "Audited Subsidiaries Financial", href: "/investors/audited-subsidiaries-financial" },
     ],
   },

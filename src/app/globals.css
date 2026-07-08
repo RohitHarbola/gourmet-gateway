@@ -467,7 +467,7 @@ body {
 
 .contact-detail {
   font-family: var(--font-display);
-  font-size: 32px;
+  font-size: 25px;   /* //32px */
   line-height: 1.5;
 }
 

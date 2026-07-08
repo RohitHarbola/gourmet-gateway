@@ -1,0 +1,242 @@
+/* app/annual-reports/AnnualReports.css */
+
+/* Annual Reports Page Specific Styles */
+.annual-reports-page {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Ensure navbar stays on top and visible */
+.annual-reports-page > nav {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Main Content Section */
+.annual-reports-page .et_pb_section_1 {
+  padding: 60px 0;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.annual-reports-page .et_pb_row {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.annual-reports-page .et_pb_row_0 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.annual-reports-page .et_pb_column_4_4 {
+  width: 100%;
+}
+
+/* Text Modules */
+.annual-reports-page .et_pb_text {
+  margin-bottom: 30px;
+}
+
+.annual-reports-page .et_pb_text_0 h2 {
+  color: #e67e22;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 32px;
+  text-align: center;
+}
+
+/* Toggle Styles (Accordion) - Matching Financials */
+.annual-reports-page .et_pb_toggle {
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.annual-reports-page .et_pb_toggle:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.annual-reports-page .et_pb_toggle_title {
+  padding: 18px 25px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+  position: relative;
+  user-select: none;
+}
+
+.annual-reports-page .et_pb_toggle_title:hover {
+  background: #f0f0f0;
+  color: #e67e22;
+}
+
+.annual-reports-page .et_pb_toggle_title:after {
+  content: "▼";
+  float: right;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.annual-reports-page .et_pb_toggle_close .et_pb_toggle_title:after {
+  transform: rotate(-90deg);
+}
+
+.annual-reports-page .et_pb_toggle_open .et_pb_toggle_title:after {
+  transform: rotate(0deg);
+}
+
+.annual-reports-page .et_pb_toggle_content {
+  padding: 20px 25px;
+  border-top: 1px solid #e0e0e0;
+  background: #fff;
+}
+
+.annual-reports-page .et_pb_toggle_close .et_pb_toggle_content {
+  display: none;
+}
+
+.annual-reports-page .et_pb_toggle_open .et_pb_toggle_content {
+  display: block;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* List Styles - Matching Financials */
+.annual-reports-page .et_pb_toggle_content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.annual-reports-page .et_pb_toggle_content ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.annual-reports-page .et_pb_toggle_content ul li:last-child {
+  border-bottom: none;
+}
+
+.annual-reports-page .et_pb_toggle_content ul li a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.annual-reports-page .et_pb_toggle_content ul li a:hover {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
+/* Divider - Matching Financials */
+.annual-reports-page .et_pb_divider {
+  margin: 40px 0;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+.annual-reports-page .et_pb_divider_0 {
+  margin: 30px 0;
+}
+
+/* Responsive Design - Matching Financials */
+@media (max-width: 768px) {
+  .annual-reports-page .et_pb_section_1 {
+    padding: 40px 0;
+  }
+
+  .annual-reports-page .et_pb_text_0 h2 {
+    font-size: 24px;
+  }
+
+  .annual-reports-page .et_pb_toggle_title {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+
+  .annual-reports-page .et_pb_toggle_content {
+    padding: 15px 20px;
+  }
+
+  .annual-reports-page .et_pb_toggle_content ul li a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .annual-reports-page .et_pb_row {
+    padding: 0 15px;
+  }
+
+  .annual-reports-page .et_pb_text_0 h2 {
+    font-size: 20px;
+  }
+
+  .annual-reports-page .et_pb_toggle_title {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+
+  .annual-reports-page .et_pb_toggle_content {
+    padding: 12px 15px;
+  }
+
+  .annual-reports-page .et_pb_toggle_content ul li a {
+    font-size: 13px;
+  }
+}
+
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Print Styles */
+@media print {
+  .annual-reports-page {
+    background: white;
+  }
+
+  .annual-reports-page .et_pb_toggle {
+    border: 1px solid #ddd;
+    box-shadow: none;
+    page-break-inside: avoid;
+  }
+
+  .annual-reports-page .et_pb_toggle_title:after {
+    display: none;
+  }
+
+  .annual-reports-page .et_pb_toggle_content ul li a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .annual-reports-page .et_pb_toggle_close .et_pb_toggle_content {
+    display: block !important;
+  }
+}

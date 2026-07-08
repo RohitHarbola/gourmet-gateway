@@ -8,7 +8,7 @@ const navigationLinks = [
 ];
 
 const investorLinks = [
-  { name: "Annual Reports", href: "/investors/financials" },
+  { name: "Annual Reports", href: "/investors/annual-reports" },
   { name: "Financial Statements", href: "/investors/financials" },
   { name: "Shareholder Information", href: "/investors/shareholders-information" },
   { name: "Board Composition", href: "/investors/board-of-directors-composition" },
