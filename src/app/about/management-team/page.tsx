@@ -36,7 +36,7 @@ const ManagementTeamPage = () => {
             <div className="et_pb_column et_pb_column_4_4 et_pb_column_0">
               <div className="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left et_pb_text_0">
                 <div className="et_pb_text_inner">
-                  <h1>BRIEF PROFILE OF THE BOARD OF DIRECTORS OF THE COMPANY</h1>
+                  <h1>BRIEF PROFILE OF THE BOARD OF DIRECTORS and KMP</h1>
                 </div>
               </div>
 
@@ -64,20 +64,20 @@ const ManagementTeamPage = () => {
                           <th><strong>DESIGNATION</strong></th>
                         </tr>
                         <tr><td>1.</td><td>ADHBHUT INFRASTRUCTURE LIMITED</td><td>Managing Director</td></tr>
-                        <tr><td></td><td>Barista Coffee Company Limited</td><td>Managing Director</td></tr>
-                        <tr><td>2.</td><td>MARTINA DEVELOPERS &amp; FINCON PVT LTD</td><td>Director</td></tr>
-                        <tr><td>3.</td><td>SO INDULGENT INDIA PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>4.</td><td>ADRITAH AUTOPARTS PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>5.</td><td>AMZEN REALTORS AND DEVELOPERS PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>6.</td><td>MARISSA VILLA AND RESORT PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>7.</td><td>AMFINE CAPITAL MANAGEMENT PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>8.</td><td>AMZEN GLOBAL CORPORATION PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>9.</td><td>FUTUREVISION CONSULTANTS PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>10.</td><td>FAITH ADVISORY SERVICES PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>11.</td><td>AMERTEC SYSTEMS PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>12.</td><td>HUNGRY N THIRSTY FOODS PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>13.</td><td>AERTHAA ESCAPES LLP</td><td>Designated Partner</td></tr>
-                        <tr><td>14.</td><td>ADRITAH AUTOMOTIVE LLP</td><td>Designated Partner</td></tr>
+                        <tr><td>2.</td><td>BARISTA COFFEE COMPANY LIMITED</td><td>Managing Director</td></tr>
+                        <tr><td>3.</td><td>MARTINA DEVELOPERS &amp; FINCON PVT LTD</td><td>Director</td></tr>
+                        <tr><td>4.</td><td>SO INDULGENT INDIA PRIVATE LIMITED</td><td>Director</td></tr>
+                        <tr><td>5.</td><td>ADRITAH AUTOPARTS PRIVATE LIMITED</td><td>Director</td></tr>
+                        <tr><td>6.</td><td>AMZEN REALTORS AND DEVELOPERS PRIVATE LIMITED</td><td>Director</td></tr>
+                        <tr><td>7.</td><td>MARISSA VILLA AND RESORT PRIVATE LIMITED</td><td>Director</td></tr>
+                        <tr><td>8.</td><td>AMFINE CAPITAL MANAGEMENT PRIVATE LIMITED</td><td>Director</td></tr>
+                        <tr><td>9.</td><td>AMZEN GLOBAL CORPORATION PRIVATE LIMITED</td><td>Director</td></tr>
+                        <tr><td>10.</td><td>FUTUREVISION CONSULTANTS PRIVATE LIMITED</td><td>Director</td></tr>
+                        <tr><td>11.</td><td>FAITH ADVISORY SERVICES PRIVATE LIMITED</td><td>Director</td></tr>
+                        <tr><td>12.</td><td>AMERTEC SYSTEMS PRIVATE LIMITED</td><td>Director</td></tr>
+                        <tr><td>13.</td><td>HUNGRY N THIRSTY FOODS PRIVATE LIMITED</td><td>Director</td></tr>
+                        <tr><td>14.</td><td>AERTHAA ESCAPES LLP</td><td>Designated Partner</td></tr>
+                        <tr><td>15.</td><td>ADRITAH AUTOMOTIVE LLP</td><td>Designated Partner</td></tr>
                       </tbody>
                     </table>
                   </div>
@@ -108,7 +108,7 @@ const ManagementTeamPage = () => {
                           <th><strong>DESIGNATION</strong></th>
                         </tr>
                         <tr><td>1.</td><td>AMFINE CAPITAL MANAGEMENT PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>2.</td><td>SO INDULGENT INDIA PRIVATE LIMITED</td><td>Additional Director</td></tr>
+                        <tr><td>2.</td><td>SO INDULGENT INDIA PRIVATE LIMITED</td><td>Director</td></tr>
                         <tr><td>3.</td><td>ADRITAH AUTOPARTS PRIVATE LIMITED</td><td>Director</td></tr>
                         <tr><td>4.</td><td>AMZEN GLOBAL CORPORATION PRIVATE LIMITED</td><td>Director</td></tr>
                         <tr><td>5.</td><td>V3 ADVISORS LLP</td><td>Designated Partner</td></tr>
@@ -216,7 +216,7 @@ const ManagementTeamPage = () => {
                         <tr><td>1.</td><td>MUDRA CAPITAL VENTURES PRIVATE LIMITED</td><td>Director</td></tr>
                         <tr><td>2.</td><td>MUDRA RTA VENTURES PRIVATE LIMITED</td><td>Director</td></tr>
                         <tr><td>3.</td><td>EVEH REALTY PRIVATE LIMITED</td><td>Company Secretary</td></tr>
-                        <tr><td>4.</td><td>Barista Coffee Company Limited</td><td>Director</td></tr>
+                        <tr><td>4.</td><td>BARISTA COFFEE COMPANY LIMITED</td><td>Director</td></tr>
                       </tbody>
                     </table>
                   </div>
@@ -251,7 +251,7 @@ const ManagementTeamPage = () => {
                         <tr><td>3.</td><td>EEZ VALUATION SERVICES PRIVATE LIMITED</td><td>Director</td></tr>
                         <tr><td>4.</td><td>C &amp; C TOWERS LIMITED</td><td>Director</td></tr>
                         <tr><td>5.</td><td>GEOSYS INDIA INFRASTRUCTURES LIMITED</td><td>Director</td></tr>
-                        <tr><td>6.</td><td>Barista Coffee Company Limited</td><td>Director</td></tr>
+                        <tr><td>6.</td><td>BARISTA COFFEE COMPANY LIMITED</td><td>Director</td></tr>
                       </tbody>
                     </table>
                   </div>

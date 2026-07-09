@@ -26,7 +26,8 @@ const navLinks = [
         href: "/investors/financials",
         dropdown: [
           { label: "Postal Ballot Notice", href: "/investors/postal-ballot-notice" },
-          { label: "Annual Reports & Financials", href: "/investors/financials" },
+          { label: "Financials", href: "/investors/financials" },
+          { label: "Annual Reports", href: "/investors/annual-reports" },
           { label: "Investor's Information", href: "/investors/investors-information" },
           { label: "Archives", href: "/investors/archives" },
           { label: "Investors' Contact", href: "/investors/investors-contact" },
@@ -63,7 +64,7 @@ export default function Navbar() {
     setTimeout(() => {
       setOpenDropdown(label);
       setOpenNestedDropdown(null);
-    }, 20);
+    }, 22);
   };
 
   // Handle mouse leave for main dropdown
@@ -82,7 +83,7 @@ export default function Navbar() {
     }
     setTimeout(() => {
       setOpenNestedDropdown(label);
-    }, 20);
+    }, 22);
   };
 
   // Handle mouse leave for nested dropdown

@@ -536,7 +536,7 @@ export default function ContactSection() {
                   Email: amfinecompliance@gmail.com
                 </p>
                 <p className="contact-detail text-xs text-[#2A241D] font-medium">
-                  Phone: 8750131314
+                  Phone:  +918750131314
                 </p>
               </div>
             </div>
