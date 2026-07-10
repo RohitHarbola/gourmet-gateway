@@ -498,12 +498,12 @@ const Hero = () => {
 
           {/* Left Section — eyebrow + headline + subtext + buttons */}
           <div className="hero-left">
-            <div className="hero-eyebrow">
+            {/* <div className="hero-eyebrow">
               <span className="hero-eyebrow-line" aria-hidden="true" />
               <span className="hero-eyebrow-text">
                 BSE Listed · Scrip Code 506134
               </span>
-            </div>
+            </div> */}
 
             {/* <h1 className="hero-headline">
               Curating<br />
