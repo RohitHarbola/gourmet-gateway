@@ -44,7 +44,7 @@ const Hero = () => {
             radial-gradient(ellipse at 30% 60%, rgba(45,74,62,0.4) 0%, transparent 60%),
             radial-gradient(ellipse at 80% 20%, rgba(184,150,90,0.15) 0%, transparent 50%),
             linear-gradient(180deg, rgba(17,16,9,0.3) 0%, rgba(17,16,9,0.85) 100%),
-            url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1800&q=80') center/cover no-repeat;
+            url('assets/Hero.png') center/cover no-repeat;
         }
 
         .hero-noise {

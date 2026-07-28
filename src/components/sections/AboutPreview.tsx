@@ -26,7 +26,7 @@ export default function AboutPreview() {
 
             {/* Main Image */}
             <img
-              src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1600"
+              src="assets/Culinary.png"
               alt="Restaurant"
               className="w-full object-cover"
               style={{ height: "580px" }}
@@ -44,7 +44,7 @@ export default function AboutPreview() {
               }}
             >
               <img
-                src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=800"
+                src="assets/CulinarySmall.png"
                 alt="Food"
                 className="w-full h-full object-cover"
               />
