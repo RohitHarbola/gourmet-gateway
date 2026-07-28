@@ -19,7 +19,7 @@ const brands = [
     description:
       "An elevated Pan-Asian dining destination bringing together authentic flavours and modern culinary artistry. From sushi and dim sum to signature mains, Kylin delivers sophisticated Asian experiences.",
     image:
-      "assets/Kylin.png",
+      "assets/kylin.png",
     website: "https://kylinexperience.com/",
     externalLink: true,
   },
@@ -83,62 +83,83 @@ export default function BrandsPage() {
 
           <div className="grid lg:grid-cols-2 gap-8">
 
-            {brands.map((brand) => (
-              <Link
-                key={brand.slug}
-                href={`/brands/${brand.slug}`}
-                className="group relative overflow-hidden h-[650px] brand-card"
-              >
-                <img
-                  src={brand.image}
-                  alt={brand.name}
-                  className="w-full h-full object-cover"
-                />
+            {brands.map((brand) => {
+              // Create the content that will be wrapped
+              const Content = (
+                <div className="group relative overflow-hidden h-[650px] brand-card">
+                  <img
+                    src={brand.image}
+                    alt={brand.name}
+                    className="w-full h-full object-cover"
+                  />
 
-                <div className="absolute inset-0 bg-black/45 group-hover:bg-black/65 transition-all duration-500" />
+                  <div className="absolute inset-0 bg-black/45 group-hover:bg-black/65 transition-all duration-500" />
 
-                <div className="absolute inset-0 p-10 flex flex-col justify-end">
+                  <div className="absolute inset-0 p-10 flex flex-col justify-end">
 
-                  <span className="eyebrow text-white">
-                    {brand.category}
-                  </span>
+                    <span className="eyebrow text-white">
+                      {brand.category}
+                    </span>
 
-                  <h3 className="font-serif text-white text-5xl mt-3">
-                    {brand.name}
-                  </h3>
+                    <h3 className="font-serif text-white text-5xl mt-3">
+                      {brand.name}
+                    </h3>
 
-                  <p
-                    className="
-                      mt-5
-                      text-white/80
-                      max-w-md
-                      opacity-0
-                      translate-y-5
-                      group-hover:opacity-100
-                      group-hover:translate-y-0
-                      transition-all
-                      duration-500
-                    "
-                  >
-                    {brand.description}
-                  </p>
+                    <p
+                      className="
+                        mt-5
+                        text-white/80
+                        max-w-md
+                        opacity-0
+                        translate-y-5
+                        group-hover:opacity-100
+                        group-hover:translate-y-0
+                        transition-all
+                        duration-500
+                      "
+                    >
+                      {brand.description}
+                    </p>
 
-                  <span
-                    className="
-                      mt-6
-                      text-[var(--c-gold-pale)]
-                      uppercase
-                      tracking-[0.2em]
-                      text-sm
-                    "
-                  >
-                    Explore Brand →
-                  </span>
+                    <span
+                      className="
+                        mt-6
+                        text-[var(--c-gold-pale)]
+                        uppercase
+                        tracking-[0.2em]
+                        text-sm
+                      "
+                    >
+                      {brand.externalLink ? "Visit Website →" : "Explore Brand →"}
+                    </span>
+
+                  </div>
 
                 </div>
+              );
 
-              </Link>
-            ))}
+              // For external links, wrap with <a> tag
+              if (brand.externalLink) {
+                return (
+                  <a
+                    key={brand.slug}
+                    href={brand.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    {Content}
+                  </a>
+                );
+              }
+
+              // For internal links (Café Meular), wrap with Next.js Link
+              return (
+                <Link key={brand.slug} href={brand.website} className="block">
+                  {Content}
+                </Link>
+              );
+            })}
 
           </div>
 
