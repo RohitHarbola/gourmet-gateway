@@ -1,8 +1,9 @@
 const tickerItems = [
-  "Barista Coffee Company",
+  "Barista",
   "Cafe Muller by Barista",
   "Drizzle & Dust",
-  "Kylin & Wanchai Restaurants",
+  "Kylin ",
+  "Wanchai",
 ];
 
 export default function Ticker() {

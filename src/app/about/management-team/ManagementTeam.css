@@ -1,4 +1,4 @@
-/* ManagementTeam.css - Updated with mobile responsiveness */
+/* ManagementTeam.css - Modern card-grid layout for the leadership team */
 
 /* Management Team Page Specific Styles */
 .management-team-page {
@@ -13,204 +13,320 @@
 }
 
 /* Main Content Section */
-.management-team-page .et_pb_section_1 {
-  padding: 40px 0;
-  background: #fff;
+.management-team-page .management-section {
+  padding: 56px 0 80px;
+  background: linear-gradient(180deg, #fafafa 0%, #ffffff 260px);
   position: relative;
   z-index: 2;
 }
 
 @media (max-width: 768px) {
-  .management-team-page .et_pb_section_1 {
-    padding: 30px 0;
+  .management-team-page .management-section {
+    padding: 36px 0 56px;
   }
 }
 
 @media (max-width: 480px) {
-  .management-team-page .et_pb_section_1 {
-    padding: 20px 0;
+  .management-team-page .management-section {
+    padding: 24px 0 40px;
   }
 }
 
-.management-team-page .et_pb_row {
-  max-width: 1080px;
+.management-team-page .row {
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
 @media (max-width: 768px) {
-  .management-team-page .et_pb_row {
-    padding: 0 16px;
+  .management-team-page .row {
+    padding: 0 18px;
   }
 }
 
 @media (max-width: 480px) {
-  .management-team-page .et_pb_row {
-    padding: 0 12px;
+  .management-team-page .row {
+    padding: 0 14px;
   }
 }
 
-.management-team-page .et_pb_row_0 {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.management-team-page .et_pb_column_4_4 {
+.management-team-page .column {
   width: 100%;
 }
 
-/* Text Modules */
-.management-team-page .et_pb_text {
-  margin-bottom: 40px;
+/* Page Heading */
+.management-team-page .page-heading {
+  margin-bottom: 48px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
-  .management-team-page .et_pb_text {
-    margin-bottom: 30px;
+  .management-team-page .page-heading {
+    margin-bottom: 32px;
   }
 }
 
 @media (max-width: 480px) {
-  .management-team-page .et_pb_text {
+  .management-team-page .page-heading {
     margin-bottom: 24px;
   }
 }
 
-.management-team-page .et_pb_text_0 h1 {
-  font-size: 32px;
-  color: #e67e22;
+.management-team-page .page-heading h1 {
+  font-size: 34px;
+  color: #1a1a1a;
   text-align: center;
-  margin-bottom: 20px;
-  font-weight: 600;
+  margin: 0 auto 14px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  max-width: 780px;
+  line-height: 1.25;
+}
+
+.management-team-page .page-heading::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin: 18px auto 0;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #e67e22, #f39c12);
 }
 
 @media (max-width: 768px) {
-  .management-team-page .et_pb_text_0 h1 {
+  .management-team-page .page-heading h1 {
     font-size: 24px;
-    margin-bottom: 16px;
   }
 }
 
 @media (max-width: 480px) {
-  .management-team-page .et_pb_text_0 h1 {
-    font-size: 20px;
-    margin-bottom: 12px;
+  .management-team-page .page-heading h1 {
+    font-size: 19px;
+  }
+
+  .management-team-page .page-heading::after {
+    margin-top: 14px;
   }
 }
 
-/* Toggle Styles */
-.management-team-page .et_pb_toggle {
-  margin-bottom: 20px;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  background: #fff;
+/* ===== Modern Card Grid ===== */
+.management-team-page .team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  align-items: start;
 }
 
-@media (max-width: 768px) {
-  .management-team-page .et_pb_toggle {
-    margin-bottom: 16px;
+@media (max-width: 900px) {
+  .management-team-page .team-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .management-team-page .et_pb_toggle {
-    margin-bottom: 12px;
+  .management-team-page .team-grid {
+    gap: 16px;
   }
 }
 
-.management-team-page .et_pb_toggle:hover {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.management-team-page .et_pb_toggle_title {
-  padding: 18px 25px;
-  margin: 0;
-  font-size: 18px;
-  font-weight: 600;
-  color: #333;
-  cursor: pointer;
-  background: #f9f9f9;
-  transition: all 0.3s ease;
+/* Team Member Card */
+.management-team-page .team-member {
   position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #eef0f2;
+  box-shadow: 0 2px 10px rgba(20, 20, 20, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.management-team-page .team-member::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #e67e22, #f5b041);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.management-team-page .team-member--open::before {
+  opacity: 1;
+}
+
+.management-team-page .team-member:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(20, 20, 20, 0.09);
+  border-color: #f2dcc4;
+}
+
+/* Toggle Title (Name / Role header, acts as the clickable trigger) */
+.management-team-page .toggle-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 26px;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a1a1a;
+  cursor: pointer;
+  background: transparent;
+  transition: color 0.2s ease;
   user-select: none;
+  line-height: 1.4;
 }
 
 @media (max-width: 768px) {
-  .management-team-page .et_pb_toggle_title {
-    padding: 14px 20px;
+  .management-team-page .toggle-title {
+    padding: 18px 20px;
     font-size: 16px;
   }
 }
 
 @media (max-width: 480px) {
-  .management-team-page .et_pb_toggle_title {
-    padding: 12px 16px;
-    font-size: 14px;
+  .management-team-page .toggle-title {
+    padding: 16px 16px;
+    font-size: 14.5px;
+    gap: 10px;
   }
 }
 
-.management-team-page .et_pb_toggle_title:hover {
-  background: #f0f0f0;
+.management-team-page .toggle-title:hover {
   color: #e67e22;
 }
 
-.management-team-page .et_pb_toggle_title:before {
+/* Chevron toggle icon — circular button styled via ::before, no markup change */
+.management-team-page .toggle-title:before {
   content: "\25BC";
-  float: right;
-  font-size: 12px;
-  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #e67e22;
+  background: rgba(230, 126, 34, 0.1);
+  border-radius: 50%;
+  transition: transform 0.3s ease, background 0.25s ease;
+}
+
+.management-team-page .toggle-title:hover:before {
+  background: rgba(230, 126, 34, 0.18);
 }
 
 @media (max-width: 480px) {
-  .management-team-page .et_pb_toggle_title:before {
+  .management-team-page .toggle-title:before {
+    width: 26px;
+    height: 26px;
     font-size: 10px;
   }
 }
 
-.management-team-page .et_pb_toggle_open .et_pb_toggle_title:before {
+.management-team-page .team-member--open .toggle-title:before {
   transform: rotate(180deg);
 }
 
-.management-team-page .et_pb_toggle_content {
-  padding: 20px 25px;
-  border-top: 1px solid #e0e0e0;
+/* Toggle Content: image, then bio text — animated collapse/expand */
+.management-team-page .toggle-content {
+  padding: 4px 26px 28px;
+  border-top: 1px solid #f0f1f3;
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  max-height: 3000px;
+  opacity: 1;
+  transition: max-height 0.45s ease, opacity 0.35s ease, padding 0.35s ease;
+}
+
+.management-team-page .team-member--closed .toggle-content {
+  max-height: 0;
+  opacity: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top-color: transparent;
 }
 
 @media (max-width: 768px) {
-  .management-team-page .et_pb_toggle_content {
-    padding: 16px 20px;
+  .management-team-page .toggle-content {
+    padding: 4px 20px 22px;
   }
 }
 
 @media (max-width: 480px) {
-  .management-team-page .et_pb_toggle_content {
-    padding: 12px 16px;
+  .management-team-page .toggle-content {
+    padding: 4px 16px 18px;
   }
 }
 
-.management-team-page .et_pb_toggle_content p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 16px;
+/* Director Photo */
+.management-team-page .team-member-photo-wrap {
+  margin: 22px 0 20px;
+}
+
+.management-team-page .team-member-photo {
+  display: block;
+  width: 168px;
+  height: 168px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  outline: 3px solid rgba(230, 126, 34, 0.18);
+  box-shadow: 0 6px 18px rgba(20, 20, 20, 0.1);
 }
 
 @media (max-width: 768px) {
-  .management-team-page .et_pb_toggle_content p {
-    font-size: 15px;
-    line-height: 1.5;
-    margin-bottom: 14px;
+  .management-team-page .team-member-photo-wrap {
+    margin: 18px 0 16px;
+  }
+
+  .management-team-page .team-member-photo {
+    width: 140px;
+    height: 140px;
   }
 }
 
 @media (max-width: 480px) {
-  .management-team-page .et_pb_toggle_content p {
-    font-size: 14px;
-    line-height: 1.4;
-    margin-bottom: 12px;
+  .management-team-page .team-member-photo-wrap {
+    margin: 14px 0 14px;
+  }
+
+  .management-team-page .team-member-photo {
+    width: 112px;
+    height: 112px;
+    outline-width: 2px;
+  }
+}
+
+/* Bio Text */
+.management-team-page .toggle-content p {
+  width: 100%;
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: #565f6b;
+  margin: 0;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .management-team-page .toggle-content p {
+    font-size: 14.5px;
+    line-height: 1.65;
+  }
+}
+
+@media (max-width: 480px) {
+  .management-team-page .toggle-content p {
+    font-size: 13.5px;
+    line-height: 1.6;
   }
 }
 
@@ -218,6 +334,7 @@
 .management-team-page .table-responsive {
   overflow-x: auto;
   margin-top: 16px;
+  width: 100%;
 }
 
 @media (max-width: 768px) {

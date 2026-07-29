@@ -1,232 +1,280 @@
-/* BusinessOverview.css - Updated with mobile responsiveness */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap');
 
-/* Business Overview Page Specific Styles */
 .business-overview-page {
-  /* Inherits base styles from global */
+  --eo-ink: #1f1610;
+  --eo-ink-soft: #4a3c30;
+  --eo-paper: #fbf7f1;
+  --eo-paper-alt: #f2ebe0;
+  --eo-line: rgba(31, 22, 16, 0.12);
+
+  --eo-gold: #b8863b;
+  --eo-jade: #2f6e5c;
+  --eo-cinnabar: #c0492e;
+  --eo-blush: #c15a82;
+
+  --eo-display: 'Fraunces', Georgia, serif;
+  --eo-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
   position: relative;
   min-height: 100vh;
+  background: var(--eo-paper);
+  font-family: var(--eo-body);
+  color: var(--eo-ink);
 }
 
-/* Ensure navbar stays on top and visible */
 .business-overview-page > nav {
   position: relative;
   z-index: 1000;
 }
 
-/* Main Content Section */
-.business-overview-page .et_pb_section_1 {
-  padding: 40px 0;
-  background: #fff;
+/* ---------------------------------- */
+/* Hero                                */
+/* ---------------------------------- */
+
+.eo-hero {
   position: relative;
-  z-index: 2;
-}
-
-@media (max-width: 768px) {
-  .business-overview-page .et_pb_section_1 {
-    padding: 30px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .business-overview-page .et_pb_section_1 {
-    padding: 20px 0;
-  }
-}
-
-.business-overview-page .et_pb_row {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-@media (max-width: 768px) {
-  .business-overview-page .et_pb_row {
-    padding: 0 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .business-overview-page .et_pb_row {
-    padding: 0 12px;
-  }
-}
-
-.business-overview-page .et_pb_row_0 {
+  min-height: 64vh;
   display: flex;
-  flex-wrap: wrap;
+  align-items: flex-end;
+  overflow: hidden;
 }
 
-.business-overview-page .et_pb_column_4_4 {
+.eo-hero-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.eo-hero-image {
+  object-fit: cover;
+  object-position: center;
   width: 100%;
+  height: 100%;
 }
 
-/* Text Modules */
-.business-overview-page .et_pb_text {
-  margin-bottom: 30px;
+/* Gradient scrim so the image stays fully visible while the headline
+   stays legible — no flat white wash over the photo. */
+.eo-hero-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(20, 13, 8, 0.15) 0%,
+    rgba(20, 13, 8, 0.15) 40%,
+    rgba(20, 13, 8, 0.78) 100%
+  );
 }
 
-@media (max-width: 768px) {
-  .business-overview-page .et_pb_text {
-    margin-bottom: 24px;
-  }
+.eo-hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 56px 24px 48px;
+  color: #fbf7f1;
 }
 
-@media (max-width: 480px) {
-  .business-overview-page .et_pb_text {
-    margin-bottom: 20px;
-  }
-}
-
-.business-overview-page .et_pb_text_0 h1 {
-  font-size: 36px;
-  color: #e67e22;
-  text-align: center;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-
-@media (max-width: 768px) {
-  .business-overview-page .et_pb_text_0 h1 {
-    font-size: 28px;
-    margin-bottom: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .business-overview-page .et_pb_text_0 h1 {
-    font-size: 24px;
-    margin-bottom: 12px;
-  }
-}
-
-.business-overview-page .et_pb_text_1 h3 {
-  font-size: 24px;
-  color: #333;
-  margin: 30px 0 15px;
-  font-weight: 500;
-}
-
-@media (max-width: 768px) {
-  .business-overview-page .et_pb_text_1 h3 {
-    font-size: 22px;
-    margin: 24px 0 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .business-overview-page .et_pb_text_1 h3 {
-    font-size: 20px;
-    margin: 20px 0 10px;
-  }
-}
-
-.business-overview-page .et_pb_text_1 h3:first-of-type {
-  margin-top: 0;
-}
-
-.business-overview-page .et_pb_text_1 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 20px;
-}
-
-.business-overview-page .et_pb_text_1 ul li {
-  padding: 8px 0;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
-}
-
-@media (max-width: 768px) {
-  .business-overview-page .et_pb_text_1 ul li {
-    padding: 6px 0;
-    font-size: 15px;
-    line-height: 1.5;
-  }
-}
-
-@media (max-width: 480px) {
-  .business-overview-page .et_pb_text_1 ul li {
-    padding: 5px 0;
-    font-size: 14px;
-    line-height: 1.4;
-  }
-}
-
-.business-overview-page .et_pb_text_1 ul li strong {
-  color: #333;
-}
-
-.business-overview-page .et_pb_text_1 p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-  .business-overview-page .et_pb_text_1 p {
-    font-size: 15px;
-    line-height: 1.5;
-    margin-bottom: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .business-overview-page .et_pb_text_1 p {
-    font-size: 14px;
-    line-height: 1.4;
-    margin-bottom: 14px;
-  }
-}
-
-.business-overview-page .et_pb_text_1 p strong {
-  color: #333;
+.eo-eyebrow {
   display: inline-block;
-  margin-bottom: 5px;
+  font-family: var(--eo-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #e9d9bf;
+  margin-bottom: 14px;
 }
 
-.business-overview-page .et_pb_text_1 a {
-  color: #e67e22;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  word-break: break-all;
+.eo-eyebrow-dark {
+  color: var(--eo-gold);
 }
 
-@media (max-width: 480px) {
-  .business-overview-page .et_pb_text_1 a {
-    font-size: 13px;
-    word-break: break-all;
-    display: inline-block;
-  }
+.eo-hero-content h1 {
+  font-family: var(--eo-display);
+  font-weight: 600;
+  font-size: clamp(36px, 5.6vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0 0 16px;
 }
 
-.business-overview-page .et_pb_text_1 a:hover {
-  color: #d35400;
-  text-decoration: underline;
+.eo-hero-sub {
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 560px;
+  color: #e9e2d6;
+  margin: 0;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  .business-overview-page .et_pb_fullwidth_header {
-    padding: 50px 0;
+  .eo-hero {
+    min-height: 52vh;
   }
-
-  .business-overview-page .header-content-container {
-    min-height: 200px;
-  }
-
-  .business-overview-page .header-content h1 {
-    font-size: 32px;
+  .eo-hero-content {
+    padding: 40px 20px 36px;
   }
 }
 
 @media (max-width: 480px) {
-  .business-overview-page .header-content h1 {
-    font-size: 24px;
+  .eo-hero {
+    min-height: 46vh;
   }
+  .eo-hero-content {
+    padding: 32px 16px 28px;
+  }
+  .eo-hero-sub {
+    font-size: 15px;
+  }
+}
 
-  .business-overview-page .et_pb_fullwidth_header_container {
-    padding: 0 20px;
+/* ---------------------------------- */
+/* Brands                              */
+/* ---------------------------------- */
+
+.eo-brands {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 72px 24px 96px;
+}
+
+.eo-brands-header {
+  margin-bottom: 40px;
+}
+
+.eo-brands-header h2 {
+  font-family: var(--eo-display);
+  font-weight: 600;
+  font-size: clamp(26px, 3vw, 34px);
+  color: var(--eo-ink);
+  margin: 0;
+}
+
+.eo-brand-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.eo-brand-card {
+  position: relative;
+  display: flex;
+  gap: 18px;
+  background: #ffffff;
+  border: 1px solid var(--eo-line);
+  border-radius: 14px;
+  padding: 30px 28px 30px 22px;
+  box-shadow: 0 1px 2px rgba(31, 22, 16, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.eo-brand-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(31, 22, 16, 0.1);
+}
+
+.eo-brand-swatch {
+  flex: 0 0 4px;
+  border-radius: 4px;
+  align-self: stretch;
+}
+
+.eo-accent-gold .eo-brand-swatch { background: var(--eo-gold); }
+.eo-accent-jade .eo-brand-swatch { background: var(--eo-jade); }
+.eo-accent-cinnabar .eo-brand-swatch { background: var(--eo-cinnabar); }
+.eo-accent-blush .eo-brand-swatch { background: var(--eo-blush); }
+
+.eo-accent-gold h3 { color: var(--eo-gold); }
+.eo-accent-jade h3 { color: var(--eo-jade); }
+.eo-accent-cinnabar h3 { color: var(--eo-cinnabar); }
+.eo-accent-blush h3 { color: var(--eo-blush); }
+
+.eo-brand-card-inner {
+  flex: 1;
+  min-width: 0;
+}
+
+.eo-brand-card-inner h3 {
+  font-family: var(--eo-display);
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 0 4px;
+}
+
+.eo-brand-tagline {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--eo-ink-soft);
+  margin: 0 0 16px;
+}
+
+.eo-brand-copy {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: var(--eo-ink-soft);
+  margin: 0 0 16px;
+}
+
+.eo-brand-copy:last-of-type {
+  margin-bottom: 0;
+}
+
+.eo-brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--eo-ink);
+  padding: 9px 16px;
+  border: 1px solid var(--eo-line);
+  border-radius: 999px;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.eo-accent-gold .eo-brand-link:hover { border-color: var(--eo-gold); color: var(--eo-gold); transform: translateX(2px); }
+.eo-accent-jade .eo-brand-link:hover { border-color: var(--eo-jade); color: var(--eo-jade); transform: translateX(2px); }
+.eo-accent-cinnabar .eo-brand-link:hover { border-color: var(--eo-cinnabar); color: var(--eo-cinnabar); transform: translateX(2px); }
+.eo-accent-blush .eo-brand-link:hover { border-color: var(--eo-blush); color: var(--eo-blush); transform: translateX(2px); }
+
+@media (max-width: 860px) {
+  .eo-brand-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .eo-brands {
+    padding: 56px 20px 72px;
+  }
+  .eo-brand-card {
+    padding: 24px 22px 24px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eo-brands {
+    padding: 44px 16px 60px;
+  }
+  .eo-brand-card {
+    padding: 20px 16px 20px 14px;
+    gap: 14px;
+  }
+  .eo-brand-card-inner h3 {
+    font-size: 21px;
+  }
+  .eo-brand-copy {
+    font-size: 14.5px;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .eo-brand-card,
+  .eo-brand-link {
+    transition: none;
   }
 }

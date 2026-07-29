@@ -17,7 +17,6 @@ const countries = [
   },
   {
     name: "Maldives",
-    outlets: "2+",
     description:
       "Luxury hospitality offerings designed for world-class tourism destinations.",
     image:
@@ -90,7 +89,7 @@ export default function GeographicPresence() {
                     {country.outlets}
                   </span>
                   <span className="text-white/60 uppercase text-[10px] tracking-[0.2em]">
-                    Outlets
+              
                   </span>
                 </div>
 

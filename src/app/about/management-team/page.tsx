@@ -2,6 +2,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import Navbar from '../../../components/layout/Navbar';
 import './ManagementTeam.css';
 
@@ -15,7 +16,9 @@ const ManagementTeamPage = () => {
     toggle4: true,
     toggle5: true,
     toggle6: true,
-    toggle7: true
+    toggle7: true,
+    toggle8: true,
+    toggle9: true
   });
 
   const toggleItem = (toggleName: string) => {
@@ -31,21 +34,30 @@ const ManagementTeamPage = () => {
 
       {/* Main Content Section with padding to account for navbar */}
       <div className="pt-[88px] md:pt-[88px]">
-        <div className="et_pb_section et_pb_section_1 et_section_regular">
-          <div className="et_pb_row et_pb_row_0">
-            <div className="et_pb_column et_pb_column_4_4 et_pb_column_0">
-              <div className="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left et_pb_text_0">
-                <div className="et_pb_text_inner">
-                  <h1>BRIEF PROFILE OF THE BOARD OF DIRECTORS and KMP</h1>
-                </div>
+        <div className="management-section">
+          <div className="row">
+            <div className="column">
+              <div className="page-heading">
+                <h1>BRIEF PROFILE OF THE BOARD OF DIRECTORS and KMP</h1>
               </div>
 
+              <div className="team-grid">
+
               {/* Mr. Anubhav Dham - Managing Director and Chairperson */}
-              <div className={`et_pb_module et_pb_toggle ${openToggles.toggle0 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'} et_pb_toggle_0 et_pb_toggle_item`}>
-                <h5 className="et_pb_toggle_title" onClick={() => toggleItem('toggle0')}>
+              <div className={`team-member ${openToggles.toggle0 ? 'team-member--open' : 'team-member--closed'}`}>
+                <h5 className="toggle-title" >
                   Mr. Anubhav Dham - Managing Director and Chairperson
                 </h5>
-                <div className="et_pb_toggle_content clearfix">
+                <div className="toggle-content clearfix">
+                  <div className="team-member-photo-wrap">
+                    <Image
+                      src="/assets/team/blank.png"
+                      alt="Mr. Anubhav Dham"
+                      width={220}
+                      height={220}
+                      className="team-member-photo"
+                    />
+                  </div>
                   <p>
                     Mr. Anubhav Dham is the Managing Director of the Company and a seasoned business leader with over nine years of experience in corporate strategy, business transformation, and investments. He holds a Bachelor's degree from the University of Southern California and earned his Master of Business Administration (MBA) from IESE Business School, Spain, in 2012.
                     <br /><br />
@@ -53,43 +65,25 @@ const ManagementTeamPage = () => {
                     <br /><br />
                     In recent years, he has expanded his focus to the food and beverage industry, where he has been instrumental in strengthening business operations, enhancing brand value, and driving growth initiatives. Under his leadership, the Company continues to focus on operational excellence, customer-centric innovation, and long-term value creation while pursuing strategic expansion opportunities.
                     <br /><br />
-                    The details of the positions held in other entities are as under:
                   </p>
-                  <div className="table-responsive">
-                    <table className="table table-bordered table-hover table-striped" border={0} width="100%" cellSpacing="0" cellPadding="0">
-                      <tbody>
-                        <tr>
-                          <th><strong>SN</strong></th>
-                          <th><strong>NAME OF BODY CORPORATE</strong></th>
-                          <th><strong>DESIGNATION</strong></th>
-                        </tr>
-                        <tr><td>1.</td><td>ADHBHUT INFRASTRUCTURE LIMITED</td><td>Managing Director</td></tr>
-                        <tr><td>2.</td><td>BARISTA COFFEE COMPANY LIMITED</td><td>Managing Director</td></tr>
-                        <tr><td>3.</td><td>MARTINA DEVELOPERS &amp; FINCON PVT LTD</td><td>Director</td></tr>
-                        <tr><td>4.</td><td>SO INDULGENT INDIA PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>5.</td><td>ADRITAH AUTOPARTS PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>6.</td><td>AMZEN REALTORS AND DEVELOPERS PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>7.</td><td>MARISSA VILLA AND RESORT PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>8.</td><td>AMFINE CAPITAL MANAGEMENT PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>9.</td><td>AMZEN GLOBAL CORPORATION PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>10.</td><td>FUTUREVISION CONSULTANTS PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>11.</td><td>FAITH ADVISORY SERVICES PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>12.</td><td>AMERTEC SYSTEMS PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>13.</td><td>HUNGRY N THIRSTY FOODS PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>14.</td><td>AERTHAA ESCAPES LLP</td><td>Designated Partner</td></tr>
-                        <tr><td>15.</td><td>ADRITAH AUTOMOTIVE LLP</td><td>Designated Partner</td></tr>
-                      </tbody>
-                    </table>
-                  </div>
                 </div>
               </div>
 
               {/* Ms. Anamika Dham - Executive Director */}
-              <div className={`et_pb_module et_pb_toggle ${openToggles.toggle1 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'} et_pb_toggle_1 et_pb_toggle_item`}>
-                <h5 className="et_pb_toggle_title" onClick={() => toggleItem('toggle1')}>
+              <div className={`team-member ${openToggles.toggle1 ? 'team-member--open' : 'team-member--closed'}`}>
+                <h5 className="toggle-title">
                   Ms. Anamika Dham - Executive Director
                 </h5>
-                <div className="et_pb_toggle_content clearfix">
+                <div className="toggle-content clearfix">
+                  <div className="team-member-photo-wrap">
+                    <Image
+                      src="/assets/team/Anamika.png"
+                      alt="Ms. Anamika Dham"
+                      width={220}
+                      height={220}
+                      className="team-member-photo"
+                    />
+                  </div>
                   <p>
                     Ms. Anamika Dham is an Executive Director of the Company. She holds a Bachelor of Business Administration (BBA) from the Indian Institute of Planning and Management (IIPM), completed in 2009. She has over four years of professional experience in product development, brand management, and marketing across diverse sectors, including fashion and the food &amp; beverage industry.
                     <br /><br />
@@ -97,36 +91,25 @@ const ManagementTeamPage = () => {
                     <br /><br />
                     In the food and beverage sector, she has contributed to the development of customer-centric offerings and brand-building initiatives while supporting business expansion and operational excellence. As an Executive Director, Ms. Dham continues to provide strategic guidance in product development, marketing, and brand management, contributing to the Company's long-term growth and value creation.
                     <br /><br />
-                    The details of the positions held in other entities are as under:
                   </p>
-                  <div className="table-responsive">
-                    <table className="table table-bordered table-hover table-striped" border={0} width="100%" cellSpacing="0" cellPadding="0">
-                      <tbody>
-                        <tr>
-                          <th><strong>SN</strong></th>
-                          <th><strong>NAME OF BODY CORPORATE</strong></th>
-                          <th><strong>DESIGNATION</strong></th>
-                        </tr>
-                        <tr><td>1.</td><td>AMFINE CAPITAL MANAGEMENT PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>2.</td><td>SO INDULGENT INDIA PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>3.</td><td>ADRITAH AUTOPARTS PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>4.</td><td>AMZEN GLOBAL CORPORATION PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>5.</td><td>V3 ADVISORS LLP</td><td>Designated Partner</td></tr>
-                        <tr><td>6.</td><td>AERTHAA ESCAPES LLP</td><td>Designated Partner</td></tr>
-                        <tr><td>7.</td><td>ADRITAH AUTOMOTIVE LLP</td><td>Designated Partner</td></tr>
-                        <tr><td>8.</td><td>FINOCIAL INFORMATION SYSTEMS LLP</td><td>Designated Partner</td></tr>
-                      </tbody>
-                    </table>
-                  </div>
                 </div>
               </div>
 
               {/* Ms. Aarti Jain - Managing Director */}
-              <div className={`et_pb_module et_pb_toggle ${openToggles.toggle2 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'} et_pb_toggle_2 et_pb_toggle_item`}>
-                <h5 className="et_pb_toggle_title" onClick={() => toggleItem('toggle2')}>
+              <div className={`team-member ${openToggles.toggle2 ? 'team-member--open' : 'team-member--closed'}`}>
+                <h5 className="toggle-title" >
                   Ms. Aarti Jain - Managing Director
                 </h5>
-                <div className="et_pb_toggle_content clearfix">
+                <div className="toggle-content clearfix">
+                  <div className="team-member-photo-wrap">
+                    <Image
+                      src="/assets/team/Aarti.png"
+                      alt="Ms. Aarti Jain"
+                      width={220}
+                      height={220}
+                      className="team-member-photo"
+                    />
+                  </div>
                   <p>
                     Ms. Aarti Jain is the Managing Director of the Company and a seasoned business leader with over 26 years of extensive experience in corporate finance, strategic management, marketing, and business development. She holds an MBA (Marketing) from Manchester Business School and a Post Graduate Diploma in Garment Manufacturing Technology from the National Institute of Fashion Technology (NIFT).
                     <br /><br />
@@ -134,38 +117,25 @@ const ManagementTeamPage = () => {
                     <br /><br />
                     As Managing Director, Ms. Jain provides strategic direction to the Company's growth initiatives, with a strong focus on business innovation, financial discipline, customer-centric strategies, and organizational excellence. She also serves on the boards of several companies across diverse sectors, reflecting her broad business acumen and leadership experience.
                     <br /><br />
-                    The details of the positions held in other entities are as under:
                   </p>
-                  <div className="table-responsive">
-                    <table className="table table-bordered table-hover table-striped" border={0} width="100%" cellSpacing="0" cellPadding="0">
-                      <tbody>
-                        <tr>
-                          <th><strong>SN</strong></th>
-                          <th><strong>NAME OF BODY CORPORATE</strong></th>
-                          <th><strong>DESIGNATION</strong></th>
-                        </tr>
-                        <tr><td>1.</td><td>ROLLATAINERS LIMITED</td><td>Director</td></tr>
-                        <tr><td>2.</td><td>GANPATI REALTY PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>3.</td><td>CROSS CONNECTION IMPEX PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>4.</td><td>LTPL TRAVELS PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>5.</td><td>DEXTEROUS DEVELOPERS PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>6.</td><td>GARIMA BUILDPROP PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>7.</td><td>KAIZEN RESTAURANTS PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>8.</td><td>VIAAN TECHNOLOGIES PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>9.</td><td>KAMAKSHI SILK MILLS PVT LTD</td><td>Director</td></tr>
-                        <tr><td>10.</td><td>SOPHISTICATED REALTORS PRIVATE LIMITED</td><td>Director</td></tr>
-                      </tbody>
-                    </table>
-                  </div>
                 </div>
               </div>
 
               {/* Mr. Sudhanshu Singhal - Independent Director */}
-              <div className={`et_pb_module et_pb_toggle ${openToggles.toggle3 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'} et_pb_toggle_3 et_pb_toggle_item`}>
-                <h5 className="et_pb_toggle_title" onClick={() => toggleItem('toggle3')}>
+              <div className={`team-member ${openToggles.toggle3 ? 'team-member--open' : 'team-member--closed'}`}>
+                <h5 className="toggle-title" >
                   Mr. Sudhanshu Singhal - Independent Director
                 </h5>
-                <div className="et_pb_toggle_content clearfix">
+                <div className="toggle-content clearfix">
+                  <div className="team-member-photo-wrap">
+                    <Image
+                      src="/assets/team/SudhanshuSinghal.png"
+                      alt="Mr. Sudhanshu Singhal"
+                      width={220}
+                      height={220}
+                      className="team-member-photo"
+                    />
+                  </div>
                   <p>
                     CS Sudhanshu Singhal is a distinguished Company Secretary and corporate governance professional with extensive experience in corporate laws, securities laws, and regulatory compliance. He is a Fellow Member of the Institute of Company Secretaries of India (ICSI) and has established himself as a trusted advisor in the areas of corporate restructuring, governance, secretarial audits, due diligence, and regulatory advisory.
                     <br /><br />
@@ -173,62 +143,49 @@ const ManagementTeamPage = () => {
                     <br /><br />
                     In addition to his professional practice, Mr. Singhal is a regular speaker at seminars and professional development programmes organized by various chapters of ICSI, where he shares practical insights on evolving corporate and regulatory developments. He is widely recognized for his thought leadership and commitment to strengthening corporate governance standards and promoting ethical business practices.
                     <br /><br />
-                    The details of the positions held in other entities are as under:
                   </p>
-                  <div className="table-responsive">
-                    <table className="table table-bordered table-hover table-striped" border={0} width="100%" cellSpacing="0" cellPadding="0">
-                      <tbody>
-                        <tr>
-                          <th><strong>SN</strong></th>
-                          <th><strong>NAME OF BODY CORPORATE</strong></th>
-                          <th><strong>DESIGNATION</strong></th>
-                        </tr>
-                        <tr><td>1.</td><td>PROFBRILL CORP ADVISORY LLP</td><td>Designated Partner</td></tr>
-                        <tr><td>2.</td><td>PARASRAMPURIA SYNTHETICS LIMITED</td><td>Director</td></tr>
-                        <tr><td>3.</td><td>ASPIRE &amp; INNOVATIVE ADVERTISING LIMITED</td><td>Director</td></tr>
-                      </tbody>
-                    </table>
-                  </div>
                 </div>
               </div>
 
               {/* Mr. Ritesh Kalra - Independent Director */}
-              <div className={`et_pb_module et_pb_toggle ${openToggles.toggle4 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'} et_pb_toggle_4 et_pb_toggle_item`}>
-                <h5 className="et_pb_toggle_title" onClick={() => toggleItem('toggle4')}>
+              <div className={`team-member ${openToggles.toggle4 ? 'team-member--open' : 'team-member--closed'}`}>
+                <h5 className="toggle-title" >
                   Mr. Ritesh Kalra - Independent Director
                 </h5>
-                <div className="et_pb_toggle_content clearfix">
+                <div className="toggle-content clearfix">
+                  <div className="team-member-photo-wrap">
+                    <Image
+                      src="/assets/team/blank.png"
+                      alt="Mr. Ritesh Kalra"
+                      width={220}
+                      height={220}
+                      className="team-member-photo"
+                    />
+                  </div>
                   <p>
                     Mr. Ritesh Kalra is a qualified Company Secretary and a corporate governance professional with extensive experience in corporate laws, securities laws, and regulatory compliance. He possesses significant expertise in the Companies Act, 2013, SEBI Regulations, listing compliances, secretarial audits, Board and shareholder advisory, corporate restructuring, FEMA compliances, and regulatory matters.
                     <br /><br />
                     Throughout his professional career, he has advised and supported listed and unlisted companies in strengthening governance frameworks, ensuring statutory compliance, and implementing best corporate governance practices. His strong understanding of corporate legal and secretarial matters enables him to provide strategic guidance on governance, compliance, and regulatory affairs, contributing to sustainable business growth and stakeholder value.
                     <br /><br />
-                    The details of the positions held in other entities are as under:
                   </p>
-                  <div className="table-responsive">
-                    <table className="table table-bordered table-hover table-striped" border={0} width="100%" cellSpacing="0" cellPadding="0">
-                      <tbody>
-                        <tr>
-                          <th><strong>SN</strong></th>
-                          <th><strong>NAME OF BODY CORPORATE</strong></th>
-                          <th><strong>DESIGNATION</strong></th>
-                        </tr>
-                        <tr><td>1.</td><td>MUDRA CAPITAL VENTURES PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>2.</td><td>MUDRA RTA VENTURES PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>3.</td><td>EVEH REALTY PRIVATE LIMITED</td><td>Company Secretary</td></tr>
-                        <tr><td>4.</td><td>BARISTA COFFEE COMPANY LIMITED</td><td>Director</td></tr>
-                      </tbody>
-                    </table>
-                  </div>
                 </div>
               </div>
 
               {/* Mr. Neeraj Jain - Independent Director */}
-              <div className={`et_pb_module et_pb_toggle ${openToggles.toggle5 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'} et_pb_toggle_5 et_pb_toggle_item`}>
-                <h5 className="et_pb_toggle_title" onClick={() => toggleItem('toggle5')}>
+              <div className={`team-member ${openToggles.toggle5 ? 'team-member--open' : 'team-member--closed'}`}>
+                <h5 className="toggle-title" >
                   Mr. Neeraj Jain - Independent Director
                 </h5>
-                <div className="et_pb_toggle_content clearfix">
+                <div className="toggle-content clearfix">
+                  <div className="team-member-photo-wrap">
+                    <Image
+                      src="/assets/team/NeerajJain.png"
+                      alt="Mr. Neeraj Jain"
+                      width={220}
+                      height={220}
+                      className="team-member-photo"
+                    />
+                  </div>
                   <p>
                     FCS Neeraj Jain is a Fellow Member of the Institute of Company Secretaries of India (ICSI) and a distinguished corporate advisory professional with extensive expertise in capital markets, corporate finance, and regulatory compliance. He is a qualified Insolvency Professional registered with the Insolvency and Bankruptcy Board of India (IBBI) and possesses significant experience in SME IPOs, investment banking, business valuation, fund raising, and corporate restructuring.
                     <br /><br />
@@ -236,34 +193,47 @@ const ManagementTeamPage = () => {
                     <br /><br />
                     In addition to his corporate advisory practice, Mr. Jain is actively engaged in promoting responsible and sustainable business practices as a Certified Social Auditor. His multidisciplinary experience across corporate law, finance, valuation, and capital markets enables him to provide comprehensive strategic guidance to businesses throughout their growth lifecycle.
                     <br /><br />
-                    The details of the positions held in other entities are as under:
                   </p>
-                  <div className="table-responsive">
-                    <table className="table table-bordered table-hover table-striped" border={0} width="100%" cellSpacing="0" cellPadding="0">
-                      <tbody>
-                        <tr>
-                          <th><strong>SN</strong></th>
-                          <th><strong>NAME OF BODY CORPORATE</strong></th>
-                          <th><strong>DESIGNATION</strong></th>
-                        </tr>
-                        <tr><td>1.</td><td>A1 AGRI GLOBAL LIMITED</td><td>Director</td></tr>
-                        <tr><td>2.</td><td>JMG CORPORATION LIMITED</td><td>Director</td></tr>
-                        <tr><td>3.</td><td>EEZ VALUATION SERVICES PRIVATE LIMITED</td><td>Director</td></tr>
-                        <tr><td>4.</td><td>C &amp; C TOWERS LIMITED</td><td>Director</td></tr>
-                        <tr><td>5.</td><td>GEOSYS INDIA INFRASTRUCTURES LIMITED</td><td>Director</td></tr>
-                        <tr><td>6.</td><td>BARISTA COFFEE COMPANY LIMITED</td><td>Director</td></tr>
-                      </tbody>
-                    </table>
-                  </div>
                 </div>
               </div>
 
+                          {/* Mr. Rajat Agrawal - Chief Executive Officer */}
+              <div className={`team-member ${openToggles.toggle7 ? 'team-member--open' : 'team-member--closed'}`}>
+                <h5 className="toggle-title" >
+                  Mr. Rajat Agrawal - Chief Executive Officer
+                </h5>
+                <div className="toggle-content clearfix">
+                  <div className="team-member-photo-wrap">
+                    <Image
+                      src="/assets/team/blank.png"
+                      alt="Mr. Rajat Agrawal"
+                      width={220}
+                      height={220}
+                      className="team-member-photo"
+                    />
+                  </div>
+                  <p>
+                    Mr. Rajat Agrawal is the Chief Executive Officer of Barista Coffee Company, one of India's pioneering café chains. With over 20 years of experience in finance, strategy, and business leadership, he is spearheading Barista's growth by driving innovation, enhancing guest experiences, and expanding the brand's footprint across India. A Chartered Accountant by profession, Rajat has previously held leadership roles at EY, Grant Thornton, and Deloitte, advising organizations across diverse industries. Passionate about building high-performing teams and fostering a culture of ownership, he is committed to strengthening Barista's legacy while shaping its next phase of sustainable growth and market leadership.
+                  </p>
+                </div>
+              </div>
+
+              
               {/* Mr. Manish Makhija - Group CFO */}
-              <div className={`et_pb_module et_pb_toggle ${openToggles.toggle6 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'} et_pb_toggle_6 et_pb_toggle_item`}>
-                <h5 className="et_pb_toggle_title" onClick={() => toggleItem('toggle6')}>
+              <div className={`team-member ${openToggles.toggle8 ? 'team-member--open' : 'team-member--closed'}`}>
+                <h5 className="toggle-title" >
                   Mr. Manish Makhija - Group CFO
                 </h5>
-                <div className="et_pb_toggle_content clearfix">
+                <div className="toggle-content clearfix">
+                  <div className="team-member-photo-wrap">
+                    <Image
+                      src="/assets/team/Manish.png"
+                      alt="Mr. Manish Makhija"
+                      width={220}
+                      height={220}
+                      className="team-member-photo"
+                    />
+                  </div>
                   <p>
                     Mr. Manish Makhija is a seasoned finance professional with over 21 years of extensive experience in finance, accounts, strategic planning, financial controls, treasury management, and business finance. He has demonstrated expertise in driving financial strategy, strengthening internal controls, optimizing working capital, and supporting sustainable business growth across diverse business environments.
                     <br /><br />
@@ -274,12 +244,42 @@ const ManagementTeamPage = () => {
                 </div>
               </div>
 
-              {/* Mr. Narender Kumar Sharma - CS */}
-              <div className={`et_pb_module et_pb_toggle ${openToggles.toggle7 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'} et_pb_toggle_7 et_pb_toggle_item`}>
-                <h5 className="et_pb_toggle_title" onClick={() => toggleItem('toggle7')}>
-                  Mr. Narender Kumar Sharma - Group Head - Company Secretary
+              {/* Mr. Sanjeev Khanna - Senior Vice President – Supply Chain Management */}
+              <div className={`team-member ${openToggles.toggle6 ? 'team-member--open' : 'team-member--closed'}`}>
+                <h5 className="toggle-title" >
+                  Mr. Sanjeev Khanna - Senior Vice President – Supply Chain Management
                 </h5>
-                <div className="et_pb_toggle_content clearfix">
+                <div className="toggle-content clearfix">
+                  <div className="team-member-photo-wrap">
+                    <Image
+                      src="/assets/team/Sanjeev.png"
+                      alt="Mr. Sanjeev Khanna"
+                      width={220}
+                      height={220}
+                      className="team-member-photo"
+                    />
+                  </div>
+                  <p>
+                    Mr. Sanjeev Khanna is the Senior Vice President – Supply Chain Management, New Product Development (NPD) & Alliances at Barista Coffee Company. With over 25 years of experience in strategy and growth across the food & beverage industry, he leads key functions including supply chain, product innovation, strategic partnerships, and the expansion of Barista's business verticals. He has been instrumental in building Barista's vending business from the ground up, establishing it as a fast-growing channel for the brand. An MBA by qualification, Sanjeev has held leadership positions with renowned brands including Nirula's, Starbucks, Costa Coffee, and Park Plaza Hotels. Passionate about innovation, operational excellence, and building high-performing teams, he continues to drive sustainable growth while enhancing guest experiences and strengthening Barista's market leadership.
+                  </p>
+                </div>
+              </div>
+
+              {/* Mr. Narender Kumar Sharma - CS */}
+              <div className={`team-member ${openToggles.toggle9 ? 'team-member--open' : 'team-member--closed'}`}>
+                <h5 className="toggle-title" >
+                  Mr. Narender Kumar Sharma - Company Secretary
+                </h5>
+                <div className="toggle-content clearfix">
+                  <div className="team-member-photo-wrap">
+                    <Image
+                      src="/assets/team/blank.png"
+                      alt="Mr. Narender Kumar Sharma"
+                      width={220}
+                      height={220}
+                      className="team-member-photo"
+                    />
+                  </div>
                   <p>
                     CS Narender Kumar is the Group Head – Company Secretary and a seasoned corporate governance and compliance professional with extensive experience in corporate laws, secretarial practice, and regulatory advisory. As a qualified Company Secretary, he possesses in-depth expertise in the Companies Act, 2013, SEBI Regulations, FEMA compliances, corporate governance, Board and committee advisory, secretarial audits, due diligence, and statutory compliance.
                     <br /><br />
@@ -289,10 +289,13 @@ const ManagementTeamPage = () => {
                   </p>
                 </div>
               </div>
+
+              </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   );
 };

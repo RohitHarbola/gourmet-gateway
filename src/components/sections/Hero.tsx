@@ -539,7 +539,7 @@ const Hero = () => {
             <div className="hero-stats">
               <div className="hero-stat">
                 <div className="hero-stat-num">
-                  5<span className="stat-suffix"></span>
+                  4<span className="stat-suffix"></span>
                 </div>
                 <div className="hero-stat-label">Iconic Brands</div>
               </div>

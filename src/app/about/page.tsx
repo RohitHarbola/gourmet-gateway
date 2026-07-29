@@ -69,7 +69,7 @@ export default function AboutPage() {
 
             <div className="relative overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1600"
+                src="assets/About.png"
                 alt="Restaurant"
                 className="w-full h-[550px] object-cover"
               />

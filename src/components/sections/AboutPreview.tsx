@@ -23,14 +23,15 @@ export default function AboutPreview() {
             >
               EST. 2000
             </div>
+            <img src="assets/CulinarySmall.png" alt="Restaurant" className="w-full object-cover" style={{ height: "550px" }} />
 
             {/* Main Image */}
-            <img
-              src="assets/Culinary.png"
+            {/* <img
+              src="/assets/CulinarySmall.png"
               alt="Restaurant"
-              className="w-full object-cover"
-              style={{ height: "580px" }}
-            />
+              className="w-full object-contain object-center"
+              style={{ height: "550px", background: "var(--c-cream)" }}
+            /> */}
 
             {/* Overlapping smaller image */}
             <div
@@ -44,9 +45,9 @@ export default function AboutPreview() {
               }}
             >
               <img
-                src="assets/CulinarySmall.png"
+                src="assets/Culinary.png"
                 alt="Food"
-                className="w-full h-full object-cover"
+              className="w-full object-contain object-center"
               />
             </div>
           </div>
