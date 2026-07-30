@@ -149,12 +149,6 @@
   right: 0;
   height: 4px;
   background: linear-gradient(90deg, #e67e22, #f5b041);
-  opacity: 0;
-  transition: opacity 0.25s ease;
-}
-
-.management-team-page .team-member--open::before {
-  opacity: 1;
 }
 
 .management-team-page .team-member:hover {
@@ -163,20 +157,18 @@
   border-color: #f2dcc4;
 }
 
-/* Toggle Title (Name / Role header, acts as the clickable trigger) */
+/* Toggle Title (Name / Role header - now centered) */
 .management-team-page .toggle-title {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  justify-content: center;
   padding: 22px 26px;
   margin: 0;
   font-size: 17px;
   font-weight: 600;
   color: #1a1a1a;
-  cursor: pointer;
+  text-align: center;
   background: transparent;
-  transition: color 0.2s ease;
   user-select: none;
   line-height: 1.4;
 }
@@ -196,43 +188,7 @@
   }
 }
 
-.management-team-page .toggle-title:hover {
-  color: #e67e22;
-}
-
-/* Chevron toggle icon — circular button styled via ::before, no markup change */
-.management-team-page .toggle-title:before {
-  content: "\25BC";
-  flex-shrink: 0;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 11px;
-  color: #e67e22;
-  background: rgba(230, 126, 34, 0.1);
-  border-radius: 50%;
-  transition: transform 0.3s ease, background 0.25s ease;
-}
-
-.management-team-page .toggle-title:hover:before {
-  background: rgba(230, 126, 34, 0.18);
-}
-
-@media (max-width: 480px) {
-  .management-team-page .toggle-title:before {
-    width: 26px;
-    height: 26px;
-    font-size: 10px;
-  }
-}
-
-.management-team-page .team-member--open .toggle-title:before {
-  transform: rotate(180deg);
-}
-
-/* Toggle Content: image, then bio text — animated collapse/expand */
+/* Toggle Content - always visible */
 .management-team-page .toggle-content {
   padding: 4px 26px 28px;
   border-top: 1px solid #f0f1f3;
@@ -240,18 +196,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
-  max-height: 3000px;
-  opacity: 1;
-  transition: max-height 0.45s ease, opacity 0.35s ease, padding 0.35s ease;
-}
-
-.management-team-page .team-member--closed .toggle-content {
-  max-height: 0;
-  opacity: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  border-top-color: transparent;
 }
 
 @media (max-width: 768px) {
