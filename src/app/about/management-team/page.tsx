@@ -259,7 +259,7 @@ const ManagementTeamPage = () => {
               {/* Mr. Sanjeev Khanna - Senior Vice President – Supply Chain Management */}
               <div className="team-member team-member--open">
                 <h5 className="toggle-title toggle-title--centered">
-                  Mr. Sanjeev Khanna – Senior Vice President – Supply Chain Management
+                  Mr. Sanjeev Khanna – Senior Vice President 
                 </h5>
                 <div className="toggle-content clearfix">
                   <div className="team-member-photo-wrap">
