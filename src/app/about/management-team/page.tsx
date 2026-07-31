@@ -30,7 +30,7 @@ const ManagementTeamPage = () => {
                 <div className="toggle-content clearfix">
                   <div className="team-member-photo-wrap">
                     <Image
-                      src="/assets/team/blank.png"
+                      src="/assets/team/AnubhavDham.png"
                       alt="Mr. Anubhav Dham"
                       width={220}
                       height={220}
