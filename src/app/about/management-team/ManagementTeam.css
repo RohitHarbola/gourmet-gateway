@@ -135,6 +135,23 @@
   }
 }
 
+/* Half-width cards (side by side) - default for 2-column grid */
+.management-team-page .team-member--half {
+  grid-column: span 1;
+}
+
+/* Full-width cards (single per row) */
+.management-team-page .team-member--full {
+  grid-column: span 2;
+}
+
+@media (max-width: 900px) {
+  .management-team-page .team-member--half,
+  .management-team-page .team-member--full {
+    grid-column: span 1;
+  }
+}
+
 /* Team Member Card */
 .management-team-page .team-member {
   position: relative;
