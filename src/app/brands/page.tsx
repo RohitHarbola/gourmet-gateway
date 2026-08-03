@@ -90,7 +90,7 @@ export default function BrandsPage() {
                   <img
                     src={brand.image}
                     alt={brand.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-fill"
                   />
 
                   <div className="absolute inset-0 bg-black/45 group-hover:bg-black/65 transition-all duration-500" />

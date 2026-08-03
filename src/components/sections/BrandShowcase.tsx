@@ -79,9 +79,9 @@ export default function BrandShowcase() {
                     className="
                       w-full
                       h-full
-                      object-cover
+                      object-fill
                       transition-transform
-                      duration-700
+                      duration-800
                       group-hover:scale-110
                     "
                   />
