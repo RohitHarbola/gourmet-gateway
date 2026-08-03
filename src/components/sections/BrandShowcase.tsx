@@ -88,32 +88,40 @@ export default function BrandShowcase() {
 
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent transition-all duration-500 group-hover:from-black/95" />
 
-                  <div className="absolute bottom-0 left-0 right-0 p-10 translate-y-8 transition-all duration-500 group-hover:translate-y-0">
+                  {/* Always-visible bottom block: category + name (+ CTA beside name on hover) */}
+                  <div className="absolute bottom-0 left-0 right-0 p-10 pb-6">
                     <p className="uppercase tracking-[0.25em] text-xs text-[#B8965A]">
                       {brand.category}
                     </p>
 
-                    <h3 className="mt-3 text-white text-5xl font-serif">
-                      {brand.name}
-                    </h3>
+                    <div className="mt-3 flex items-end justify-between gap-4">
+                      <h3 className="text-white text-5xl font-serif">
+                        {brand.name}
+                      </h3>
 
-                    <p className="mt-4 max-w-md text-white/80 leading-7 opacity-0 transition-all duration-500 group-hover:opacity-100">
-                      {brand.description}
-                    </p>
-
-                    <div className="mt-4 w-0 h-[2px] bg-[#B8965A] transition-all duration-500 group-hover:w-24" />
-
-                    {/* Show "Visit Website" for external links, "Explore Brand" for Wanchai */}
-                    {brand.externalLink ? (
-                      <span className="inline-block mt-5 text-[#B8965A] uppercase tracking-[0.2em] text-sm opacity-0 transition-all duration-500 group-hover:opacity-100">
-                        Visit Website →
-                      </span>
-                    ) : (
-                      <span className="inline-block mt-5 text-[#B8965A] uppercase tracking-[0.2em] text-sm opacity-0 transition-all duration-500 group-hover:opacity-100">
-                        Visit →
-                      </span>
-                    )}
+                      {/* Show "Visit Website" for external links, "Visit" for Wanchai */}
+                      {brand.externalLink ? (
+                        <span className="inline-block shrink-0 whitespace-nowrap text-[#B8965A] uppercase tracking-[0.2em] text-sm opacity-0 transition-all duration-500 group-hover:opacity-100">
+                          Visit Website →
+                        </span>
+                      ) : (
+                        <span className="inline-block shrink-0 whitespace-nowrap text-[#B8965A] uppercase tracking-[0.2em] text-sm opacity-0 transition-all duration-500 group-hover:opacity-100">
+                          Visit →
+                        </span>
+                      )}
+                    </div>
                   </div>
+
+                  {/* Hover-reveal block: description */}
+                      {/* <div className="mt-4 w-0 h-[2px] bg-[#B8965A] transition-all duration-500 group-hover:w-24" /> */}
+                  {/* <div className="absolute bottom left-0 right-0 p-10 pt-0 translate-y-8 transition-all duration-500 group-hover:translate-y-0">
+                    <div className="pt-[132px]">
+                      <p className="max-w-md text-white/80 leading-7 opacity-0 transition-all duration-500 group-hover:opacity-100">
+                        {brand.description}
+                      </p>
+
+                    </div>
+                  </div> */}
                 </div>
               </div>
             );

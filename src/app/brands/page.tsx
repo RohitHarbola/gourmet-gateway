@@ -95,44 +95,49 @@ export default function BrandsPage() {
 
                   <div className="absolute inset-0 bg-black/45 group-hover:bg-black/65 transition-all duration-500" />
 
-                  <div className="absolute inset-0 p-10 flex flex-col justify-end">
-
+                  {/* Always-visible bottom block: category + name (+ CTA beside name) */}
+                  <div className="absolute bottom-0 left-0 right-0 p-10 pb-6">
                     <span className="eyebrow text-white">
                       {brand.category}
                     </span>
 
-                    <h3 className="font-serif text-white text-5xl mt-3">
-                      {brand.name}
-                    </h3>
+                    <div className="mt-3 flex items-end justify-between gap-4">
+                      <h3 className="font-serif text-white text-5xl">
+                        {brand.name}
+                      </h3>
 
-                    <p
-                      className="
-                        mt-5
-                        text-white/80
-                        max-w-md
-                        opacity-0
-                        translate-y-5
-                        group-hover:opacity-100
-                        group-hover:translate-y-0
-                        transition-all
-                        duration-500
-                      "
-                    >
-                      {brand.description}
-                    </p>
+                      <span
+                        className="
+                          inline-block
+                          shrink-0
+                          whitespace-nowrap
+                          text-[var(--c-gold-pale)]
+                          uppercase
+                          tracking-[0.2em]
+                          text-sm
+                        "
+                      >
+                        {brand.externalLink ? "Visit Website →" : "Explore Brand →"}
+                      </span>
+                    </div>
+                  </div>
 
-                    <span
-                      className="
-                        mt-6
-                        text-[var(--c-gold-pale)]
-                        uppercase
-                        tracking-[0.2em]
-                        text-sm
-                      "
-                    >
-                      {brand.externalLink ? "Visit Website →" : "Explore Brand →"}
-                    </span>
-
+                  {/* Hover-reveal block: description */}
+                  <div className="absolute bottom-0 left-0 right-0 p-10 pt-0 translate-y-5 transition-all duration-500 group-hover:translate-y-0">
+                    <div className="pt-[148px]">
+                      <p
+                        className="
+                          text-white/80
+                          max-w-md
+                          opacity-0
+                          group-hover:opacity-100
+                          transition-all
+                          duration-500
+                        "
+                      >
+                        {/* {brand.description} */}
+                      </p>
+                    </div>
                   </div>
 
                 </div>
