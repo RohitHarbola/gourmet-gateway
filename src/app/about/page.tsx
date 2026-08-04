@@ -71,7 +71,7 @@ export default function AboutPage() {
               <img
                 src="assets/About.png"
                 alt="Restaurant"
-                className="w-full h-[550px] object-cover"
+                className="w-full h-[550px] object-fill"
               />
             </div>
           </div>

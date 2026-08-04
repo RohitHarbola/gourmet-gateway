@@ -26,7 +26,7 @@ const brands = [
   {
     name: "Café Meular ",
     slug: "Café Meular ",
-    category: "",
+    category: "Heritage Cafe",
     description:
       "A heritage café experience designed around artisanal coffee, curated food, and elevated aesthetics. Café Meular celebrates slow moments, meaningful conversations, and thoughtfully crafted indulgence.",
     image:
@@ -41,7 +41,7 @@ const brands = [
     description:
       "A destination for handcrafted desserts, artisanal pastries, and celebration cakes that transform everyday moments into memorable occasions through creativity and craftsmanship.",
     image:
-      "https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=1400",
+      "assets/D&D.png",
     website: "https://drizzleanddust.in/",
     externalLink: true,
   },
