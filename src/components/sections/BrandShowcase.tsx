@@ -27,7 +27,7 @@ const brands = [
   {
     name: "Café Meular ",
     slug: "Café Meular ",
-    category: "Asian QSR",
+    category: "",
     description:
       "A heritage café experience designed around artisanal coffee, curated food, and elevated aesthetics. Café Meular celebrates slow moments, meaningful conversations, and thoughtfully crafted indulgence.",
     image:
