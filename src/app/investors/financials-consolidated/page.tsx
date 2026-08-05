@@ -66,7 +66,7 @@ const FinancialsConsolidatedPage = () => {
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/2025-26/Consolidate/console.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/assets/wp-content/uploads/pdfs/2025-26/Consolidate/Console.pdf" target="_blank" rel="noopener noreferrer">
                           Q1- Unaudited Financial Statement
                         </a>
                       </li>
