@@ -62,13 +62,13 @@ const FinancialsPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/08/results-June-25.pdf" target="_blank" rel="noopener noreferrer">Q1- Unaudited Financial Statement</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2026/02/03e084aa-7e28-4df8-be6f-f152c3a176bd.pdf" target="_blank" rel="noopener noreferrer">Q2- Unaudited Financial Statement</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2026/02/Q-4_GGIL.pdf" target="_blank" rel="noopener noreferrer">Q3- Unaudited Financial Statement</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2026/05/Quarter-4-and-year-end-Audited-Finanacials_GGIL.pdf" target="_blank" rel="noopener noreferrer">Q4- Audited Financial Statement</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/2025-26/Standalone/Standalone.pdf" target="_blank" rel="noopener noreferrer">Q1- Unaudited Financial Statement</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/2025-26/Standalone/Standalonesept25.pdf" target="_blank" rel="noopener noreferrer">Q2- Unaudited Financial Statement</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/2025-26/Standalone/StandaloneJune25.pdf" target="_blank" rel="noopener noreferrer">Q3- Unaudited Financial Statement</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/2025-26/Standalone/MarchStandalone.pdf" target="_blank" rel="noopener noreferrer">Q4- Audited Financial Statement</a></li>
                     </ul>
-                  </div>
-                </div>
+                  </div> 
+                 </div>
 
                 {/* Financial Results 2024-25 */}
                 <div className={`et_pb_module et_pb_toggle ${openQuarterly.q2024_25 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'} et_pb_accordion_item_1`}>
@@ -77,10 +77,10 @@ const FinancialsPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/BM OUTCOME_Gourmet_June 24-Financials Q1.pdf" target="_blank" rel="noopener noreferrer">Q1- Unaudited Financial Statement</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/final outcome-financials Q2.pdf" target="_blank" rel="noopener noreferrer">Q2- Unaudited Financial Statement</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/02/Financial-q3.pdf" target="_blank" rel="noopener noreferrer">Q3- Unaudited Financial Statement</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/05/Q4-Audited-Financial-Statements.pdf" target="_blank" rel="noopener noreferrer">Q4- Audited Financial Statement</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/2024-25/Standalone/Dec2024standalonewithAR.pdf" target="_blank" rel="noopener noreferrer">Q1- Unaudited Financial Statement</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/2024-25/Standalone/Sept2024_StandalonewithAR.pdf" target="_blank" rel="noopener noreferrer">Q2- Unaudited Financial Statement</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/2024-25/Standalone/June24standalone.pdf" target="_blank" rel="noopener noreferrer">Q3- Unaudited Financial Statement</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/2024-25/Standalone/ARStandalone_March25.pdf" target="_blank" rel="noopener noreferrer">Q4- Audited Financial Statement</a></li>
                     </ul>
                   </div>
                 </div>
@@ -92,10 +92,10 @@ const FinancialsPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2023/09/Financials for 1st quarter.pdf" target="_blank" rel="noopener noreferrer">Q1- Unaudited Financial Statement</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2023/09/Financials-for-2nd-quarter.pdf" target="_blank" rel="noopener noreferrer">Q2- Unaudited Financial Statement</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2023/09/Financials-q3.pdf" target="_blank" rel="noopener noreferrer">Q3- Unaudited Financial Statement</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2023/09/Financials-Q4.pdf" target="_blank" rel="noopener noreferrer">Q4- Audited Financial Statement</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/2023-24/Standalone/Dec23Standalone.pdf" target="_blank" rel="noopener noreferrer">Q1- Unaudited Financial Statement</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/2023-24/Standalone/Sept23Standalone.pdf" target="_blank" rel="noopener noreferrer">Q2- Unaudited Financial Statement</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/2023-24/Standalone/June2023_StanalonewithAR.pdf" target="_blank" rel="noopener noreferrer">Q3- Unaudited Financial Statement</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/2023-24/Standalone/March24Stanalone.pdf" target="_blank" rel="noopener noreferrer">Q4- Audited Financial Statement</a></li>
                     </ul>
                   </div>
                 </div>
@@ -277,5 +277,6 @@ const FinancialsPage = () => {
     </div>
   );
 };
+
 
 export default FinancialsPage;

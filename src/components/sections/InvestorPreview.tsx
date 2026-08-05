@@ -8,13 +8,21 @@ const investorDocs = [
     icon: "📊",
     link: "/investors/financials",
   },
+      {
+    title: "Financial Statement Consolidated",
+    description:
+      "Review audited financial  consolidated statement.",
+    icon: "📈",
+    link: "/investors/financials-consolidated",
+  },
   {
-    title: "Financial Statements",
+    title: "Financial Statements Standalone",
     description:
       "Review audited financial statements and quarterly performance documents.",
     icon: "📈",
     link: "/investors/financials",
   },
+
   {
     title: "Policies",
     description:
