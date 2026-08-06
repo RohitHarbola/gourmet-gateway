@@ -17,7 +17,7 @@ const BoardOfDirectorsCompositionPage = () => {
 
             <div className="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left et_pb_text_0">
               <div className="et_pb_text_inner">
-                <h1>Board of Directors Composition</h1>
+                <h1>BOARD COMPOSITION</h1>
               </div>
             </div>
 

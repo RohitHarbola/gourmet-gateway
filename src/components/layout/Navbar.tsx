@@ -26,7 +26,8 @@ const navLinks = [
         href: "/investors/financials",
         dropdown: [
           { label: "Postal Ballot Notice", href: "/investors/postal-ballot-notice" },
-          { label: "Financials", href: "/investors/financials" },
+          { label: "Financials Standalone", href: "/investors/financials" },
+           { label: "Financials Consolidated", href: "/investors/financials-consolidated" },
           { label: "Annual Reports", href: "/investors/annual-reports" },
           { label: "Investor's Information", href: "/investors/investors-information" },
           { label: "Archives", href: "/investors/archives" },

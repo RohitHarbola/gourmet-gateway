@@ -6,12 +6,12 @@ const investorDocs = [
     description:
       "Access historical annual reports, performance highlights and corporate updates.",
     icon: "📊",
-    link: "/investors/financials",
+    link: "/investors/annual-reports",
   },
-      {
-    title: "Financial Statement Consolidated",
+  {
+    title: "Financial Statement Consolidation",
     description:
-      "Review audited financial  consolidated statement.",
+      "Review audited financial consolidated statement.",
     icon: "📈",
     link: "/investors/financials-consolidated",
   },
@@ -22,7 +22,6 @@ const investorDocs = [
     icon: "📈",
     link: "/investors/financials",
   },
-
   {
     title: "Policies",
     description:
@@ -42,13 +41,15 @@ const investorDocs = [
 export default function InvestorPreview() {
   return (
     <section className="bg-[#111009] py-16 reveal">
-      <div className="container-custom">
+      <div className="container-custom max-w-7xl mx-auto px-4">
 
         {/* Header */}
         <div className="grid lg:grid-cols-2 gap-12 mb-12">
           <div>
-            <span className="eyebrow">INVESTOR RELATIONS</span>
-            <h2 className="display-lg mt-4 text-white">
+            <span className="eyebrow text-[#B8965A] text-xs uppercase tracking-[0.2em]">
+              INVESTOR RELATIONS
+            </span>
+            <h2 className="display-lg mt-4 text-white text-4xl md:text-5xl font-serif">
               Transparency.
               <br />
               Governance.
@@ -80,6 +81,7 @@ export default function InvestorPreview() {
                 transition-all
                 duration-300
                 hover:bg-[#B8965A]
+                hover:text-black
               "
             >
               View Investor Centre
@@ -87,13 +89,13 @@ export default function InvestorPreview() {
           </div>
         </div>
 
-        {/* Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Cards - Horizontal Layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-5">
           {investorDocs.map((item) => (
             <Link
               href={item.link}
               key={item.title}
-              className="investor-card group h-full"
+              className="group h-full"
             >
               <div
                 className="
@@ -101,31 +103,33 @@ export default function InvestorPreview() {
                   border
                   border-white/10
                   bg-white/[0.03]
-                  p-6
+                  p-5
                   transition-all
                   duration-500
                   group-hover:border-[#B8965A]
                   flex
                   flex-col
+                  hover:bg-white/[0.06]
+                  min-h-[280px]
                 "
               >
-                <div className="text-4xl mb-5">
+                <div className="text-3xl mb-4">
                   {item.icon}
                 </div>
 
-                <h3 className="text-xl text-white font-serif mb-3">
+                <h3 className="text-lg text-white font-serif mb-3 leading-tight">
                   {item.title}
                 </h3>
 
-                <p className="text-white/60 text-sm leading-6">
+                <p className="text-white/60 text-sm leading-6 flex-1">
                   {item.description}
                 </p>
 
-                <div className="mt-6 flex items-center justify-between">
-                  <span className="text-[#B8965A] text-[11px] uppercase tracking-[0.2em]">
+                <div className="mt-5 pt-3 border-t border-white/5 flex items-center justify-between">
+                  <span className="text-[#B8965A] text-[10px] uppercase tracking-[0.2em] font-medium">
                     View
                   </span>
-                  <span className="text-[#B8965A] text-lg">
+                  <span className="text-[#B8965A] text-lg transition-transform duration-300 group-hover:translate-x-1">
                     →
                   </span>
                 </div>

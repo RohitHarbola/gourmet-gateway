@@ -79,7 +79,7 @@ const ArchivesPage = () => {
                     </div>
                   </div>
                   <p>
-                    <strong>|BSE Limited, Scrip Code- 506134 Symbol- INTELLCAP</strong><br />
+                    <strong>|BSE Limited, Scrip Code- 506134 Symbol- GOURMET</strong><br />
                     (Exchange(s) where company is listed along with Scrip Code/Name or Symbol)
                   </p>
                 </div>
@@ -92,7 +92,7 @@ const ArchivesPage = () => {
 <div className="et_pb_module et_pb_accordion et_pb_accordion_0">
 
    {/* Financial Results 2025-26 */}
-                <div className={`et_pb_module et_pb_toggle ${openQuarterly.q2025_26 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'} et_pb_accordion_item_0`}>
+                {/* <div className={`et_pb_module et_pb_toggle ${openQuarterly.q2025_26 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'} et_pb_accordion_item_0`}>
                   <h5 className="et_pb_toggle_title" onClick={() => toggleQuarterly('q2025_26')}>
                     Financial Results 2025-26
                   </h5>
@@ -104,10 +104,10 @@ const ArchivesPage = () => {
                       <li><a href="/assets/wp-content/uploads/pdfs/2025-26/Standalone/MarchStandalone.pdf" target="_blank" rel="noopener noreferrer">Q4- Audited Financial Statement</a></li>
                     </ul>
                   </div> 
-                 </div>
+                 </div> */}
 
 {/* Financial Results 2024-25 */}
-                <div className={`et_pb_module et_pb_toggle ${openQuarterly.q2024_25 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'} et_pb_accordion_item_1`}>
+                {/* <div className={`et_pb_module et_pb_toggle ${openQuarterly.q2024_25 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'} et_pb_accordion_item_1`}>
                   <h5 className="et_pb_toggle_title" onClick={() => toggleQuarterly('q2024_25')}>
                     Financial Results 2024-25
                   </h5>
@@ -119,29 +119,14 @@ const ArchivesPage = () => {
                       <li><a href="/assets/wp-content/uploads/pdfs/2024-25/Standalone/ARStandalone_March25.pdf" target="_blank" rel="noopener noreferrer">Q4- Audited Financial Statement</a></li>
                     </ul>
                   </div>
-                </div>
+                </div> */}
 
 
-   {/* Financial Results 2023-24 */}
- 
-   <div className={`et_pb_module et_pb_toggle ${openQuarterly.q2023_24 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'} et_pb_accordion_item_2`}>
-                  <h5 className="et_pb_toggle_title" onClick={() => toggleQuarterly('q2023_24')}>
-                    Financial Results 2023-24
-                  </h5>
-                  <div className="et_pb_toggle_content clearfix">
-                    <ul>
-                      <li><a href="/assets/wp-content/uploads/pdfs/2023-24/Standalone/Dec23Standalone.pdf" target="_blank" rel="noopener noreferrer">Q1- Unaudited Financial Statement</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/2023-24/Standalone/Sept23Standalone.pdf" target="_blank" rel="noopener noreferrer">Q2- Unaudited Financial Statement</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/2023-24/Standalone/June2023_StanalonewithAR.pdf" target="_blank" rel="noopener noreferrer">Q3- Unaudited Financial Statement</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/2023-24/Standalone/March24Stanalone.pdf" target="_blank" rel="noopener noreferrer">Q4- Audited Financial Statement</a></li>
-                    </ul>
-                  </div>
-                </div>
 
                 {/* Financial Results 2022-23 */}
                 <div className={`et_pb_module et_pb_toggle ${openQuarterly.q2022_23 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'} et_pb_accordion_item_3`}>
                   <h5 className="et_pb_toggle_title" onClick={() => toggleQuarterly('q2022_23')}>
-                    Financial Results 2022-23
+                    Financial Results 2022-2023
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
