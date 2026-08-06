@@ -83,13 +83,33 @@
   color: #555;
 }
 
-/* QUARTERLY FINANCIAL RESULT heading */
-.archives-page .et_pb_text_1 h2 {
-  font-size: 32px;
-  color: #e67e22;
+/* QUARTERLY FINANCIAL RESULT heading - Plain heading with hover effect */
+.archives-page .et_pb_text_0 h2.et_pb_toggle_title,
+.archives-page .et_pb_text_0 h2,
+.archives-page h2.et_pb_toggle_title {
+  font-size: 28px;
+  color: #333;
   margin: 30px 0 20px;
   font-weight: 600;
-  text-align: center;
+  text-align: justify;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: default;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.archives-page .et_pb_text_0 h2.et_pb_toggle_title:hover,
+.archives-page .et_pb_text_0 h2:hover,
+.archives-page h2.et_pb_toggle_title:hover {
+  color: #e67e22;
+}
+
+.archives-page .et_pb_text_0 h2.et_pb_toggle_title:after,
+.archives-page h2.et_pb_toggle_title:after {
+  display: none !important;
+  content: none !important;
 }
 
 /* Toggle Styles */
@@ -224,7 +244,10 @@
     font-size: 36px;
   }
 
-  .archives-page .et_pb_text_1 h2 {
+  .archives-page .et_pb_text_1 h2,
+  .archives-page .et_pb_text_0 h2.et_pb_toggle_title,
+  .archives-page .et_pb_text_0 h2,
+  .archives-page h2.et_pb_toggle_title {
     font-size: 24px;
   }
 
@@ -263,7 +286,10 @@
     font-size: 14px;
   }
 
-  .archives-page .et_pb_text_1 h2 {
+  .archives-page .et_pb_text_1 h2,
+  .archives-page .et_pb_text_0 h2.et_pb_toggle_title,
+  .archives-page .et_pb_text_0 h2,
+  .archives-page h2.et_pb_toggle_title {
     font-size: 20px;
   }
 

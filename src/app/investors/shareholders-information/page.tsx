@@ -98,10 +98,10 @@ const ShareholdersInformationPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/09/Shareholding%20Pattern.xlsm" target="_blank" rel="noopener noreferrer">Q1- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/09/Final-SHP_Q2.XLSM" target="_blank" rel="noopener noreferrer">Q2- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/09/ASCR_2025_GGIL_Final.pdf" target="_blank" rel="noopener noreferrer">Q3- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/09/AMFINE-506134%20(15).XLSM" target="_blank" rel="noopener noreferrer">Q4- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Shareholding%20Pattern.xlsm" target="_blank" rel="noopener noreferrer">Q1- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Final-SHP_Q2.XLSM" target="_blank" rel="noopener noreferrer">Q2- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/ASCR_2025_GGIL_Final.pdf" target="_blank" rel="noopener noreferrer">Q3- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/AMFINE-506134%20(15).XLSM" target="_blank" rel="noopener noreferrer">Q4- shareholding pattern</a></li>
                     </ul>
                   </div>
                 </div>
@@ -113,10 +113,10 @@ const ShareholdersInformationPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/SHP-Q1-2024-25.XLSM" target="_blank" rel="noopener noreferrer">Q1- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/SHP_Q-2-2024-25.XLSM" target="_blank" rel="noopener noreferrer">Q2- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/02/SHP-Q3.XLSM" target="_blank" rel="noopener noreferrer">Q3- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/09/SHP_Final.xlsm" target="_blank" rel="noopener noreferrer">Q4- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/SHP-Q1-2024-25.XLSM" target="_blank" rel="noopener noreferrer">Q1- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/SHP_Q-2-2024-25.XLSM" target="_blank" rel="noopener noreferrer">Q2- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/SHP-Q3.XLSM" target="_blank" rel="noopener noreferrer">Q3- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/SHP_Final.xlsm" target="_blank" rel="noopener noreferrer">Q4- shareholding pattern</a></li>
                     </ul>
                   </div>
                 </div>
@@ -128,10 +128,10 @@ const ShareholdersInformationPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2023/09/506134_June%2023.XLSM" target="_blank" rel="noopener noreferrer">Q1- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2023/09/SHP%20FINAL%20ICVL%20SEP%202023.XLSM" target="_blank" rel="noopener noreferrer">Q2- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2023/09/SHP%20ICVL%20DEC%202023.XLSM" target="_blank" rel="noopener noreferrer">Q3- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/SHP_ICVL_-Q4.XLSM" target="_blank" rel="noopener noreferrer">Q4- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/506134_June%2023.XLSM" target="_blank" rel="noopener noreferrer">Q1- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/SHP%20FINAL%20ICVL%20SEP%202023.XLSM" target="_blank" rel="noopener noreferrer">Q2- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/SHP%20ICVL%20DEC%202023.XLSM" target="_blank" rel="noopener noreferrer">Q3- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/SHP_ICVL_-Q4.XLSM" target="_blank" rel="noopener noreferrer">Q4- shareholding pattern</a></li>
                     </ul>
                   </div>
                 </div>
@@ -143,10 +143,10 @@ const ShareholdersInformationPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2023/02/Shareholding-pattern-Q1-2022-23.pdf" target="_blank" rel="noopener noreferrer">Q1- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2023/02/Shareholding-pattern-Q2-2022-23.pdf" target="_blank" rel="noopener noreferrer">Q2- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2023/02/Shareholding-pattern-Q3-2022-23.pdf" target="_blank" rel="noopener noreferrer">Q3- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2023/09/506134_Mar%2023.XLSM" target="_blank" rel="noopener noreferrer">Q4- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Shareholding-pattern-Q1-2022-23.pdf" target="_blank" rel="noopener noreferrer">Q1- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Shareholding-pattern-Q2-2022-23.pdf" target="_blank" rel="noopener noreferrer">Q2- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Shareholding-pattern-Q3-2022-23.pdf" target="_blank" rel="noopener noreferrer">Q3- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Shareholding-pattern-Q4-2022-23.pdf" target="_blank" rel="noopener noreferrer">Q4- shareholding pattern</a></li>
                     </ul>
                   </div>
                 </div>
@@ -158,10 +158,10 @@ const ShareholdersInformationPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2021/12/Q1-shareholding-pattern.pdf" target="_blank" rel="noopener noreferrer">Q1- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2021/12/Q2-shareholding-pattern.pdf" target="_blank" rel="noopener noreferrer">Q2- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2023/02/shareholding-pattern-Q3-2021-22.pdf" target="_blank" rel="noopener noreferrer">Q3- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2023/02/Shareholding-Pattern-Q4-2021-22.pdf" target="_blank" rel="noopener noreferrer">Q4- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q1-shareholding-pattern.pdf" target="_blank" rel="noopener noreferrer">Q1- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q2-shareholding-pattern.pdf" target="_blank" rel="noopener noreferrer">Q2- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/shareholding-pattern-Q3-2021-22.pdf" target="_blank" rel="noopener noreferrer">Q3- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Shareholding-Pattern-Q4-2021-22.pdf" target="_blank" rel="noopener noreferrer">Q4- shareholding pattern</a></li>
                     </ul>
                   </div>
                 </div>
@@ -173,10 +173,10 @@ const ShareholdersInformationPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q1-shareholding-pattern-2.pdf" target="_blank" rel="noopener noreferrer">Q1- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q2-shareholding-pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q2- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q3-shareholding-pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q3- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q4-shareholding-pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q4- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q1-shareholding-pattern-2.pdf" target="_blank" rel="noopener noreferrer">Q1- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q2-shareholding-pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q2- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q3-shareholding-pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q3- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q4-shareholding-pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q4- shareholding pattern</a></li>
                     </ul>
                   </div>
                 </div>
@@ -188,10 +188,10 @@ const ShareholdersInformationPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q1-shareholding-pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q1- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q2-shareholding-pattern.pdf" target="_blank" rel="noopener noreferrer">Q2- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q3-shareholding-pattern.pdf" target="_blank" rel="noopener noreferrer">Q3- shareholding pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q4-shareholding-pattern.pdf" target="_blank" rel="noopener noreferrer">Q4- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q1-shareholding-pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q1- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q2-shareholding-pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q2- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q3-shareholding-pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q3- shareholding pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q4-shareholding-pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q4- shareholding pattern</a></li>
                     </ul>
                   </div>
                 </div>
@@ -203,10 +203,10 @@ const ShareholdersInformationPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/ICVL-Q-1-Shareholding-Pattern.pdf" target="_blank" rel="noopener noreferrer">ICVL Q-1 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/ICVL-Q-2-Shareholding-Pattern-1.pdf" target="_blank" rel="noopener noreferrer">ICVL Q-2 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/ICVL-Q-3-Shareholding-Pattern-1.pdf" target="_blank" rel="noopener noreferrer">ICVL Q-3 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/ICVL-Q-4-Shareholding-Pattern-1.pdf" target="_blank" rel="noopener noreferrer">ICVL Q-4 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/ICVL-Q-1-Shareholding-Pattern.pdf" target="_blank" rel="noopener noreferrer">ICVL Q-1 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/ICVL-Q-2-Shareholding-Pattern-1.pdf" target="_blank" rel="noopener noreferrer">ICVL Q-2 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/ICVL-Q-3-Shareholding-Pattern-1.pdf" target="_blank" rel="noopener noreferrer">ICVL Q-3 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/ICVL-Q-4-Shareholding-Pattern-1.pdf" target="_blank" rel="noopener noreferrer">ICVL Q-4 Shareholding Pattern</a></li>
                     </ul>
                   </div>
                 </div>
@@ -218,10 +218,10 @@ const ShareholdersInformationPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q-1-Shareholding-Pattern.pdf" target="_blank" rel="noopener noreferrer">Q-1 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/ICVL-Q-2-Shareholding-Pattern.pdf" target="_blank" rel="noopener noreferrer">ICVL Q-2 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/ICVL-Q-3-Shareholding-Pattern.pdf" target="_blank" rel="noopener noreferrer">ICVL Q-3 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/ICVL-Q-4-Shareholding-Pattern.pdf" target="_blank" rel="noopener noreferrer">ICVL Q-4 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q-1-Shareholding-Pattern.pdf" target="_blank" rel="noopener noreferrer">Q-1 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/ICVL-Q-2-Shareholding-Pattern.pdf" target="_blank" rel="noopener noreferrer">ICVL Q-2 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/ICVL-Q-3-Shareholding-Pattern.pdf" target="_blank" rel="noopener noreferrer">ICVL Q-3 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/ICVL-Q-4-Shareholding-Pattern.pdf" target="_blank" rel="noopener noreferrer">ICVL Q-4 Shareholding Pattern</a></li>
                     </ul>
                   </div>
                 </div>
@@ -233,10 +233,10 @@ const ShareholdersInformationPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q-1-Shareholding-Pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q-1 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q-2-Shareholding-Pattern.pdf" target="_blank" rel="noopener noreferrer">Q-2 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q-3-Shareholding-Pattern.pdf" target="_blank" rel="noopener noreferrer">Q-3 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q-4-Shareholding-Pattern.pdf" target="_blank" rel="noopener noreferrer">Q-4 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q-1-Shareholding-Pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q-1 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q-2-Shareholding-Pattern.pdf" target="_blank" rel="noopener noreferrer">Q-2 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q-3-Shareholding-Pattern.pdf" target="_blank" rel="noopener noreferrer">Q-3 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q-4-Shareholding-Pattern.pdf" target="_blank" rel="noopener noreferrer">Q-4 Shareholding Pattern</a></li>
                     </ul>
                   </div>
                 </div>
@@ -248,10 +248,10 @@ const ShareholdersInformationPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q-1-Shareholding-Pattern-2.pdf" target="_blank" rel="noopener noreferrer">Q-1 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q-2-Shareholding-Pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q-2 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q-3-Shareholding-Pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q-3 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q-4-Shareholding-Pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q-4 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q-1-Shareholding-Pattern-2.pdf" target="_blank" rel="noopener noreferrer">Q-1 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q-2-Shareholding-Pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q-2 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q-3-Shareholding-Pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q-3 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q-4-Shareholding-Pattern-1.pdf" target="_blank" rel="noopener noreferrer">Q-4 Shareholding Pattern</a></li>
                     </ul>
                   </div>
                 </div>
@@ -263,10 +263,10 @@ const ShareholdersInformationPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q-1-Shareholding-Pattern-3.pdf" target="_blank" rel="noopener noreferrer">Q-1 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q-2-Shareholding-Pattern-2.pdf" target="_blank" rel="noopener noreferrer">Q-2 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q-3-Shareholding-Pattern-2.pdf" target="_blank" rel="noopener noreferrer">Q-3 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q-4-Shareholding-Pattern-2.pdf" target="_blank" rel="noopener noreferrer">Q-4 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q-1-Shareholding-Pattern-3.pdf" target="_blank" rel="noopener noreferrer">Q-1 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q-2-Shareholding-Pattern-2.pdf" target="_blank" rel="noopener noreferrer">Q-2 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q-3-Shareholding-Pattern-2.pdf" target="_blank" rel="noopener noreferrer">Q-3 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q-4-Shareholding-Pattern-2.pdf" target="_blank" rel="noopener noreferrer">Q-4 Shareholding Pattern</a></li>
                     </ul>
                   </div>
                 </div>
@@ -278,10 +278,10 @@ const ShareholdersInformationPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q-1-Shareholding-Pattern-4.pdf" target="_blank" rel="noopener noreferrer">Q-1 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q-2-Shareholding-Pattern-3.pdf" target="_blank" rel="noopener noreferrer">Q-2 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q-3-Shareholding-Pattern-3.pdf" target="_blank" rel="noopener noreferrer">Q-3 Shareholding Pattern</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2017/07/Q-4-Shareholding-Pattern-3.pdf" target="_blank" rel="noopener noreferrer">Q-4 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q-1-Shareholding-Pattern-4.pdf" target="_blank" rel="noopener noreferrer">Q-1 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q-2-Shareholding-Pattern-3.pdf" target="_blank" rel="noopener noreferrer">Q-2 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q-3-Shareholding-Pattern-3.pdf" target="_blank" rel="noopener noreferrer">Q-3 Shareholding Pattern</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Q-4-Shareholding-Pattern-3.pdf" target="_blank" rel="noopener noreferrer">Q-4 Shareholding Pattern</a></li>
                     </ul>
                   </div>
                 </div>
@@ -382,10 +382,10 @@ const ShareholdersInformationPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/Corporate%20Governance_Q1-2024-25.xlsm" target="_blank" rel="noopener noreferrer">Q1- Corporate Governance Report</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/Corporate%20Governance-Q-2-2024-25.xlsm" target="_blank" rel="noopener noreferrer">Q2- Corporate Governance Report</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/02/Corporate%20Governance.xlsm" target="_blank" rel="noopener noreferrer">Q3- Corporate Governance Report</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/09/Integrated%20Governance%20GGIL%20Quarter%20first.xlsm" target="_blank" rel="noopener noreferrer">Q4- Corporate Governance Report</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Corporate%20Governance_Q1-2024-25.xlsm" target="_blank" rel="noopener noreferrer">Q1- Corporate Governance Report</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Corporate%20Governance-Q-2-2024-25.xlsm" target="_blank" rel="noopener noreferrer">Q2- Corporate Governance Report</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Corporate%20Governance.xlsm" target="_blank" rel="noopener noreferrer">Q3- Corporate Governance Report</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Integrated%20Governance%20GGIL%20Quarter%20first.xlsm" target="_blank" rel="noopener noreferrer">Q4- Corporate Governance Report</a></li>
                     </ul>
                   </div>
                 </div>
@@ -397,8 +397,8 @@ const ShareholdersInformationPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2023/09/Corporate%20Governance%20ICVL%20DEC%202023.xlsm" target="_blank" rel="noopener noreferrer">Q3- Corporate Governance Report</a></li>
-                      <li><a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/Corporate%20Governance-Q-4-2023-24.xlsm" target="_blank" rel="noopener noreferrer">Q4- Corporate Governance Report</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Corporate%20Governance%20ICVL%20DEC%202023.xlsm" target="_blank" rel="noopener noreferrer">Q3- Corporate Governance Report</a></li>
+                      <li><a href="/assets/wp-content/uploads/pdfs/Shareholders-information/Corporate%20Governance-Q-4-2023-24.xlsm" target="_blank" rel="noopener noreferrer">Q4- Corporate Governance Report</a></li>
                     </ul>
                   </div>
                 </div>

@@ -35,12 +35,12 @@ const SecretarialComplianceReportPage = () => {
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
                       <li>
-                        <a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/09/ASCR_2025_GGIL_Final.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/assets/wp-content/uploads/pdfs/SecretarialCompliance/ASCR_2025_GGIL_Final.pdf" target="_blank" rel="noopener noreferrer">
                           2024-25 Secretarial Compliance Report
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/04/23-24-Secretarial-complaince-report.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/assets/wp-content/uploads/pdfs/SecretarialCompliance/23-24-Secretarial-complaince-report.pdf" target="_blank" rel="noopener noreferrer">
                           2023-24 Secretarial Compliance Report
                         </a>
                       </li>

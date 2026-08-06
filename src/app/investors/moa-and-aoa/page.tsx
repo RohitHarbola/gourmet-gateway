@@ -35,12 +35,12 @@ const MOAandAOAPage = () => {
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
                       <li>
-                        <a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/04/MOA.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/assets/wp-content/uploads/pdfs/MOAandAOA/MOA.pdf" target="_blank" rel="noopener noreferrer">
                           Memorandum of Association (MOA)
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/04/AOA-ICVL.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/assets/wp-content/uploads/pdfs/MOAandAOA/AOA-ICVL.pdf" target="_blank" rel="noopener noreferrer">
                           Articles of Association (AOA) - ICVL
                         </a>
                       </li>

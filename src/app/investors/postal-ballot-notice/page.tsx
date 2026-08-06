@@ -29,7 +29,7 @@ const PostalBallotNoticePage = () => {
                     <ul>
                       <li>
                         <a 
-                          href="https://www.gourmetgateway.co.in/wp-content/uploads/2025/08/Notice-of-Postal-Ballot-19th-August-2025.pdf" 
+                          href="/assets/wp-content/uploads/pdfs/Postal-notice/Notice-of-Postal-Ballot-19th-August-2025.pdf" 
                           target="_blank" 
                           rel="noopener noreferrer"
                         >

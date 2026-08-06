@@ -8,15 +8,9 @@ const investorDocs = [
     icon: "📊",
     link: "/investors/annual-reports",
   },
+
   {
-    title: "Financial Statement Consolidation",
-    description:
-      "Review audited financial consolidated statement.",
-    icon: "📈",
-    link: "/investors/financials-consolidated",
-  },
-  {
-    title: "Financial Statements Standalone",
+    title: "Financial Statements",
     description:
       "Review audited financial statements and quarterly performance documents.",
     icon: "📈",
@@ -90,7 +84,7 @@ export default function InvestorPreview() {
         </div>
 
         {/* Cards - Horizontal Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-5">
           {investorDocs.map((item) => (
             <Link
               href={item.link}
