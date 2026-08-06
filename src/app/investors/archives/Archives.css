@@ -12,56 +12,11 @@
   z-index: 1000;
 }
 
-/* Hero Section Styles */
+/* Hero Section Styles - Updated for centered ARCHIVES heading */
 .archives-page .et_pb_fullwidth_section {
   width: 100%;
   position: relative;
   clear: both;
-}
-
-.archives-page .et_pb_fullwidth_header {
-  position: relative;
-  padding: 80px 0;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top: 0;
-  z-index: 1;
-}
-
-.archives-page .et_pb_fullwidth_header_container {
-  position: relative;
-  z-index: 2;
-  margin: 0 auto;
-  padding: 0 40px;
-  max-width: 1280px;
-}
-
-.archives-page .header-content-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 200px;
-}
-
-.archives-page .header-content h1 {
-  font-size: 52px;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.archives-page .et_pb_fullwidth_header_overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
 }
 
 /* Main Content Section */
@@ -92,12 +47,34 @@
   margin-bottom: 30px;
 }
 
+/* ARCHIVES Title - Centered with specific styles */
+.archives-title {
+  font-size: 52px;
+  color: #e67e22;
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.archives-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+
+/* Alternative: If you want the h1 with the original class */
 .archives-page .et_pb_text_0 h1 {
-  font-size: 36px;
+  font-size: 32px;
   color: #e67e22;
   text-align: center;
   margin-bottom: 20px;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .archives-page .et_pb_text_0 p {
@@ -106,6 +83,7 @@
   color: #555;
 }
 
+/* QUARTERLY FINANCIAL RESULT heading */
 .archives-page .et_pb_text_1 h2 {
   font-size: 32px;
   color: #e67e22;
@@ -234,9 +212,8 @@
     padding: 50px 0;
   }
 
-  .archives-page .header-content h1 {
-    font-size: 36px;
-
+  .archives-title {
+    font-size: 36px !important;
   }
 
   .archives-page .et_pb_section_1 {
@@ -244,7 +221,7 @@
   }
 
   .archives-page .et_pb_text_0 h1 {
-    font-size: 28px;
+    font-size: 36px;
   }
 
   .archives-page .et_pb_text_1 h2 {
@@ -266,8 +243,8 @@
 }
 
 @media (max-width: 480px) {
-  .archives-page .header-content h1 {
-    font-size: 28px;
+  .archives-title {
+    font-size: 28px !important;
   }
 
   .archives-page .et_pb_fullwidth_header_container {
@@ -279,7 +256,7 @@
   }
 
   .archives-page .et_pb_text_0 h1 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .archives-page .et_pb_text_0 p {

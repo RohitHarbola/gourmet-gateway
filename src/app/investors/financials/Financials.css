@@ -128,7 +128,7 @@
 .financials-page .et_pb_toggle_title {
   padding: 18px 25px;
   margin: 0;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 600;
   color: #333;
   cursor: pointer;
@@ -292,4 +292,28 @@
   .financials-page .et_pb_toggle_content {
     padding: 12px 15px;
   }
+}
+
+/* Add this to Financials.css — styles for the year sub-blocks that
+   live inside the Consolidated / Standalone toggles */
+
+.financials-page .et_pb_toggle_year_block {
+  margin-bottom: 10px;
+}
+
+.financials-page .et_pb_toggle_year_block:last-child {
+  margin-bottom: 0;
+}
+
+.financials-page .et_pb_toggle_year_title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #444;
+  margin: 15px 0 8px;
+  padding-left: 5px;
+  border-left: 3px solid #e67e22;
+}
+
+.financials-page .et_pb_toggle_year_block:first-child .et_pb_toggle_year_title {
+  margin-top: 0;
 }
