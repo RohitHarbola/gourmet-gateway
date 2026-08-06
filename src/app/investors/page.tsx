@@ -60,7 +60,7 @@ export default function InvestorsPage() {
 
             {/* Annual Reports */}
             <Link
-              href="/investors/financials"
+              href="/investors/annual-reports"
               className="investor-card bg-white border border-[var(--c-border)] p-8 flex flex-col"
             >
               <div className="w-12 h-12 rounded-full border border-[var(--c-gold)] flex items-center justify-center text-[var(--c-gold)] text-lg">
