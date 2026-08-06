@@ -29,7 +29,7 @@ const PostalBallotNoticePage = () => {
                     <ul>
                       <li>
                         <a 
-                          href="/assets/wp-content/uploads/pdfs/Postal-notice/Notice-of-Postal-Ballot-19th-August-2025.pdf" 
+                          href="/uploads/Postal-notice/Notice-of-Postal-Ballot-19th-August-2025.pdf" 
                           target="_blank" 
                           rel="noopener noreferrer"
                         >

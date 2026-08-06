@@ -35,12 +35,12 @@ const MOAandAOAPage = () => {
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/MOAandAOA/MOA.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/MOAandAOA/MOA.pdf" target="_blank" rel="noopener noreferrer">
                           Memorandum of Association (MOA)
                         </a>
                       </li>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/MOAandAOA/AOA-ICVL.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/MOAandAOA/AOA-ICVL.pdf" target="_blank" rel="noopener noreferrer">
                           Articles of Association (AOA) - ICVL
                         </a>
                       </li>

@@ -98,10 +98,10 @@ const ArchivesPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q1- Unaudited Financials 2022.pdf" target="_blank" rel="noopener noreferrer">Q1- Unaudited Financial Statement</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q2-UNAUDITED-FINANCIAL-RESULTS.pdf" target="_blank" rel="noopener noreferrer">Q2- Unaudited Financial Statement</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q3 UNAUDITED FINANCIAL RESULTS.pdf" target="_blank" rel="noopener noreferrer">Q3- Unaudited Financial Statement</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/bm_Outcome_Reg 33.pdf" target="_blank" rel="noopener noreferrer">Q4- Audited Financial Statement</a></li>
+                      <li><a href="/uploads/Archives/Q1- Unaudited Financials 2022.pdf" target="_blank" rel="noopener noreferrer">Q1- Unaudited Financial Statement</a></li>
+                      <li><a href="/uploads/Archives/Q2-UNAUDITED-FINANCIAL-RESULTS.pdf" target="_blank" rel="noopener noreferrer">Q2- Unaudited Financial Statement</a></li>
+                      <li><a href="/uploads/Archives/Q3 UNAUDITED FINANCIAL RESULTS.pdf" target="_blank" rel="noopener noreferrer">Q3- Unaudited Financial Statement</a></li>
+                      <li><a href="/uploads/Archives/bm_Outcome_Reg 33.pdf" target="_blank" rel="noopener noreferrer">Q4- Audited Financial Statement</a></li>
                     </ul>
                   </div>
                 </div>
@@ -113,10 +113,10 @@ const ArchivesPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-1-Un-Audited-Result.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-2-Un-Audited-Result.pdf" target="_blank" rel="noopener noreferrer">Q-2 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q3- Unaudited Financials 2021.pdf" target="_blank" rel="noopener noreferrer">Q-3 Unaudited Financial Statement</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q4- Audited Financials 2021.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Financial Statement</a></li>
+                      <li><a href="/uploads/Archives/Q-1-Un-Audited-Result.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-2-Un-Audited-Result.pdf" target="_blank" rel="noopener noreferrer">Q-2 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q3- Unaudited Financials 2021.pdf" target="_blank" rel="noopener noreferrer">Q-3 Unaudited Financial Statement</a></li>
+                      <li><a href="/uploads/Archives/Q4- Audited Financials 2021.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Financial Statement</a></li>
                     </ul>
                   </div>
                 </div>
@@ -128,10 +128,10 @@ const ArchivesPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-1-Un-Audited-Result-5.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-2-Un-Audited-Result-5.pdf" target="_blank" rel="noopener noreferrer">Q-2 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-3-Un-Audited-Result-5.pdf" target="_blank" rel="noopener noreferrer">Q-3 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/ICVL-Outcome-22.06.2021.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-1-Un-Audited-Result-5.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-2-Un-Audited-Result-5.pdf" target="_blank" rel="noopener noreferrer">Q-2 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-3-Un-Audited-Result-5.pdf" target="_blank" rel="noopener noreferrer">Q-3 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/ICVL-Outcome-22.06.2021.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Result</a></li>
                     </ul>
                   </div>
                 </div>
@@ -143,10 +143,10 @@ const ArchivesPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-1-Un-Audited-Result-4.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-2-Un-Audited-Result-4.pdf" target="_blank" rel="noopener noreferrer">Q-2 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-3-Un-Audited-Result-4.pdf" target="_blank" rel="noopener noreferrer">Q-3 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-4-Audited-Result-3.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-1-Un-Audited-Result-4.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-2-Un-Audited-Result-4.pdf" target="_blank" rel="noopener noreferrer">Q-2 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-3-Un-Audited-Result-4.pdf" target="_blank" rel="noopener noreferrer">Q-3 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-4-Audited-Result-3.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Result</a></li>
                     </ul>
                   </div>
                 </div>
@@ -158,9 +158,9 @@ const ArchivesPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q1-unaudited-financial-results.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q3-unaudited-financial-results.pdf" target="_blank" rel="noopener noreferrer">Q-3 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q4-audited-financial-results.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q1-unaudited-financial-results.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q3-unaudited-financial-results.pdf" target="_blank" rel="noopener noreferrer">Q-3 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q4-audited-financial-results.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Result</a></li>
                     </ul>
                   </div>
                 </div>
@@ -172,10 +172,10 @@ const ArchivesPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-1-Un-Audited-Result.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q2-unaudited-financia-results.pdf" target="_blank" rel="noopener noreferrer">Q-2 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q3-unaudited-financia-results.pdf" target="_blank" rel="noopener noreferrer">Q-3 Un-audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q4-audited-financia-results.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-1-Un-Audited-Result.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q2-unaudited-financia-results.pdf" target="_blank" rel="noopener noreferrer">Q-2 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q3-unaudited-financia-results.pdf" target="_blank" rel="noopener noreferrer">Q-3 Un-audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q4-audited-financia-results.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Result</a></li>
                     </ul>
                   </div>
                 </div>
@@ -187,10 +187,10 @@ const ArchivesPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-1-Un-Audited-Result-3.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-2-Un-Audited-Result-3.pdf" target="_blank" rel="noopener noreferrer">Q-2 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-3-Un-Audited-Result-3.pdf" target="_blank" rel="noopener noreferrer">Q-3 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-4-Audited-Result-2.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-1-Un-Audited-Result-3.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-2-Un-Audited-Result-3.pdf" target="_blank" rel="noopener noreferrer">Q-2 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-3-Un-Audited-Result-3.pdf" target="_blank" rel="noopener noreferrer">Q-3 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-4-Audited-Result-2.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Result</a></li>
                     </ul>
                   </div>
                 </div>
@@ -202,10 +202,10 @@ const ArchivesPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-1-Un-Audited-Result-2.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-2-Un-Audited-Result-2.pdf" target="_blank" rel="noopener noreferrer">Q-2 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-3-Un-Audited-Result-2.pdf" target="_blank" rel="noopener noreferrer">Q-3 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-4-Audited-Result-1.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-1-Un-Audited-Result-2.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-2-Un-Audited-Result-2.pdf" target="_blank" rel="noopener noreferrer">Q-2 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-3-Un-Audited-Result-2.pdf" target="_blank" rel="noopener noreferrer">Q-3 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-4-Audited-Result-1.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Result</a></li>
                     </ul>
                   </div>
                 </div>
@@ -217,10 +217,10 @@ const ArchivesPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-1-Un-Audited-Result-1.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-2-Un-Audited-Result-1.pdf" target="_blank" rel="noopener noreferrer">Q-2 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-3-Un-Audited-Result-1.pdf" target="_blank" rel="noopener noreferrer">Q-3 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-4-Un-Audited-Result.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-1-Un-Audited-Result-1.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-2-Un-Audited-Result-1.pdf" target="_blank" rel="noopener noreferrer">Q-2 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-3-Un-Audited-Result-1.pdf" target="_blank" rel="noopener noreferrer">Q-3 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-4-Un-Audited-Result.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Result</a></li>
                     </ul>
                   </div>
                 </div>
@@ -232,10 +232,10 @@ const ArchivesPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/-Q-1-Un-Audited-Result.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-2-Un-Audited-Result.pdf" target="_blank" rel="noopener noreferrer">Q-2 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Q-3-Un-Audited-Result.pdf" target="_blank" rel="noopener noreferrer">Q-3 Un-Audited Result</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/ICVL-Q-4-Audited-Result.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-1-Un-Audited-Result.pdf" target="_blank" rel="noopener noreferrer">Q-1 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-2-Un-Audited-Result.pdf" target="_blank" rel="noopener noreferrer">Q-2 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/Q-3-Un-Audited-Result.pdf" target="_blank" rel="noopener noreferrer">Q-3 Un-Audited Result</a></li>
+                      <li><a href="/uploads/Archives/ICVL-Q-4-Audited-Result.pdf" target="_blank" rel="noopener noreferrer">Q-4 Audited Result</a></li>
                     </ul>
                   </div>
                 </div>
@@ -250,12 +250,12 @@ const ArchivesPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/AGM-Notice-2011.pdf" target="_blank" rel="noopener noreferrer">AGM Notice 2011</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/AGM-Notice-2012.pdf" target="_blank" rel="noopener noreferrer">AGM Notice 2012</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/AGM-Notice-2013.pdf" target="_blank" rel="noopener noreferrer">AGM Notice 2013</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/AGM-Notice-2014.pdf" target="_blank" rel="noopener noreferrer">AGM Notice 2014</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/AGM-Notice-2015.pdf" target="_blank" rel="noopener noreferrer">AGM Notice 2015</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/AGM-Notice-2016.pdf" target="_blank" rel="noopener noreferrer">AGM Notice 2016</a></li>
+                      <li><a href="/uploads/Archives/AGM-Notice-2011.pdf" target="_blank" rel="noopener noreferrer">AGM Notice 2011</a></li>
+                      <li><a href="/uploads/Archives/AGM-Notice-2012.pdf" target="_blank" rel="noopener noreferrer">AGM Notice 2012</a></li>
+                      <li><a href="/uploads/Archives/AGM-Notice-2013.pdf" target="_blank" rel="noopener noreferrer">AGM Notice 2013</a></li>
+                      <li><a href="/uploads/Archives/AGM-Notice-2014.pdf" target="_blank" rel="noopener noreferrer">AGM Notice 2014</a></li>
+                      <li><a href="/uploads/Archives/AGM-Notice-2015.pdf" target="_blank" rel="noopener noreferrer">AGM Notice 2015</a></li>
+                      <li><a href="/uploads/Archives/AGM-Notice-2016.pdf" target="_blank" rel="noopener noreferrer">AGM Notice 2016</a></li>
                     </ul>
                   </div>
                 </div>
@@ -281,8 +281,8 @@ const ArchivesPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-30.05.2017.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 30.05.2017</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-11.08.2017.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 11.08.2017</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-30.05.2017.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 30.05.2017</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-11.08.2017.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 11.08.2017</a></li>
                     </ul>
                   </div>
                 </div>
@@ -294,10 +294,10 @@ const ArchivesPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-30.06.2016.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 30.06.2016</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-14.11.2016.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 14.11.2016</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-23.01.2017.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 23.01.2017</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-23.05.2016.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 23.05.2016</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-30.06.2016.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 30.06.2016</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-14.11.2016.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 14.11.2016</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-23.01.2017.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 23.01.2017</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-23.05.2016.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 23.05.2016</a></li>
                     </ul>
                   </div>
                 </div>
@@ -309,11 +309,11 @@ const ArchivesPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-30.05.2015.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 30.05.2015</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-12.08.2015.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 12.08.2015</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-07.11.2015.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 07.11.2015</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-11.02.2016.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 11.02.2016</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-11.03.2016.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 11.03.2016</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-30.05.2015.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 30.05.2015</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-12.08.2015.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 12.08.2015</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-07.11.2015.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 07.11.2015</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-11.02.2016.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 11.02.2016</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-11.03.2016.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 11.03.2016</a></li>
                     </ul>
                   </div>
                 </div>
@@ -325,10 +325,10 @@ const ArchivesPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-30.05.2014-1.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 30.05.2014</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-13.08.2014.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 13.08.2014</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-14.11.2014.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 14.11.2014</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-13.02.2015.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 13.02.2015</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-30.05.2014-1.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 30.05.2014</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-13.08.2014.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 13.08.2014</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-14.11.2014.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 14.11.2014</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-13.02.2015.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 13.02.2015</a></li>
                     </ul>
                   </div>
                 </div>
@@ -340,10 +340,10 @@ const ArchivesPage = () => {
                   </h5>
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-02.08.2013.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 02.08.2013</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-24.05.2013.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 24.05.2013</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-09.11.2013.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 09.11.2013</a></li>
-                      <li><a href="/assets/wp-content/uploads/pdfs/Archives/Notice-of-Board-Meeting-to-be-held-on-14.02.2014.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 14.02.2014</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-02.08.2013.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 02.08.2013</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-24.05.2013.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 24.05.2013</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-09.11.2013.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 09.11.2013</a></li>
+                      <li><a href="/uploads/Archives/Notice-of-Board-Meeting-to-be-held-on-14.02.2014.pdf" target="_blank" rel="noopener noreferrer">Notice of Board Meeting to be held on 14.02.2014</a></li>
                     </ul>
                   </div>
                 </div>

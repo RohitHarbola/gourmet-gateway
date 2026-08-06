@@ -37,21 +37,21 @@ const AnnualReportsPage = () => {
                 </h5>
                 <div className="et_pb_toggle_content clearfix">
                   <ul>
-                    <li><a href="/assets/wp-content/uploads/pdfs/AnnualReports/Annual-Return_2025.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2025</a></li>
-                    <li><a href="/assets/wp-content/uploads/pdfs/AnnualReports/41st-Annual-Report-2024.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2024</a></li>
-                    <li><a href="/assets/wp-content/uploads/pdfs/AnnualReports/40th-Annual-Report.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2023</a></li>
-                    <li><a href="/assets/wp-content/uploads/pdfs/AnnualReports/39TH-ICVL-ANNUAL-REPORT-2022.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2022</a></li>
-                    <li><a href="/assets/wp-content/uploads/pdfs/AnnualReports/Annual-Report-ICVL-2020-21.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2021</a></li>
-                    <li><a href="/assets/wp-content/uploads/pdfs/AnnualReports/Annual-Report-2020.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2020</a></li>
-                    <li><a href="/assets/wp-content/uploads/pdfs/AnnualReports/Annual-Report-2019.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2019</a></li>
-                    <li><a href="/assets/wp-content/uploads/pdfs/AnnualReports/Annual-Report-2018.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2018</a></li>
-                    <li><a href="/assets/wp-content/uploads/pdfs/AnnualReports/Annual-Report-2017.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2017</a></li>
-                    <li><a href="/assets/wp-content/uploads/pdfs/AnnualReports/Annual-Report-2016.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2016</a></li>
-                    <li><a href="/assets/wp-content/uploads/pdfs/AnnualReports/Annual-Report-2015.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2015</a></li>
-                    <li><a href="/assets/wp-content/uploads/pdfs/AnnualReports/Annual-Report-2014.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2014</a></li>
-                    <li><a href="/assets/wp-content/uploads/pdfs/AnnualReports/Annual-Report-2013.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2013</a></li>
-                    <li><a href="/assets/wp-content/uploads/pdfs/AnnualReports/Annual-Report-2012.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2012</a></li>
-                    <li><a href="/assets/wp-content/uploads/pdfs/AnnualReports/Annual-Report-2011.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2011</a></li>
+                    <li><a href="/uploads/AnnualReports/Annual-Return_2025.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2025</a></li>
+                    <li><a href="/uploads/AnnualReports/41st-Annual-Report-2024.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2024</a></li>
+                    <li><a href="/uploads/AnnualReports/40th-Annual-Report.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2023</a></li>
+                    <li><a href="/uploads/AnnualReports/39TH-ICVL-ANNUAL-REPORT-2022.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2022</a></li>
+                    <li><a href="/uploads/AnnualReports/Annual-Report-ICVL-2020-21.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2021</a></li>
+                    <li><a href="/uploads/AnnualReports/Annual-Report-2020.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2020</a></li>
+                    <li><a href="/uploads/AnnualReports/Annual-Report-2019.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2019</a></li>
+                    <li><a href="/uploads/AnnualReports/Annual-Report-2018.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2018</a></li>
+                    <li><a href="/uploads/AnnualReports/Annual-Report-2017.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2017</a></li>
+                    <li><a href="/uploads/AnnualReports/Annual-Report-2016.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2016</a></li>
+                    <li><a href="/uploads/AnnualReports/Annual-Report-2015.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2015</a></li>
+                    <li><a href="/uploads/AnnualReports/Annual-Report-2014.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2014</a></li>
+                    <li><a href="/uploads/AnnualReports/Annual-Report-2013.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2013</a></li>
+                    <li><a href="/uploads/AnnualReports/Annual-Report-2012.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2012</a></li>
+                    <li><a href="/uploads/AnnualReports/Annual-Report-2011.pdf" target="_blank" rel="noopener noreferrer">Annual Report 2011</a></li>
                   </ul>
                 </div>
               </div>

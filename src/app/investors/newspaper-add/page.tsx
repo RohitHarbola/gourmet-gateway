@@ -35,17 +35,17 @@ const NewspaperAddPage = () => {
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/NewspaperAdd/Q1-24-25.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/NewspaperAdd/Q1-24-25.pdf" target="_blank" rel="noopener noreferrer">
                           Q1 2024-2025
                         </a>
                       </li>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/NewspaperAdd/Q2-24-25.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/NewspaperAdd/Q2-24-25.pdf" target="_blank" rel="noopener noreferrer">
                           Q2 2024-2025
                         </a>
                       </li>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/NewspaperAdd/Q3-24-25.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/NewspaperAdd/Q3-24-25.pdf" target="_blank" rel="noopener noreferrer">
                           Q3 2024-2025
                         </a>
                       </li>

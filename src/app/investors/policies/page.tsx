@@ -35,62 +35,62 @@ const PoliciesPage = () => {
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/Policy/TCWG-Policy.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/Policy/TCWG-Policy.pdf" target="_blank" rel="noopener noreferrer">
                           TCWG Policy
                         </a>
                       </li>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/Policy/POLICY-FOR-PERFORMANCE-EVALUATION-OF-BOARD-OF-DIRECTORS.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/Policy/POLICY-FOR-PERFORMANCE-EVALUATION-OF-BOARD-OF-DIRECTORS.pdf" target="_blank" rel="noopener noreferrer">
                           Policy for performance of Board of Directors
                         </a>
                       </li>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/Policy/related-party-policy29.5.25.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/Policy/related-party-policy29.5.25.pdf" target="_blank" rel="noopener noreferrer">
                           Related Party Policy
                         </a>
                       </li>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/Policy/Vigil-Policy.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/Policy/Vigil-Policy.pdf" target="_blank" rel="noopener noreferrer">
                           Vigil Policy
                         </a>
                       </li>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/Policy/Code-of-Conduct.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/Policy/Code-of-Conduct.pdf" target="_blank" rel="noopener noreferrer">
                           Code of Conduct
                         </a>
                       </li>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/Policy/policy-on-material-subsidiary.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/Policy/policy-on-material-subsidiary.pdf" target="_blank" rel="noopener noreferrer">
                           Policy On Material Subsidiary
                         </a>
                       </li>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/Policy/policy-on-materiality.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/Policy/policy-on-materiality.pdf" target="_blank" rel="noopener noreferrer">
                           Policy On Materiality
                         </a>
                       </li>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/Policy/NominationRemunerationPolicy.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/Policy/NominationRemunerationPolicy.pdf" target="_blank" rel="noopener noreferrer">
                           Nomination Remuneration Policy
                         </a>
                       </li>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/Policy/criteria-of-making-payments-to-non-executive-directors-ICVL.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/Policy/criteria-of-making-payments-to-non-executive-directors-ICVL.pdf" target="_blank" rel="noopener noreferrer">
                           Criteria of Making Payments to Non Executive Directors ICVL
                         </a>
                       </li>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/Policy/code-conduct-prohibition-insider-trading.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/Policy/code-conduct-prohibition-insider-trading.pdf" target="_blank" rel="noopener noreferrer">
                           Code Conduct Prohibition Insider Trading
                         </a>
                       </li>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/Policy/Terms_and_Conditions_Independent_Director.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/Policy/Terms_and_Conditions_Independent_Director.pdf" target="_blank" rel="noopener noreferrer">
                           Terms and Conditions Independent Director
                         </a>
                       </li>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/Policy/Whistleblower-Policy.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/Policy/Whistleblower-Policy.pdf" target="_blank" rel="noopener noreferrer">
                           Whistleblower Policy
                         </a>
                       </li>

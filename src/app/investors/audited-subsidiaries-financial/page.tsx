@@ -35,7 +35,7 @@ const AuditedSubsidiariesFinancialPage = () => {
                   <div className="et_pb_toggle_content clearfix">
                     <ul>
                       <li>
-                        <a href="/assets/wp-content/uploads/pdfs/AuditedSubsidiaries/BALANCE-SHEET-OF-BOUTONNIERE.pdf" target="_blank" rel="noopener noreferrer">
+                        <a href="/uploads/AuditedSubsidiaries/BALANCE-SHEET-OF-BOUTONNIERE.pdf" target="_blank" rel="noopener noreferrer">
                           Balance Sheet Of Boutonniere
                         </a>
                       </li>
