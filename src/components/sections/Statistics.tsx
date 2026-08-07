@@ -90,7 +90,7 @@ export default function Statistics() {
           {/* Brands */}
           <div className="border-r border-b lg:border-b-0 border-white/10 p-6 lg:p-8 text-center">
             <h3 className="font-serif text-4xl lg:text-5xl text-[#B8965A] font-semibold">
-              <Counter end={4} suffix="+" />
+              <Counter end={4} suffix="" />
             </h3>
             <p className="mt-2 uppercase tracking-[0.2em] text-[10px] text-white/50 font-light">
               Iconic Brands

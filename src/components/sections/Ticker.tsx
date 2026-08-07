@@ -1,6 +1,6 @@
 const tickerItems = [
   "Barista",
-  "Cafe Muller by Barista",
+  "Cafe Meular by Barista",
   "Drizzle & Dust",
   "Kylin ",
   "Wanchai",

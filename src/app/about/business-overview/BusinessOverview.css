@@ -33,9 +33,13 @@
 
 .eo-hero {
   position: relative;
-  min-height: 64vh;
+  width: 100%;
+  aspect-ratio: 16 / 7;   /* match this to businessbanner.png's real ratio */
+  min-height: 340px;      /* floor so it never gets too squished on tall screens */
+  max-height: 720px;      /* ceiling so it never gets absurdly tall on ultra-wide */
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   overflow: hidden;
 }
 
@@ -48,20 +52,19 @@
 .eo-hero-image {
   object-fit: cover;
   object-position: center;
-  width: 100%;
-  height: 100%;
 }
 
 /* Gradient scrim so the image stays fully visible while the headline
-   stays legible — no flat white wash over the photo. */
+   stays legible — even coverage so centered text reads clearly
+   wherever it sits over the photo. */
 .eo-hero-scrim {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(20, 13, 8, 0.15) 0%,
+    rgba(20, 13, 8, 0.1) 0%,
     rgba(20, 13, 8, 0.15) 40%,
-    rgba(20, 13, 8, 0.78) 100%
+    rgba(20, 13, 8, 0.82) 100%
   );
 }
 
@@ -69,10 +72,14 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 900px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 56px 24px 48px;
+  padding: 0 24px 48px;
+  text-align: center;
   color: #fbf7f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .eo-eyebrow {
@@ -104,24 +111,26 @@
   line-height: 1.6;
   max-width: 560px;
   color: #e9e2d6;
-  margin: 0;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   .eo-hero {
-    min-height: 52vh;
+    aspect-ratio: 4 / 5;   /* taller ratio reads better on mobile banners */
+    min-height: 280px;
   }
   .eo-hero-content {
-    padding: 40px 20px 36px;
+    padding: 0 20px 40px;
   }
 }
 
 @media (max-width: 480px) {
   .eo-hero {
-    min-height: 46vh;
+    aspect-ratio: 3 / 4;
+    min-height: 260px;
   }
   .eo-hero-content {
-    padding: 32px 16px 28px;
+    padding: 0 16px 32px;
   }
   .eo-hero-sub {
     font-size: 15px;

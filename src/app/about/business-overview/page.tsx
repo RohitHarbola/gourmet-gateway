@@ -80,7 +80,7 @@ const BusinessOverviewPage = () => {
         <section className="eo-hero">
           <div className="eo-hero-media">
             <Image
-              src="/assets/businessOverviewbanner.png"
+              src="/assets/businessbanner.png"
               alt="Business Overview Banner"
               fill
               className="eo-hero-image "
@@ -92,7 +92,7 @@ const BusinessOverviewPage = () => {
 
           <div className="eo-hero-content">
             <span className="eo-eyebrow">Four brands, one table</span>
-            <h1>Business Overview</h1>
+            {/* <h1>Business Overview</h1> */}
             <p className="eo-hero-sub">
               A portfolio of hospitality brands spanning coffee, Pan-Asian dining, and dessert
               — each with its own identity, united by the same craft.

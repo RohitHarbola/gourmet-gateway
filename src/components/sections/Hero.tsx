@@ -153,7 +153,7 @@ const Hero = () => {
           line-height: 0.92;
           letter-spacing: -0.025em;
           color: #E1D9D1;
-          margin-bottom: 14px;
+          margin-bottom: 38px;
         }
 
         @media (max-width: 900px) {
@@ -210,7 +210,7 @@ const Hero = () => {
           align-items: center;
           gap: 16px;
           flex-wrap: wrap;
-          margin-top: 28px;
+          margin-top: 42px;
           margin-bottom: 40px; /* desktop: no bottom spacing needed here */
         }
 
@@ -514,7 +514,7 @@ const Hero = () => {
 
               <h1 className="hero-headline">
               Curating <br />
-              <em>Exceptional </em><br />
+             
               Food Experiences<br />
             </h1>
 
