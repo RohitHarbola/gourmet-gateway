@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const brands = [
   {
-    name: "Barista Coffee",
+    name: "Barista",
     slug: "barista",
     category: "Cafe Chain",
     description:
