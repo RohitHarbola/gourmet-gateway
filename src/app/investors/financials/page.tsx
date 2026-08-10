@@ -11,60 +11,77 @@ type YearBlock = {
 };
 
 const consolidatedData: YearBlock[] = [
+    {
+    
+    year: 'Financial Results 2026-27',
+    items: [
+      { label: 'Q1- Unaudited Financial Statement', href: '/uploads/2026-27/ConsoleMarch26Audited.pdf' },
+    ],
+  },
   {
+    
     year: 'Financial Results 2025-26',
     items: [
-      { label: 'Q1- Unaudited Financial Statement', href: '/uploads/2025-26/Consolidate/Console.pdf' },
+      { label: 'Q1- Unaudited Financial Statement', href: '/uploads/2025-26/Consolidate/ConsoleJune.pdf' },
       { label: 'Q2- Unaudited Financial Statement', href: '/uploads/2025-26/Consolidate/ConsoleSep25.pdf' },
-      { label: 'Q3- Unaudited Financial Statement', href: '/uploads/2025-26/Consolidate/ConsoleMarch.pdf' },
-      { label: 'Q4- Audited Financial Statement', href: '/uploads/2025-26/Consolidate/ConsoleJune.pdf' },
+      { label: 'Q3- Audited Financial Statement', href: '/uploads/2025-26/Consolidate/Console.pdf' },
+      { label: 'Q4- Unaudited Financial Statement', href: '/uploads/2025-26/Consolidate/ConsoleMarch.pdf' },
     ],
   },
   {
     year: 'Financial Results 2024-25',
     items: [
-      { label: 'Q1- Unaudited Financial Statement', href: '/uploads/2024-25/Consolidate/Dec2024ConsolewithAR.pdf' },
+      { label: 'Q1- Audited Financial Statement', href: '/uploads/2024-25/Consolidate/June24Console.pdf' },
       { label: 'Q2- Unaudited Financial Statement', href: '/uploads/2024-25/Consolidate/Sept2024_ConsolewithAR.pdf' },
-      { label: 'Q3- Unaudited Financial Statement', href: '/uploads/2024-25/Consolidate/ARConsole_March25.pdf' },
-      { label: 'Q4- Audited Financial Statement', href: '/uploads/2024-25/Consolidate/June24Console.pdf' },
+      { label: 'Q3- Unaudited Financial Statement', href: '/uploads/2024-25/Consolidate/Dec2024ConsolewithAR.pdf' },
+      { label: 'Q4- Unaudited Financial Statement', href: '/uploads/2024-25/Consolidate/ARConsole_March25.pdf' },
     ],
   },
   {
     year: 'Financial Results 2023-24',
     items: [
-      { label: 'Q1- Unaudited Financial Statement', href: '/uploads/2023-24/consolidate/Dec2023_Console.pdf' },
+      { label: 'Q1- Audited Financial Statement', href: '/uploads/2023-24/consolidate/June23Console.pdf' },
       { label: 'Q2- Unaudited Financial Statement', href: '/uploads/2023-24/consolidate/Sept23Console.pdf' },
-      { label: 'Q3- Unaudited Financial Statement', href: '/uploads/2023-24/consolidate/March24Console.pdf' },
-      { label: 'Q4- Audited Financial Statement', href: '/uploads/2023-24/consolidate/June23Console.pdf' },
+      { label: 'Q3- Unaudited Financial Statement', href: '/uploads/2023-24/consolidate/Dec2023_Console.pdf' },
+      { label: 'Q4- Unaudited Financial Statement', href: '/uploads/2023-24/consolidate/March24Console.pdf' },
     ],
   },
 ];
 
 const standaloneData: YearBlock[] = [
+
+  {
+    
+    year: 'Financial Results 2026-27',
+    items: [
+      { label: 'Q1- Unaudited Financial Statement', href: '/uploads/2026-27/StandaloneMarch26Audited.pdf' },
+    ],
+  },
+
   {
     year: 'Financial Results 2025-26',
     items: [
-      { label: 'Q1- Unaudited Financial Statement', href: '/uploads/2025-26/Standalone/Standalone.pdf' },
+      { label: 'Q1- Unaudited Financial Statement', href: '/uploads/2025-26/Standalone/StandaloneJune25.pdf' },
       { label: 'Q2- Unaudited Financial Statement', href: '/uploads/2025-26/Standalone/Standalonesept25.pdf' },
-      { label: 'Q3- Unaudited Financial Statement', href: '/uploads/2025-26/Standalone/StandaloneJune25.pdf' },
+      { label: 'Q3- Unaudited Financial Statement', href: '/uploads/2025-26/Standalone/Standalone.pdf' },
       { label: 'Q4- Audited Financial Statement', href: '/uploads/2025-26/Standalone/MarchStandalone.pdf' },
     ],
   },
   {
     year: 'Financial Results 2024-25',
     items: [
-      { label: 'Q1- Unaudited Financial Statement', href: '/uploads/2024-25/Standalone/Dec2024standalonewithAR.pdf' },
+      { label: 'Q1- Unaudited Financial Statement', href: '/uploads/2024-25/Standalone/June24standalone.pdf' },
       { label: 'Q2- Unaudited Financial Statement', href: '/uploads/2024-25/Standalone/Sept2024_StandalonewithAR.pdf' },
-      { label: 'Q3- Unaudited Financial Statement', href: '/uploads/2024-25/Standalone/June24standalone.pdf' },
+      { label: 'Q3- Unaudited Financial Statement', href: '/uploads/2024-25/Standalone/Dec2024standalonewithAR.pdf' },
       { label: 'Q4- Audited Financial Statement', href: '/uploads/2024-25/Standalone/ARStandalone_March25.pdf' },
     ],
   },
   {
     year: 'Financial Results 2023-24',
     items: [
-      { label: 'Q1- Unaudited Financial Statement', href: '/uploads/2023-24/Standalone/Dec23Standalone.pdf' },
+      { label: 'Q1- Unaudited Financial Statement', href: '/uploads/2023-24/Standalone/June2023_StanalonewithAR.pdf' },
       { label: 'Q2- Unaudited Financial Statement', href: '/uploads/2023-24/Standalone/Sept23Standalone.pdf' },
-      { label: 'Q3- Unaudited Financial Statement', href: '/uploads/2023-24/Standalone/June2023_StanalonewithAR.pdf' },
+      { label: 'Q3- Unaudited Financial Statement', href: '/uploads/2023-24/Standalone/Dec23Standalone.pdf' },
       { label: 'Q4- Audited Financial Statement', href: '/uploads/2023-24/Standalone/March24Stanalone.pdf' },
     ],
   },
