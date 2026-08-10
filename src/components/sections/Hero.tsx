@@ -545,7 +545,7 @@ const Hero = () => {
               </div>
 
               <div className="hero-stat">
-                <div className="hero-stat-num">3+</div>
+                <div className="hero-stat-num">3</div>
                 <div className="hero-stat-label">Countries</div>
               </div>
 

@@ -182,7 +182,7 @@ export default function InvestorsPage() {
         <div className="container-custom">
           <div className="grid md:grid-cols-4">
             <div className="stat-card border-r border-white/10 p-8 text-center">
-              <div className="display-md text-[var(--c-gold)]">4+</div>
+              <div className="display-md text-[var(--c-gold)]">4</div>
               <p className="uppercase tracking-[0.2em] text-xs mt-2">Brands</p>
             </div>
             <div className="stat-card border-r border-white/10 p-8 text-center">

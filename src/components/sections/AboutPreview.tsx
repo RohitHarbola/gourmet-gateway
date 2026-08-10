@@ -101,10 +101,8 @@ export default function AboutPreview() {
                 lineHeight: 1.6,
               }}
             >
-              {/* "Our mission is to enrich lives through extraordinary dining
-              experiences — maintaining the highest standards of quality,
-              innovation, and satisfaction across all our brands." */}
-              "Discover the Story Behind Drizzle and Dust"
+             
+              "Discover Our Story"
             </blockquote>
 
             {/* Feature Cards with Button */}
