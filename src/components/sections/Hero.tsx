@@ -528,9 +528,9 @@ const Hero = () => {
               <Link href="/brands" className="hero-btn hero-btn-primary">
                 Explore Our Brands
               </Link>
-              <Link href="/investors" className="hero-btn hero-btn-outline">
+              {/* <Link href="/investors" className="hero-btn hero-btn-outline">
                 Investor Relations
-              </Link>
+              </Link> */}
             </div>
           </div>
 
