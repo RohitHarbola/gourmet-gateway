@@ -94,8 +94,7 @@ const BusinessOverviewPage = () => {
             <span className="eo-eyebrow">Four brands, one table</span>
             {/* <h1>Business Overview</h1> */}
             <p className="eo-hero-sub">
-              A portfolio of hospitality brands spanning coffee, Pan-Asian dining, and dessert
-              — each with its own identity, united by the same craft.
+            A portfolio of distinctive hospitality brands across coffee, Pan-Asian dining and desserts, united by a shared passion for craft and experience.
             </p>
           </div>
         </section>
