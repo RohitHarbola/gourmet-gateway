@@ -262,31 +262,33 @@ const ManagementTeamPage = () => {
                 </div>
               </div>
 
-              {/* Mr. Ritesh Kalra - Independent Director */}
+              {/* Mr. Vipul Gupta - Non-Executive Independent Director */}
               <div className="team-member team-member--open">
                 <h5 className="toggle-title toggle-title--centered">
-                  Mr. Ritesh Kalra – Independent Director
+                 Mr. Vipul Gupta (Non-Executive Independent Director)
                 </h5>
                 <div className="toggle-content clearfix">
                   <div className="team-member-photo-wrap">
                     <Image
-                      src="/assets/team/RiteshKalra.png"
-                      alt="Mr. Ritesh Kalra"
-                      width={220}
-                      height={220}
+                      src="/assets/team/VipulGupta.png"
+                      alt="Mr. Vipul Gupta"
+                      width={228}
+                      height={110}
                       className="team-member-photo"
                     />
                   </div>
                   <div className="bio-content">
                     <p>
-                      Mr. Ritesh Kalra is a qualified Company Secretary with extensive experience in corporate laws, securities regulations, and regulatory compliance.
+                    Vipul Gupta is MBA (Finance) and an experienced Income Tax Consultant with over 25 years of professional experience in Accounting and Direct Taxation. 
                     </p>
                     <p>
-                      He specializes in the Companies Act, 2013, SEBI Regulations, listing compliances, secretarial audits, corporate restructuring, and Board advisory.
+                    Based in Delhi, he is known for his integrity, hardworking nature, practical approach and strong professional relationships. 
                     </p>
                     <p>
-                      He has advised listed and unlisted companies on governance, compliance, and regulatory matters, contributing to strong corporate governance and sustainable business growth.
+                     He has extensive experience and financial expertise in direct tax.
+                     He has vast experience in consulting the clients of different industries wirh respect to accounting and taxation
                     </p>
+                    
                   </div>
                 </div>
               </div>
