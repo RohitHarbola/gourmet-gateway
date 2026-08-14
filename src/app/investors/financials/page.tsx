@@ -11,6 +11,14 @@ type YearBlock = {
 };
 
 const consolidatedData: YearBlock[] = [
+   {
+    
+    year: 'Financial Results 2026-27',
+    items: [
+      { label: 'Q1- Unaudited Financial Statement', href: '/uploads/2026-27/GGIL_ConsoleQuarter-1-2026-27.pdf' },
+    ],
+  },
+
   {
     
     year: 'Financial Results 2025-26',
@@ -42,6 +50,13 @@ const consolidatedData: YearBlock[] = [
 ];
 
 const standaloneData: YearBlock[] = [
+    {
+    
+    year: 'Financial Results 2026-27',
+    items: [
+      { label: 'Q1- Unaudited Financial Statement', href: '/uploads/2026-27/GGIL_StandaloneQuarter-1-2026-27.pdf' },
+    ],
+  },
 
   {
     year: 'Financial Results 2025-26',
