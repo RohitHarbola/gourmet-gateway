@@ -533,10 +533,10 @@ export default function ContactSection() {
               </p>
               <div className="mt-1.5 space-y-0.5">
                 <p className="contact-detail text-xs text-[#2A241D] font-medium">
-                  Email: amfinecompliance@gmail.com
+                  Email: cs@gourmetgateway.co.in
                 </p>
                 <p className="contact-detail text-xs text-[#2A241D] font-medium">
-                  Phone:  +918750131314
+                  Phone:  +919254214094
                 </p>
               </div>
             </div>
